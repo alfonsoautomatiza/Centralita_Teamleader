@@ -1,1 +1,8 @@
 site/
+docs/
+obsoleto/
+.gitignore
+*.bat
+*.ps1
+IDEAS.MD
+*.YML
