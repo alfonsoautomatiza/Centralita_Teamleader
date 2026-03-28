@@ -1,19 +1,18 @@
 {
   "project": "centralita_teamleader",
   "channel": "stable",
-  "latest": "2.0.6",
+  "latest": "3.0.0",
   "key_id": "global-2026-01",
-  "generated_at": "2026-03-28T21:03:43.598714+00:00",
+  "generated_at": "2026-03-28T21:15:06.767806+00:00",
   "releases": [
     {
-      "version": "2.0.6",
-      "type": "partial",
+      "version": "3.0.0",
+      "type": "full",
       "target": "win-x64",
-      "url": "files/update-2.0.6.zip",
-      "sha256": "639ecc5a9d510874d076f33c483723c6c7c695a7d3ddf5996c2470a2f166dba3",
-      "size": 813432,
-      "operations_manifest": "operations.json"
+      "url": "https://github.com/wertyMSD/Centralita_Teamleader/releases/download/v3.0.0/centralita-v3.0.0-full-win-x64.zip",
+      "sha256": "76d0f72a0512800055947c6661e353de74004f0ef5176665255557261dea1993",
+      "size": 185303478
     }
   ],
-  "signature": "RCYqVixV35ASllWRY6H7ohyNw8St8w+ypQY8Gea6wZmyBmHAgoFyjt1ardYcaFK+u8gyhu303FV3Bdr+vM5zDw=="
+  "signature": "lsILkEv6xmz9VDezqQ5CI2a4EE3w8to7nOf3jBJTMmFh7mFRidjso0Eek/EgzNvhI3qtLV1XkafomvRqIZ1cDw=="
 }
