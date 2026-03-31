@@ -7,15 +7,23 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
+        <meta name="description" content="Automatice su CRM Teamleader con IA y su teléfono Android. Identificación de llamadas en tiempo real sin VOIP.">
+      
+      
+        <meta name="author" content="Alfonso Martínez González">
       
       
         <link rel="canonical" href="https://wertymsd.github.io/Centralita_Teamleader/tecnica/arquitectura/">
       
       
       
-        <link rel="next" href="../funcionalidades-core/">
       
-      
+        
+          <link rel="alternate" href="/en/" hreflang="en">
+        
+          <link rel="alternate" href="/fr/" hreflang="fr">
+        
+          <link rel="alternate" href="/" hreflang="es">
         
       
       
@@ -49,6 +57,8 @@
         <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
       
     
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
     
     <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
@@ -88,7 +98,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#contexto-de-la-aplicacion" class="md-skip">
+        <a href="#arquitectura-del-sistema" class="md-skip">
           Saltar a contenido
         </a>
       
@@ -158,6 +168,38 @@
       <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
     
     
+      <div class="md-header__option">
+  <div class="md-select">
+    
+    <button class="md-header__button md-icon" aria-label="Seleccionar idioma">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.5 17.5 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2zm-2.62 7 1.62-4.33L19.12 17z"/></svg>
+    </button>
+    <div class="md-select__inner">
+      <ul class="md-select__list">
+        
+          <li class="md-select__item">
+            <a href="/en/" hreflang="en" class="md-select__link">
+              English
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="/fr/" hreflang="fr" class="md-select__link">
+              Français
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="/" hreflang="es" class="md-select__link">
+              Español
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+    
     
       
       
@@ -178,11 +220,18 @@
       </label>
       <nav class="md-search__options" aria-label="Buscar">
         
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Compartir" aria-label="Compartir" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
         <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
           
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
         </button>
       </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
       
     </form>
     <div class="md-search__output">
@@ -199,6 +248,18 @@
 </div>
       
     
+    
+      <div class="md-header__source">
+        <a href="https://github.com/wertyMSD/Centralita_Teamleader" title="Ir al repositorio" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
     
   </nav>
   
@@ -222,7 +283,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../index.md" class="md-tabs__link">
+        <a href="../.." class="md-tabs__link">
           
   
   
@@ -261,7 +322,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../es/link-descarga-software-centralita-teamleader.md" class="md-tabs__link">
+      <a href="../../es/castellano/link-descarga-software-centralita-teamleader/" class="md-tabs__link">
         
   
   
@@ -282,7 +343,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../es/inicio-rapido-centralita-teamleader.md" class="md-tabs__link">
+        <a href="../../es/castellano/inicio-rapido-centralita-teamleader/" class="md-tabs__link">
           
   
   
@@ -300,19 +361,83 @@
   
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="./" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../es/tecnica/arquitectura/" class="md-tabs__link">
           
   
   
     
   
-  Documentación tecnica
+  Documentación Técnica
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../es/castellano/ejemplos-dia-a-dia/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Casos y Ejemplos
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../en/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  English
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../fr/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Français
 
         </a>
       </li>
@@ -350,6 +475,18 @@
     Centralita IA Teamleader
   </label>
   
+    <div class="md-nav__source">
+      <a href="https://github.com/wertyMSD/Centralita_Teamleader" title="Ir al repositorio" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
   <ul class="md-nav__list" data-md-scrollfix>
     
       
@@ -362,29 +499,35 @@
     
       
         
-      
-        
-      
-        
-      
-    
-    
-    
-      
-      
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
-        
           
-          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
-            
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../.." class="md-nav__link">
+      
   
   
   <span class="md-ellipsis">
@@ -398,106 +541,12 @@
   
   
 
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_1">
-            <span class="md-nav__icon md-icon"></span>
-            
-  
-    Inicio
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
   
 
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../index.md" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    None
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="https://wertymsd.github.io/Centralita_Teamleader/img-shared/Setup_Centralita_IA_Teamleader.zip" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Descarga Gratuita
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../es/inicio-rapido-centralita-teamleader.md" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Configuración Rapida
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
       
     </li>
   
@@ -537,7 +586,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../es/link-descarga-software-centralita-teamleader.md" class="md-nav__link">
+      <a href="../../es/castellano/link-descarga-software-centralita-teamleader/" class="md-nav__link">
         
   
   
@@ -551,6 +600,13 @@
   </span>
   
   
+    
+  
+  
+    <span class="md-status md-status--published"></span>
+  
+
+  
 
       </a>
     </li>
@@ -587,15 +643,19 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
         
-          
-          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
-            
+  
+  
+  
+    <a href="../../es/castellano/inicio-rapido-centralita-teamleader/" class="md-nav__link">
+      
   
   
   <span class="md-ellipsis">
@@ -609,35 +669,66 @@
   
   
 
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_4">
-            <span class="md-nav__icon md-icon"></span>
-            
-  
-    Español
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
   
 
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
+      
+    </li>
+  
+
+    
+      
+      
   
   
   
   
-    <li class="md-nav__item">
-      <a href="../../es/inicio-rapido-centralita-teamleader.md" class="md-nav__link">
+    
+    
+      
         
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../es/tecnica/arquitectura/" class="md-nav__link">
+      
   
   
   <span class="md-ellipsis">
     
   
-    None
+    Documentación Técnica
   
 
     
@@ -645,27 +736,56 @@
   
   
 
-      </a>
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
     </li>
   
 
-              
-            
-              
-                
+    
+      
+      
   
   
   
   
-    <li class="md-nav__item">
-      <a href="../../es/api-teamleader.md" class="md-nav__link">
+    
+    
+      
         
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../es/castellano/ejemplos-dia-a-dia/" class="md-nav__link">
+      
   
   
   <span class="md-ellipsis">
     
   
-    None
+    Casos y Ejemplos
   
 
     
@@ -673,126 +793,12 @@
   
   
 
-      </a>
-    </li>
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
   
 
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../es/centralita-crm-ia-teamleader.md" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    None
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../es/creacion-nuevo-registros-teamleader.md" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    None
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../es/pantalla-configuracion-centralita-teamleader.md" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    None
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../es/App-Call-remoto.md" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    None
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
       
     </li>
   
@@ -802,52 +808,55 @@
       
   
   
-    
   
   
-  
     
     
       
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-    
-    
-    
-      
-        
-        
-      
-      
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
         
           
-          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
-            
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../en/" class="md-nav__link">
+      
   
   
   <span class="md-ellipsis">
     
   
-    Documentación tecnica
+    English
   
 
     
@@ -855,44 +864,70 @@
   
   
 
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_5">
-            <span class="md-nav__icon md-icon"></span>
-            
-  
-    Documentación tecnica
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
   
 
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
   
   
     
-  
-  
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
+    
       
         
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
           
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../fr/" class="md-nav__link">
+      
   
   
   <span class="md-ellipsis">
     
   
-    Arquitectura
+    Français
   
 
     
@@ -900,225 +935,12 @@
   
   
 
-          <span class="md-nav__icon md-icon"></span>
-        </label>
       
-      <a href="./" class="md-nav__link md-nav__link--active">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Arquitectura
-  
-
-    
-  </span>
-  
-  
-
-      </a>
+        <span class="md-nav__icon md-icon"></span>
       
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Tabla de contenidos
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#descripcion" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Descripción
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#stack-tecnologico" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Stack Tecnológico
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#publico-objetivo" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Público Objetivo
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
-    </li>
+    </a>
   
 
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../funcionalidades-core/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Funcionalidades core
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../funcionalidades-avanzadas/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Funcionalidades avanzadas
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../integraciones.md" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    None
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../casos-de-uso.md" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    None
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../faq-tecnica/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Faq tecnica
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
       
     </li>
   
@@ -1141,8 +963,6 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -1151,7 +971,31 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#descripcion" class="md-nav__link">
+  <a href="#arquitectura-del-sistema" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Arquitectura del Sistema
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Arquitectura del Sistema">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#contexto-de-la-aplicación" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Contexto de la Aplicación
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Contexto de la Aplicación">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#descripción" class="md-nav__link">
     <span class="md-ellipsis">
       
         Descripción
@@ -1160,9 +1004,9 @@
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#stack-tecnologico" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#stack-tecnológico" class="md-nav__link">
     <span class="md-ellipsis">
       
         Stack Tecnológico
@@ -1171,15 +1015,442 @@
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#publico-objetivo" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#público-objetivo" class="md-nav__link">
     <span class="md-ellipsis">
       
         Público Objetivo
       
     </span>
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#arquitectura-frame-driven" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Arquitectura Frame-Driven
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Arquitectura Frame-Driven">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#concepto-de-frames" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Concepto de Frames
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#estructura-de-frames" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Estructura de Frames
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ventajas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ventajas
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#componentes-principales" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Componentes Principales
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Componentes Principales">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-bootstrap-de-aplicación-centralitapy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Bootstrap de Aplicación (centralita.py)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-clase-principal-miratelefono_iapy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Clase Principal (miratelefono_ia.py)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-sistema-de-tareas-miratelefono_tareas_procesopy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Sistema de Tareas (miratelefono_tareas_proceso.py)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#clase-tareav2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Clase TareaV2
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gestorcsv" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        GestorCSV
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-configuración-unificada-framesconfpy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Configuración Unificada (FRAMES/conf.py)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#clase-conf" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Clase Conf
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-cuadro-de-mando-framescuadropy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Cuadro de Mando (FRAMES/cuadro.py)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#libwertycuadro" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        libwertyCuadro
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sistema-de-recuperación" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sistema de Recuperación
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Sistema de Recuperación">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#persistencia-en-csv" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Persistencia en CSV
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#recuperación-post-apagón" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Recuperación Post-Apagón
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sistema-de-validación" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sistema de Validación
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Sistema de Validación">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#limpieza-de-audio-libwertyaudiolimpiezapy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Limpieza de Audio (libwertyaudiolimpieza.py)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#integraciones" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Integraciones
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Integraciones">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#teamleader-api" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Teamleader API
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#obs-studio-websocket" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        OBS Studio (WebSocket)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#circuit-breaker" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Circuit Breaker
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Circuit Breaker">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#aislamiento-de-fallos-miratelefono_circuit_breakerpy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Aislamiento de Fallos (miratelefono_circuit_breaker.py)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#health-checks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Health Checks
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Health Checks">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#monitorización-miratelefono_health_checkspy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Monitorización (miratelefono_health_checks.py)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#logs-y-debugging" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Logs y Debugging
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Logs y Debugging">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#logging-estructurado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Logging Estructurado
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#archivos-de-configuración" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Archivos de Configuración
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Archivos de Configuración">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#configini" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        config.ini
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#observaciones-técnicas-importantes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Observaciones Técnicas Importantes
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#archivos-clave" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Archivos Clave
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#próximos-pasos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Próximos Pasos
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1205,28 +1476,53 @@
                   
 
 
+  
+    <a href="https://github.com/wertyMSD/Centralita_Teamleader/edit/master/docs/tecnica/arquitectura.md" title="Editar esta página" class="md-content__button md-icon" rel="edit">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
+    </a>
+  
+  
+    
+      
+    
+    <a href="https://github.com/wertyMSD/Centralita_Teamleader/raw/master/docs/tecnica/arquitectura.md" title="Ver código fuente de esta página" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 18c.56 0 1 .44 1 1s-.44 1-1 1-1-.44-1-1 .44-1 1-1m0-3c-2.73 0-5.06 1.66-6 4 .94 2.34 3.27 4 6 4s5.06-1.66 6-4c-.94-2.34-3.27-4-6-4m0 6.5a2.5 2.5 0 0 1-2.5-2.5 2.5 2.5 0 0 1 2.5-2.5 2.5 2.5 0 0 1 2.5 2.5 2.5 2.5 0 0 1-2.5 2.5M9.27 20H6V4h7v5h5v4.07c.7.08 1.36.25 2 .49V8l-6-6H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h4.5a8.2 8.2 0 0 1-1.23-2"/></svg>
+    </a>
+  
 
-<h0 id="arquitectura-del-sistema">Arquitectura del Sistema</h0>
-<h1 id="contexto-de-la-aplicacion">Contexto de la Aplicación</h1>
-<h2 id="descripcion">Descripción</h2>
+
+  <h1>Arquitectura</h1>
+
+<h2 id="arquitectura-del-sistema">Arquitectura del Sistema<a class="headerlink" href="#arquitectura-del-sistema" title="Permanent link">&para;</a></h2>
+<h3 id="contexto-de-la-aplicación">Contexto de la Aplicación<a class="headerlink" href="#contexto-de-la-aplicación" title="Permanent link">&para;</a></h3>
+<h4 id="descripción">Descripción<a class="headerlink" href="#descripción" title="Permanent link">&para;</a></h4>
 <p>Sistema de gestión de llamadas con IA que integra telefonía, grabación de audio, transcripción automática con inteligencia artificial y sincronización con CRMs como Teamleader. Centraliza la gestión de llamadas entrantes/salientes, automatiza el resumen de conversaciones y mantiene un registro estructurado de todas las interacciones.</p>
-<h2 id="stack-tecnologico">Stack Tecnológico</h2>
+<h4 id="stack-tecnológico">Stack Tecnológico<a class="headerlink" href="#stack-tecnológico" title="Permanent link">&para;</a></h4>
 <ul>
+<li><strong>Python 3.13+</strong>: Lenguaje principal del sistema</li>
+<li><strong>Streamlit</strong>: Interfaces web de configuración y gestión</li>
+<li><strong>PySimpleGUI</strong>: System tray y menú de notificaciones</li>
 <li><strong>OBS Studio</strong>: Grabación de audio del sistema (opcional)</li>
 <li><strong>OpenRouter API</strong>: Transcripción con IA (Google Gemini)</li>
 <li><strong>Teamleader API</strong>: Integración con CRM</li>
+<li><strong>Tkinter/PyAudio</strong>: Grabación interna de audio</li>
+<li><strong>PyInstaller</strong>: Empaquetado en ejecutable</li>
+<li><strong>NumPy/pandas</strong>: Procesamiento de datos</li>
+<li><strong>Threading/multiprocessing</strong>: Concurrencia de tareas</li>
 </ul>
-<h2 id="publico-objetivo">Público Objetivo</h2>
+<h4 id="público-objetivo">Público Objetivo<a class="headerlink" href="#público-objetivo" title="Permanent link">&para;</a></h4>
 <p>PYMEs españolas que utilizan Teamleader como CRM y necesitan automatizar la gestión de llamadas telefónicas con transcripción IA, especialmente empresas de servicios, call centers y equipos de ventas.</p>
 <hr />
-<h1 id="arquitectura-frame-driven">Arquitectura Frame-Driven</h1>
+<h3 id="arquitectura-frame-driven">Arquitectura Frame-Driven<a class="headerlink" href="#arquitectura-frame-driven" title="Permanent link">&para;</a></h3>
 <p>El sistema usa una arquitectura de "frames" en <code>FRAMES/</code> que permite diferentes implementaciones por integración CRM (Teamleader, Sage 50, etc.).</p>
-<h2 id="concepto-de-frames">Concepto de Frames</h2>
+<h4 id="concepto-de-frames">Concepto de Frames<a class="headerlink" href="#concepto-de-frames" title="Permanent link">&para;</a></h4>
 <p>Los archivos en la raíz (<code>conf.py</code>, <code>cuadro.py</code>, <code>procesos.py</code>) son shims que delegan al frame activo resuelto por:
 - Variable de entorno <code>CENTRALITA_FRAME</code>
 - Rama git activa
 - Configuración en <code>config.ini</code></p>
-<h2 id="estructura-de-frames">Estructura de Frames</h2>
+<h4 id="estructura-de-frames">Estructura de Frames<a class="headerlink" href="#estructura-de-frames" title="Permanent link">&para;</a></h4>
 <div class="highlight"><pre><span></span><code>FRAMES/
 ├── main/              # Frame principal (Teamleader)
 │   ├── conf.py        # Configuración Teamleader
@@ -1238,7 +1534,7 @@
 │   └── procesos.py
 └── README.md          # Documentación de frames
 </code></pre></div>
-<h2 id="ventajas">Ventajas</h2>
+<h4 id="ventajas">Ventajas<a class="headerlink" href="#ventajas" title="Permanent link">&para;</a></h4>
 <ul>
 <li><strong>Mismo código base</strong> para múltiples productos</li>
 <li><strong>Fácil mantenimiento</strong> de integraciones específicas</li>
@@ -1246,77 +1542,107 @@
 <li><strong>Aislamiento</strong> de lógica de cada CRM</li>
 </ul>
 <hr />
-<h1 id="componentes-principales">Componentes Principales</h1>
-<h2 id="1-inicializacion-del-sistema">1. Inicialización del Sistema</h2>
+<h3 id="componentes-principales">Componentes Principales<a class="headerlink" href="#componentes-principales" title="Permanent link">&para;</a></h3>
+<h4 id="1-bootstrap-de-aplicación-centralitapy">1. Bootstrap de Aplicación (<code>centralita.py</code>)<a class="headerlink" href="#1-bootstrap-de-aplicación-centralitapy" title="Permanent link">&para;</a></h4>
 <p><strong>Responsabilidad</strong>: Punto de entrada principal y validación de entorno</p>
 <p><strong>Funcionalidades clave</strong>:
-- Validación de entorno y dependencias
+- Validación de entorno Python y dependencias
 - Logging estructurado con niveles DEBUG/INFO/WARNING/ERROR
-- Inicialización del sistema</p>
+- Cleanup de procesos rs.exe (en builds PyInstaller)
+- Inicialización de ApplicationBootstrap</p>
+<p><strong>Patrón</strong>: Bootstrap en dos fases
+1. <strong>Fase 1</strong>: Validación de entorno (rápida)
+2. <strong>Fase 2</strong>: Carga de módulos pesados (diferida)</p>
 <hr />
-<h2 id="2-motor-principal">2. Motor Principal</h2>
+<h4 id="2-clase-principal-miratelefono_iapy">2. Clase Principal (<code>miratelefono_ia.py</code>)<a class="headerlink" href="#2-clase-principal-miratelefono_iapy" title="Permanent link">&para;</a></h4>
 <p><strong>Responsabilidad</strong>: Orquestación de todos los componentes</p>
 <p><strong>Componentes gestionados</strong>:
 - <strong>Core</strong>: Configuración y estado global
 - <strong>API</strong>: Cliente Teamleader/OAuth
 - <strong>Recording</strong>: Grabación de audio (interna/OBS)
-- <strong>TaskManager</strong>: Sistema de gestión de tareas
+- <strong>TaskManager</strong>: Sistema TareaV2
 - <strong>CallProcessor</strong>: Detección de estados de llamada
 - <strong>GUI</strong>: System tray y menús</p>
-<p><strong>Flujo de trabajo</strong>:
-1. Detección de estado de llamada
-2. Inicio automático de grabación
-3. Búsqueda en CRM
-4. Apertura de ficha de cliente
-5. Procesamiento con IA al finalizar
-6. Creación automática de nota en CRM</p>
+<p><strong>Bucle principal</strong>:
+<div class="highlight"><pre><span></span><code><span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+    <span class="c1"># Detectar estado de llamada</span>
+    <span class="n">estado</span> <span class="o">=</span> <span class="n">call_processor</span><span class="o">.</span><span class="n">get_state</span><span class="p">()</span>
+
+    <span class="k">if</span> <span class="n">estado</span> <span class="o">==</span> <span class="s2">&quot;OffHook&quot;</span><span class="p">:</span>
+        <span class="c1"># Iniciar grabación</span>
+        <span class="c1"># Buscar en CRM</span>
+        <span class="c1"># Abrir ficha cliente</span>
+
+    <span class="k">elif</span> <span class="n">estado</span> <span class="o">==</span> <span class="s2">&quot;Connected&quot;</span><span class="p">:</span>
+        <span class="c1"># Continuar grabación</span>
+
+    <span class="k">elif</span> <span class="n">estado</span> <span class="o">==</span> <span class="s2">&quot;Idle&quot;</span><span class="p">:</span>
+        <span class="c1"># Detener grabación</span>
+        <span class="c1"># Procesar con IA</span>
+        <span class="c1"># Crear nota en CRM</span>
+</code></pre></div></p>
 <hr />
-<h2 id="3-sistema-de-tareas">3. Sistema de Tareas</h2>
+<h4 id="3-sistema-de-tareas-miratelefono_tareas_procesopy">3. Sistema de Tareas (<code>miratelefono_tareas_proceso.py</code>)<a class="headerlink" href="#3-sistema-de-tareas-miratelefono_tareas_procesopy" title="Permanent link">&para;</a></h4>
 <p><strong>Responsabilidad</strong>: CORAZÓN del sistema - gestión de grabación, IA, backup y plantillas</p>
-<p><strong>Funcionalidades principales</strong>:
-- <strong>Grabación en segundo plano</strong> sin bloquear la interfaz
-- <strong>Procesamiento con IA</strong> de transcripciones
-- <strong>Backup automático</strong> de grabaciones
-- <strong>Procesamiento de plantillas</strong> personalizadas</p>
+<h4 id="clase-tareav2">Clase TareaV2<a class="headerlink" href="#clase-tareav2" title="Permanent link">&para;</a></h4>
+<p><strong>ThreadPoolExecutor</strong> para ejecución paralela de tareas:</p>
+<div class="highlight"><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">TareaV2</span><span class="p">:</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">procesar_grabacion</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">audio_file</span><span class="p">):</span>
+        <span class="c1"># Grabación en background</span>
+
+    <span class="k">def</span><span class="w"> </span><span class="nf">procesar_ia</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">audio_file</span><span class="p">):</span>
+        <span class="c1"># Transcripción con IA</span>
+
+    <span class="k">def</span><span class="w"> </span><span class="nf">procesar_backup</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="c1"># Backup automático</span>
+
+    <span class="k">def</span><span class="w"> </span><span class="nf">procesar_plantillas</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="c1"># Procesamiento de plantillas</span>
+</code></pre></div>
 <p><strong>Características</strong>:
 - <strong>Ejecución simultánea</strong> sin bloquear interfaz
 - <strong>Validación de audio</strong> pre-IA (evita créditos desperdiciados)
 - <strong>Recuperación post-apagón</strong> desde CSV
 - <strong>A/B testing</strong> de prompts IA</p>
-<h2 id="gestorcsv">GestorCSV</h2>
+<h4 id="gestorcsv">GestorCSV<a class="headerlink" href="#gestorcsv" title="Permanent link">&para;</a></h4>
 <p>Persistencia de estado en <code>hojatiempo.csv</code>:
 - Registro de todas las llamadas
 - Estado de procesamiento (audio, IA, CRM)
 - URLs de notas creadas
 - <strong>Recuperación automática</strong> tras corte de luz</p>
 <hr />
-<h2 id="4-configuracion-unificada">4. Configuración Unificada</h2>
+<h4 id="4-configuración-unificada-framesconfpy">4. Configuración Unificada (<code>FRAMES/conf.py</code>)<a class="headerlink" href="#4-configuración-unificada-framesconfpy" title="Permanent link">&para;</a></h4>
 <p><strong>Responsabilidad</strong>: Configuración centralizada con recarga en caliente</p>
+<h4 id="clase-conf">Clase Conf<a class="headerlink" href="#clase-conf" title="Permanent link">&para;</a></h4>
 <p><strong>Funcionalidades</strong>:
 - Teamleader API (OAuth2, tokens)
-- Sistema de multi-idioma
+- Sistema de multi-idioma (gettext)
 - Gestión de licencias
 - <strong>Recarga en caliente</strong> sin reiniciar</p>
-<p><strong>Recarga dinámica</strong>:
-- Detecta cambios en config.ini
-- Recarga variables automáticamente
-- Reinicia traductor
-- Actualiza configuración de grabación</p>
+<p><strong>control_stream_config()</strong>:
+<div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">control_stream_config</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="c1"># Detecta cambios en config.ini via mtime</span>
+    <span class="c1"># Recarga variables</span>
+    <span class="c1"># Reinicia traductor</span>
+    <span class="c1"># Actualiza configuración de grabación</span>
+</code></pre></div></p>
 <hr />
-<h2 id="5-cuadro-de-mando">5. Cuadro de Mando</h2>
-<p><strong>Responsabilidad</strong>: Gestión de interfaces de configuración</p>
-<p><strong>Interfaces disponibles</strong>:
-- <strong>Configuración</strong>: Panel de configuración general
-- <strong>Hoja de tiempo</strong>: Registro de llamadas
-- <strong>Pre-notas</strong>: Gestión de notas predefinidas
-- <strong>Notas</strong>: Creación y gestión de notas</p>
+<h4 id="5-cuadro-de-mando-framescuadropy">5. Cuadro de Mando (<code>FRAMES/cuadro.py</code>)<a class="headerlink" href="#5-cuadro-de-mando-framescuadropy" title="Permanent link">&para;</a></h4>
+<p><strong>Responsabilidad</strong>: Gestión de interfaces Streamlit</p>
+<h4 id="libwertycuadro">libwertyCuadro<a class="headerlink" href="#libwertycuadro" title="Permanent link">&para;</a></h4>
+<p><strong>Instancias gestionadas</strong>:
+- <strong>Config</strong>: <code>http://localhost:8585/</code>
+- <strong>Hoja de tiempo</strong>: <code>http://localhost:8501/</code>
+- <strong>Prenota</strong>: <code>http://localhost:8502/</code>
+- <strong>Nota</strong>: <code>http://localhost:8503/</code></p>
 <p><strong>Características</strong>:
-- Interfaces web de gestión
+- Lanzamiento de instancias Streamlit
+- Gestión de procesos rs.exe (PyInstaller)
 - Supervisor para evitar múltiples instancias
 - Cierre por inactividad</p>
 <hr />
-<h1 id="sistema-de-recuperacion">Sistema de Recuperación</h1>
-<h2 id="persistencia-en-csv">Persistencia en CSV</h2>
+<h3 id="sistema-de-recuperación">Sistema de Recuperación<a class="headerlink" href="#sistema-de-recuperación" title="Permanent link">&para;</a></h3>
+<h4 id="persistencia-en-csv">Persistencia en CSV<a class="headerlink" href="#persistencia-en-csv" title="Permanent link">&para;</a></h4>
 <p><code>hojatiempo.csv</code> es el <strong>MECANISMO DE RECUPERACIÓN</strong> del sistema:</p>
 <table>
 <thead>
@@ -1352,16 +1678,17 @@
 </tr>
 </tbody>
 </table>
-<h2 id="recuperacion-post-apagon">Recuperación Post-Apagón</h2>
-<p>El sistema recupera automáticamente las llamadas no procesadas:
-1. Lectura del CSV
-2. Filtrado de registros sin IA
-3. Validación de archivos existentes
-4. Reprocesamiento con IA
-5. Notificación al usuario</p>
+<h4 id="recuperación-post-apagón">Recuperación Post-Apagón<a class="headerlink" href="#recuperación-post-apagón" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">procesocsv_post_apagon</span><span class="p">():</span>
+    <span class="c1"># 1. Leer CSV</span>
+    <span class="c1"># 2. Filtrar filas sin IA</span>
+    <span class="c1"># 3. Validar archivos existen</span>
+    <span class="c1"># 4. Relanzar tareas de IA</span>
+    <span class="c1"># 5. Notificar al usuario</span>
+</code></pre></div>
 <hr />
-<h1 id="sistema-de-validacion">Sistema de Validación</h1>
-<h2 id="limpieza-de-audio-libwertyaudiolimpiezapy">Limpieza de Audio (<code>libwertyaudiolimpieza.py</code>)</h2>
+<h3 id="sistema-de-validación">Sistema de Validación<a class="headerlink" href="#sistema-de-validación" title="Permanent link">&para;</a></h3>
+<h4 id="limpieza-de-audio-libwertyaudiolimpiezapy">Limpieza de Audio (<code>libwertyaudiolimpieza.py</code>)<a class="headerlink" href="#limpieza-de-audio-libwertyaudiolimpiezapy" title="Permanent link">&para;</a></h4>
 <p><strong>AudioCleaner.prepare_wav_for_ia()</strong>:
 - <strong>Tamaño mínimo</strong>: 4096 bytes
 - <strong>Duración mínima</strong>: 0.8 segundos
@@ -1372,8 +1699,8 @@
 - Para archivos recién creados
 - Evita procesamiento prematuro</p>
 <hr />
-<h1 id="integraciones">Integraciones</h1>
-<h2 id="teamleader-api">Teamleader API</h2>
+<h3 id="integraciones">Integraciones<a class="headerlink" href="#integraciones" title="Permanent link">&para;</a></h3>
+<h4 id="teamleader-api">Teamleader API<a class="headerlink" href="#teamleader-api" title="Permanent link">&para;</a></h4>
 <p><strong>OAuth2 Flow</strong>:
 - <code>client_id</code>, <code>client_secret</code>
 - <code>tl_access_token</code>, <code>tl_refresh_token</code>
@@ -1382,39 +1709,47 @@
 - Búsqueda de contactos/empresas
 - Creación de notas/pre-notas
 - Lookup por número telefónico</p>
-<h2 id="obs-studio-websocket">OBS Studio (WebSocket)</h2>
+<h4 id="obs-studio-websocket">OBS Studio (WebSocket)<a class="headerlink" href="#obs-studio-websocket" title="Permanent link">&para;</a></h4>
 <p><strong>Control remoto</strong>:
-- Control de grabación remoto
+- <code>obs_websocket</code> en <code>python-OBS-websocket</code>
+- <code>StartRecording</code> / <code>StopRecording</code>
 - Grabación de audio del sistema</p>
 <p><strong>Configuración</strong>:
-- Host OBS configurable
-- Puerto OBS configurable
-- Modo de audio seleccionable</p>
+- <code>obs#obs_host=localhost</code>
+- <code>obs#obs_port=4455</code>
+- <code>modulos#audio=2</code> (modo OBS)</p>
 <hr />
-<h1 id="circuit-breaker">Circuit Breaker</h1>
-<h2 id="aislamiento-de-fallos">Aislamiento de Fallos</h2>
-<p><strong>Sistema de aislamiento</strong>:
-- Detecta fallos en servicios externos
-- Aísla servicios con problemas
-- Reintenta conexiones automáticamente</p>
+<h3 id="circuit-breaker">Circuit Breaker<a class="headerlink" href="#circuit-breaker" title="Permanent link">&para;</a></h3>
+<h4 id="aislamiento-de-fallos-miratelefono_circuit_breakerpy">Aislamiento de Fallos (<code>miratelefono_circuit_breaker.py</code>)<a class="headerlink" href="#aislamiento-de-fallos-miratelefono_circuit_breakerpy" title="Permanent link">&para;</a></h4>
+<p><strong>CircuitBreakerManager</strong>:
+<div class="highlight"><pre><span></span><code><span class="n">estados</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;CLOSED&quot;</span><span class="p">,</span> <span class="s2">&quot;OPEN&quot;</span><span class="p">,</span> <span class="s2">&quot;HALF_OPEN&quot;</span><span class="p">]</span>
+
+<span class="k">if</span> <span class="n">api_fails</span><span class="p">:</span>
+    <span class="n">circuit_breaker</span><span class="o">.</span><span class="n">open</span><span class="p">()</span>
+    <span class="c1"># Aislar fallo, usar fallback</span>
+
+<span class="k">if</span> <span class="n">timeout_expires</span><span class="p">:</span>
+    <span class="n">circuit_breaker</span><span class="o">.</span><span class="n">half_open</span><span class="p">()</span>
+    <span class="c1"># Reintentar conexión</span>
+</code></pre></div></p>
 <p><strong>Servicios monitoreados</strong>:
 - OBS Studio
 - Teamleader API
 - OpenRouter API</p>
 <hr />
-<h1 id="health-checks">Health Checks</h1>
-<h2 id="monitorizacion">Monitorización</h2>
-<p><strong>Sistema de monitorización</strong>:
+<h3 id="health-checks">Health Checks<a class="headerlink" href="#health-checks" title="Permanent link">&para;</a></h3>
+<h4 id="monitorización-miratelefono_health_checkspy">Monitorización (<code>miratelefono_health_checks.py</code>)<a class="headerlink" href="#monitorización-miratelefono_health_checkspy" title="Permanent link">&para;</a></h4>
+<p><strong>health_checker</strong>:
 - Comprobaciones periódicas de estado
-- Métricas de rendimiento
+- Métricas en puerto 8000
 - Endpoints para monitoring</p>
 <p><strong>Componentes verificados</strong>:
 - OBS Studio conectado
 - API CRM respondiendo
 - Sistema de archivos accesible</p>
 <hr />
-<h1 id="logs-y-debugging">Logs y Debugging</h1>
-<h2 id="logging-estructurado">Logging Estructurado</h2>
+<h3 id="logs-y-debugging">Logs y Debugging<a class="headerlink" href="#logs-y-debugging" title="Permanent link">&para;</a></h3>
+<h4 id="logging-estructurado">Logging Estructurado<a class="headerlink" href="#logging-estructurado" title="Permanent link">&para;</a></h4>
 <p><strong>Niveles</strong>:
 - <code>DEBUG</code>: Detalles de ejecución
 - <code>INFO</code>: Eventos importantes
@@ -1423,8 +1758,8 @@
 <p><strong>Archivo</strong>: <code>log_centralita.log</code></p>
 <p><strong>Limitación actual</strong>: Sin rotación de logs. Para producción de larga duración, recomendar <code>RotatingFileHandler</code>.</p>
 <hr />
-<h1 id="archivos-de-configuracion">Archivos de Configuración</h1>
-<h2 id="configini">config.ini</h2>
+<h3 id="archivos-de-configuración">Archivos de Configuración<a class="headerlink" href="#archivos-de-configuración" title="Permanent link">&para;</a></h3>
+<h4 id="configini">config.ini<a class="headerlink" href="#configini" title="Permanent link">&para;</a></h4>
 <p>Archivo MONOLÍTICO que controla TODO:</p>
 <div class="highlight"><pre><span></span><code><span class="k">[API]</span>
 <span class="na">client_id</span><span class="o">=</span><span class="s">...</span>
@@ -1455,74 +1790,82 @@
 <span class="na">tema</span><span class="o">=</span><span class="s">DarkBlue16</span>
 </code></pre></div>
 <hr />
-<h1 id="observaciones-importantes">Observaciones Importantes</h1>
+<h3 id="observaciones-técnicas-importantes">Observaciones Técnicas Importantes<a class="headerlink" href="#observaciones-técnicas-importantes" title="Permanent link">&para;</a></h3>
 <ol>
 <li>
 <p><strong>CSV como base de datos distribuida</strong>: <code>hojatiempo.csv</code> no es solo un log - es el MECANISMO DE RECUPERACIÓN. Si se corrompe o borra, se pierde la capacidad de recuperar llamadas tras apagones.</p>
 </li>
 <li>
-<p><strong>Configuración en tiempo real</strong>: El sistema permite recargar configuración SIN REINICIAR, crucial para usuarios que ajustan prompts frecuentemente.</p>
+<p><strong>Configuración en tiempo real</strong>: <code>control_stream_config()</code> permite recargar configuración SIN REINICIAR, crucial para usuarios que ajustan prompts frecuentemente.</p>
 </li>
 <li>
-<p><strong>Sistema de licencias</strong>: La licencia controla qué módulos están activos. Las funciones verifican la licencia antes de ejecutar.</p>
+<p><strong>Sistema de licencias</strong>: La licencia controla qué módulos están activos. Las funciones checkean licencia antes de ejecutar.</p>
 </li>
 <li>
-<p><strong>Menú dinámico</strong>: El menú se construye según licencia y configuración - módulos no autorizados no aparecen.</p>
+<p><strong>System tray dinámico</strong>: El menú se construye según licencia y configuración - módulos no autorizados no aparecen.</p>
 </li>
 <li>
-<p><strong>Limpieza de audio obligatoria</strong>: El sistema valida TODOS los audios antes de enviarlos a IA, previniendo desperdicio de créditos API.</p>
+<p><strong>Limpieza de audio obligatoria</strong>: El sistema valida TODOS los audios antes de enviarlos a IA, previniendo WASTE de créditos API.</p>
 </li>
 </ol>
 <hr />
-<h1 id="componentes-clave-del-sistema">Componentes Clave del Sistema</h1>
+<h3 id="archivos-clave">Archivos Clave<a class="headerlink" href="#archivos-clave" title="Permanent link">&para;</a></h3>
 <table>
 <thead>
 <tr>
-<th>Componente</th>
+<th>Archivo</th>
 <th>Responsabilidad</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Motor Principal</td>
-<td>Orquestación del sistema</td>
+<td><code>centralita.py</code></td>
+<td>Punto de entrada</td>
 </tr>
 <tr>
-<td>Sistema de Tareas</td>
-<td>Gestión de grabación e IA</td>
+<td><code>miratelefono_ia.py</code></td>
+<td>Orquestación principal</td>
 </tr>
 <tr>
-<td>Configuración Unificada</td>
-<td>Configuración centralizada</td>
+<td><code>miratelefono_tareas_proceso.py</code></td>
+<td>CORAZÓN del sistema</td>
 </tr>
 <tr>
-<td>Cuadro de Mando</td>
-<td>Interfaces de gestión</td>
+<td><code>FRAMES/conf.py</code></td>
+<td>Configuración unificada</td>
 </tr>
 <tr>
-<td>Procesos CRM</td>
+<td><code>FRAMES/cuadro.py</code></td>
+<td>Interfaces Streamlit</td>
+</tr>
+<tr>
+<td><code>FRAMES/procesos.py</code></td>
 <td>Lookup CRM y efectos</td>
 </tr>
 <tr>
-<td>Validación de Audio</td>
-<td>Validación de archivos</td>
+<td><code>miratelefono_phone_processor.py</code></td>
+<td>Normalización de números</td>
 </tr>
 <tr>
-<td>Aislamiento de Fallos</td>
-<td>Gestión de errores</td>
+<td><code>libwertyaudiolimpieza.py</code></td>
+<td>Validación de audio</td>
 </tr>
 <tr>
+<td><code>miratelefono_circuit_breaker.py</code></td>
+<td>Aislamiento de fallos</td>
+</tr>
+<tr>
+<td><code>miratelefono_health_checks.py</code></td>
 <td>Monitorización</td>
-<td>Health checks</td>
 </tr>
 <tr>
-<td>config.ini</td>
-<td>Configuración principal</td>
+<td><code>config.ini</code></td>
+<td>Configuración monolítica</td>
 </tr>
 </tbody>
 </table>
 <hr />
-<h1 id="proximos-pasos">Próximos Pasos</h1>
+<h3 id="próximos-pasos">Próximos Pasos<a class="headerlink" href="#próximos-pasos" title="Permanent link">&para;</a></h3>
 <ul class="task-list">
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Leer [[funcionalidades-core]] para详细了解 las funcionalidades principales</li>
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Revisar [[funcionalidades-avanzadas]] para características v2</li>
@@ -1548,6 +1891,8 @@
             </div>
           
           
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
 <script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
         </div>
         
@@ -1561,28 +1906,6 @@
       
         <footer class="md-footer">
   
-    
-      
-      <nav class="md-footer__inner md-grid" aria-label="Pie" >
-        
-        
-          
-          <a href="../funcionalidades-core/" class="md-footer__link md-footer__link--next" aria-label="Siguiente: Funcionalidades core">
-            <div class="md-footer__title">
-              <span class="md-footer__direction">
-                Siguiente
-              </span>
-              <div class="md-ellipsis">
-                Funcionalidades core
-              </div>
-            </div>
-            <div class="md-footer__button md-icon">
-              
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
-            </div>
-          </a>
-        
-      </nav>
     
   
   <div class="md-footer-meta md-typeset">
@@ -1604,10 +1927,7 @@
     
     
     
-      
-      
-    
-    <a href="https://www.linkedin.com/in/★alfonso-martinez-gonzalez★-19236218/" target="_blank" rel="noopener" title="www.linkedin.com" class="md-social__link">
+    <a href="https://www.linkedin.com/in/%E2%98%85alfonso-martinez-gonzalez%E2%98%85-19236218/" target="_blank" rel="noopener" title="LinkedIn de Alfonso Martínez" class="md-social__link">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3M135.4 416H69V202.2h66.5V416zM102.2 96a38.5 38.5 0 1 1 0 77 38.5 38.5 0 1 1 0-77m282.1 320h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9z"/></svg>
     </a>
   
@@ -1615,10 +1935,7 @@
     
     
     
-      
-      
-    
-    <a href="https://github.com/wertyMSD" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+    <a href="https://github.com/wertyMSD" target="_blank" rel="noopener" title="GitHub de wertyMSD" class="md-social__link">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
     </a>
   
@@ -1645,7 +1962,7 @@
 
 
 <h4>Cookie</h4>
-<p>Utilizamos cookies para reconocer sus visitas repetidas y sus preferencias, así como para como para medir la eficacia de nuestra documentación y si los usuarios  encuentran lo que buscan. Con su consentimiento, nos ayuda a mejorar nuestra documentación</p>
+<p>Utilizamos cookies para reconocer sus visitas repetidas y sus preferencias, así como para medir la eficacia de nuestra documentación y si los usuarios encuentran lo que buscan. Con su consentimiento, nos ayuda a mejorar nuestra documentación.</p>
 <input class="md-toggle" type="checkbox" id="__settings" >
 <div class="md-consent__settings">
   <ul class="task-list">
@@ -1669,6 +1986,21 @@
       
     
     
+      
+        
+  
+  
+    
+    
+  
+  <li class="task-list-item">
+    <label class="task-list-control">
+      <input type="checkbox" name="github" checked>
+      <span class="task-list-indicator"></span>
+      GitHub
+    </label>
+  </li>
+
       
     
     
@@ -1697,7 +2029,7 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.instant", "navigation.tabs", "navigation.sections", "navigation.top", "navigation.footer", "navigation.indexes", "navigation.path", "language_selector"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.instant", "navigation.tabs", "navigation.sections", "navigation.top", "navigation.footer", "navigation.indexes", "navigation.path", "navigation.tracking", "navigation.prune", "search.highlight", "search.share", "search.suggest", "content.tabs.link", "content.code.copy", "content.action.edit", "content.action.view"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
     
     
       <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>

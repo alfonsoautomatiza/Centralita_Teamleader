@@ -1,0 +1,47 @@
+/* Custom CSS for Centralita Teamleader Documentation */
+
+/* Custom button styles */
+.md-button--primary {
+  background-color: var(--md-primary-fg-color);
+  color: var(--md-primary-bg-color);
+  border: none;
+}
+
+.md-button--primary:hover {
+  background-color: var(--md-accent-fg-color);
+  color: var(--md-accent-bg-color);
+}
+
+/* Improve callout readability */
+.admonition {
+  margin: 1.5em 0;
+}
+
+/* Better code block styling */
+code {
+  padding: 0.2em 0.4em;
+  margin: 0;
+  font-size: 85%;
+  background-color: rgba(27,31,35,0.05);
+  border-radius: 3px;
+}
+
+pre code {
+  padding: 1em;
+  overflow: auto;
+  line-height: 1.45;
+  background-color: #f6f8fa;
+  border-radius: 3px;
+}
+
+/* Language selector improvements */
+.md-header__topic {
+  font-weight: 600;
+}
+
+/* Mobile adjustments */
+@media screen and (max-width: 76.25em) {
+  .md-sidebar--secondary {
+    display: none;
+  }
+}

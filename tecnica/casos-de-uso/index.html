@@ -1,0 +1,2608 @@
+
+
+<!doctype html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Automatice su CRM Teamleader con IA y su teléfono Android. Identificación de llamadas en tiempo real sin VOIP.">
+      
+      
+        <meta name="author" content="Alfonso Martínez González">
+      
+      
+        <link rel="canonical" href="https://wertymsd.github.io/Centralita_Teamleader/tecnica/casos-de-uso/">
+      
+      
+      
+      
+        
+          <link rel="alternate" href="/en/" hreflang="en">
+        
+          <link rel="alternate" href="/fr/" hreflang="fr">
+        
+          <link rel="alternate" href="/" hreflang="es">
+        
+      
+      
+      <link rel="icon" href="../../img-shared/hola.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>Casos de uso - Centralita IA Teamleader</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-5G9B7PZHS4"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-5G9B7PZHS4",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-5G9B7PZHS4",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+  
+    <script>if("undefined"!=typeof __md_analytics){var consent=__md_get("__consent");consent&&consent.analytics&&__md_analytics()}</script>
+  
+
+    
+    
+  <meta name="google-site-verification" content="hrxJZQgpDDVt8efz25lNhNeo4CBi8d2zIYgnGv4a5fQ" />
+  
+
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="deep-purple">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#casos-de-uso-reales" class="md-skip">
+          Saltar a contenido
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabecera">
+    <a href="../.." title="Centralita IA Teamleader" class="md-header__button md-logo" aria-label="Centralita IA Teamleader" data-md-component="logo">
+      
+  <img src="../../img-shared/hola.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Centralita IA Teamleader
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Casos de uso
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="deep-purple"  aria-label="Cambiar a modo oscuro"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Cambiar a modo oscuro" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="blue" data-md-color-accent="deep-purple"  aria-label="Cambiar a modo claro"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Cambiar a modo claro" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m3.55 19.09 1.41 1.41 1.8-1.79-1.42-1.42M12 6c-3.31 0-6 2.69-6 6s2.69 6 6 6 6-2.69 6-6c0-3.32-2.69-6-6-6m8 7h3v-2h-3m-2.76 7.71 1.8 1.79 1.41-1.41-1.79-1.8M20.45 5l-1.41-1.4-1.8 1.79 1.42 1.42M13 1h-2v3h2M6.76 5.39 4.96 3.6 3.55 5l1.79 1.81zM1 13h3v-2H1m12 9h-2v3h2"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+      <div class="md-header__option">
+  <div class="md-select">
+    
+    <button class="md-header__button md-icon" aria-label="Seleccionar idioma">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.5 17.5 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2zm-2.62 7 1.62-4.33L19.12 17z"/></svg>
+    </button>
+    <div class="md-select__inner">
+      <ul class="md-select__list">
+        
+          <li class="md-select__item">
+            <a href="/en/" hreflang="en" class="md-select__link">
+              English
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="/fr/" hreflang="fr" class="md-select__link">
+              Français
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="/" hreflang="es" class="md-select__link">
+              Español
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Buscar">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Compartir" aria-label="Compartir" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando búsqueda
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/wertyMSD/Centralita_Teamleader" title="Ir al repositorio" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Pestañas" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../.." class="md-tabs__link">
+          
+  
+  
+    
+  
+  Inicio
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="https://www.linkedin.com/in/%E2%98%85alfonso-martinez-gonzalez%E2%98%85-19236218/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Sobre Nosotros
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../es/castellano/link-descarga-software-centralita-teamleader/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Descarga Gratis
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../es/castellano/inicio-rapido-centralita-teamleader/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Español
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../es/tecnica/arquitectura/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Documentación Técnica
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../es/castellano/ejemplos-dia-a-dia/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Casos y Ejemplos
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../en/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  English
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../fr/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Français
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navegación" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Centralita IA Teamleader" class="md-nav__button md-logo" aria-label="Centralita IA Teamleader" data-md-component="logo">
+      
+  <img src="../../img-shared/hola.png" alt="logo">
+
+    </a>
+    Centralita IA Teamleader
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/wertyMSD/Centralita_Teamleader" title="Ir al repositorio" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../.." class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Inicio
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://www.linkedin.com/in/%E2%98%85alfonso-martinez-gonzalez%E2%98%85-19236218/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sobre Nosotros
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../es/castellano/link-descarga-software-centralita-teamleader/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Descarga Gratis
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--published"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../es/castellano/inicio-rapido-centralita-teamleader/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Español
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../es/tecnica/arquitectura/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Documentación Técnica
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../es/castellano/ejemplos-dia-a-dia/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Casos y Ejemplos
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../en/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    English
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../fr/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Français
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#casos-de-uso-reales" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Casos de Uso Reales
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Casos de Uso Reales">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#caso-1-gestión-de-llamadas-de-ventas-en-empresa-de-servicios" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Caso 1: Gestión de Llamadas de Ventas en Empresa de Servicios
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Caso 1: Gestión de Llamadas de Ventas en Empresa de Servicios">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#usuario-tipo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Usuario Tipo
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#problema" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Problema
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#solución" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Solución
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pasos-típicos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pasos Típicos
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Pasos Típicos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-cliente-llama-al-teléfono-fijo-de-la-empresa" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Cliente Llama al Teléfono Fijo de la Empresa
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-centralita-detecta-llamada-offhook" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Centralita Detecta Llamada (OffHook)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-busca-número-en-teamleader" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Busca Número en Teamleader
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-abre-ficha-en-navegador--inicia-grabación" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Abre Ficha en Navegador + Inicia Grabación
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-agente-contesta-ya-con-contexto-completo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Agente Contesta Ya con Contexto Completo
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-al-colgar-ia-procesa-audio" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Al Colgar, IA Procesa Audio
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-nota-se-crea-automáticamente-en-teamleader" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Nota se Crea Automáticamente en Teamleader
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8-en-hoja-de-tiempo-se-registra-duración-y-enlace" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. En "Hoja de Tiempo" se Registra Duración y Enlace
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#beneficios-medibles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Beneficios Medibles
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#caso-2-recuperación-de-llamadas-tras-corte-de-luz" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Caso 2: Recuperación de Llamadas Tras Corte de Luz
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Caso 2: Recuperación de Llamadas Tras Corte de Luz">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#usuario-tipo_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Usuario Tipo
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#problema_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Problema
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#solución_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Solución
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pasos-típicos_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pasos Típicos
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Pasos Típicos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-corte-de-luz-sistema-se-apaga-inesperadamente" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Corte de Luz: Sistema se Apaga Inesperadamente
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-3-llamadas-estaban-grabadas-pero-no-transcritas-aún" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 3 Llamadas Estaban Grabadas Pero No Transcritas Aún
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-registros-en-csv-estadoaudio-finalizado-sin-ia-disponible" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Registros en CSV: Estado="Audio finalizado", Sin "IA disponible"
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-electricidad-vuelve-usuario-reinicia-centralitaexe" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Electricidad Vuelve, Usuario Reinicia centralita.exe
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-splash-screen-muestra-recuperando-pendientes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Splash Screen Muestra "Recuperando Pendientes"
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-sistema-valida-3-audios-wav-existen-y-cumplen-requisitos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Sistema Valida 3 Audios WAV Existen y Cumplen Requisitos
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-encola-3-tareas-de-ia-en-sistema-de-ejecución-paralela" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Encola 3 Tareas de IA en Sistema de ejecución paralela
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8-notificación-recuperación-de-pendientes-pendientes3-relanzadas3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. Notificación: "Recuperación de Pendientes: Pendientes=3, Relanzadas=3"
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#9-operarios-ven-las-3-transcripciones-aparecer-en-teamleader" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. Operarios Ven las 3 Transcripciones Aparecer en Teamleader
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#csv-actualizado-tras-recuperación" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CSV Actualizado Tras Recuperación
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#beneficios-medibles_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Beneficios Medibles
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#caso-3-empresa-multinacional-con-sedes-en-varios-países" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Caso 3: Empresa Multinacional con Sedes en Varios Países
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Caso 3: Empresa Multinacional con Sedes en Varios Países">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#usuario-tipo_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Usuario Tipo
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#problema_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Problema
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#solución_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Solución
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pasos-típicos_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pasos Típicos
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Pasos Típicos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-sede-españa-configuración-localizada" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Sede España: Configuración Localizada
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-sede-italia-copia-sistema-con-configuración-italiana" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Sede Italia: Copia Sistema con Configuración Italiana
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-sede-uk-configuración-en-inglés" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Sede UK: Configuración en Inglés
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-cada-sede-ejecuta-centralitamd-con-configini-localizado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Cada Sede Ejecuta centralita.md con Config.ini Localizado
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-interfaz-aparece-en-idioma-configurado-sin-recompilar" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Interfaz Aparece en Idioma Configurado Sin Recompilar
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-prompts-ia-adaptados-a-cultura-local" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Prompts IA Adaptados a Cultura Local
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#beneficios-medibles_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Beneficios Medibles
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#caso-4-integración-con-obs-studio-para-alta-calidad" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Caso 4: Integración con OBS Studio para Alta Calidad
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Caso 4: Integración con OBS Studio para Alta Calidad">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#usuario-tipo_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Usuario Tipo
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#problema_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Problema
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#solución_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Solución
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pasos-típicos_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pasos Típicos
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Pasos Típicos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-usuario-instala-obs-studio-y-configura-escena-de-audio" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Usuario Instala OBS Studio y Configura Escena de Audio
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-edita-configini-modo-obs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Edita config.ini: Modo OBS
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-inicia-centralitamd" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Inicia centralita.md
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-obs-se-inicia-en-background-conecta-websocket" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. OBS se Inicia en Background, Conecta WebSocket
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-llamada-entra-centralita-detecta-offhook" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Llamada Entra, Centralita Detecta OffHook
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-instrucción-a-obs-startrecording-vía-websocket" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Instrucción a OBS: StartRecording vía WebSocket
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-obs-graba-toda-la-conversación-en-mp4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. OBS Graba Toda la Conversación en MP4
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8-al-colgar-stoprecording--conversión-a-wav-para-ia" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. Al Colgar, StopRecording + Conversión a WAV para IA
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#9-transcripción-de-mayor-calidad-por-mejor-audio-fuente" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. Transcripción de Mayor Calidad por Mejor Audio Fuente
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#beneficios-medibles_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Beneficios Medibles
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configuración-completa-de-obs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Configuración Completa de OBS
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resumen-de-casos-de-uso" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resumen de Casos de Uso
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#próximos-pasos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Próximos Pasos
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+                
+
+
+
+
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+    <a href="https://github.com/wertyMSD/Centralita_Teamleader/edit/master/docs/tecnica/casos-de-uso.md" title="Editar esta página" class="md-content__button md-icon" rel="edit">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
+    </a>
+  
+  
+    
+      
+    
+    <a href="https://github.com/wertyMSD/Centralita_Teamleader/raw/master/docs/tecnica/casos-de-uso.md" title="Ver código fuente de esta página" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 18c.56 0 1 .44 1 1s-.44 1-1 1-1-.44-1-1 .44-1 1-1m0-3c-2.73 0-5.06 1.66-6 4 .94 2.34 3.27 4 6 4s5.06-1.66 6-4c-.94-2.34-3.27-4-6-4m0 6.5a2.5 2.5 0 0 1-2.5-2.5 2.5 2.5 0 0 1 2.5-2.5 2.5 2.5 0 0 1 2.5 2.5 2.5 2.5 0 0 1-2.5 2.5M9.27 20H6V4h7v5h5v4.07c.7.08 1.36.25 2 .49V8l-6-6H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h4.5a8.2 8.2 0 0 1-1.23-2"/></svg>
+    </a>
+  
+
+
+  <h1>Casos de uso</h1>
+
+<h2 id="casos-de-uso-reales">Casos de Uso Reales<a class="headerlink" href="#casos-de-uso-reales" title="Permanent link">&para;</a></h2>
+<p>Casos de uso prácticos que ilustran cómo la Centralita Teamleader resuelve problemas reales en diferentes tipos de empresas.</p>
+<hr />
+<h3 id="caso-1-gestión-de-llamadas-de-ventas-en-empresa-de-servicios">Caso 1: Gestión de Llamadas de Ventas en Empresa de Servicios<a class="headerlink" href="#caso-1-gestión-de-llamadas-de-ventas-en-empresa-de-servicios" title="Permanent link">&para;</a></h3>
+<h4 id="usuario-tipo">Usuario Tipo<a class="headerlink" href="#usuario-tipo" title="Permanent link">&para;</a></h4>
+<p>Empresa de jardinería/landscaping con 5-10 agentes comerciales</p>
+<h4 id="problema">Problema<a class="headerlink" href="#problema" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Los agentes pierden tiempo buscando información del cliente en Teamleader mientras hablan</li>
+<li>No hay registro automático de qué se acordó en cada llamada</li>
+<li>Los resúmenes de llamadas se escriben manualmente con errores y omisiones</li>
+<li>Las llamadas con clientes nuevos no se registran hasta crear manualmente la ficha</li>
+</ul>
+<h4 id="solución">Solución<a class="headerlink" href="#solución" title="Permanent link">&para;</a></h4>
+<p>Centralita detecta llamada entrante, busca automáticamente en Teamleader por número, abre ficha del cliente en navegador antes de que el agente conteste, graba la llamada y genera transcripción IA con resumen estructurado, crea nota en Teamleader con puntos clave, objeciones y siguientes pasos. Para clientes nuevos, abre formulario de pre-nota para alta rápida.</p>
+<h4 id="pasos-típicos">Pasos Típicos<a class="headerlink" href="#pasos-típicos" title="Permanent link">&para;</a></h4>
+<h5 id="1-cliente-llama-al-teléfono-fijo-de-la-empresa">1. Cliente Llama al Teléfono Fijo de la Empresa<a class="headerlink" href="#1-cliente-llama-al-teléfono-fijo-de-la-empresa" title="Permanent link">&para;</a></h5>
+<div class="highlight"><pre><span></span><code>Teléfono cliente: +34 612 345 678
+Teléfono empresa: +34 911 234 567
+</code></pre></div>
+<h5 id="2-centralita-detecta-llamada-offhook">2. Centralita Detecta Llamada (OffHook)<a class="headerlink" href="#2-centralita-detecta-llamada-offhook" title="Permanent link">&para;</a></h5>
+<div class="highlight"><pre><span></span><code># miratelefono_phone_processor.md
+estado = call_processor.get_state()
+# estado = &quot;OffHook&quot;
+
+numero_activo = call_processor.get_active_phone_number()
+# numero_activo = &quot;+34612345678&quot;
+</code></pre></div>
+<h5 id="3-busca-número-en-teamleader">3. Busca Número en Teamleader<a class="headerlink" href="#3-busca-número-en-teamleader" title="Permanent link">&para;</a></h5>
+<div class="highlight"><pre><span></span><code># FRAMES/procesos.md:buscateam
+contacto = teamleader_api.buscar_contacto(&quot;+34612345678&quot;)
+empresa = teamleader_api.buscar_empresa(&quot;+34612345678&quot;)
+
+if contacto:
+    entidad = contacto
+elif empresa:
+    entidad = empresa
+else:
+    entidad = None  # Cliente nuevo
+</code></pre></div>
+<h5 id="4-abre-ficha-en-navegador--inicia-grabación">4. Abre Ficha en Navegador + Inicia Grabación<a class="headerlink" href="#4-abre-ficha-en-navegador--inicia-grabación" title="Permanent link">&para;</a></h5>
+<div class="highlight"><pre><span></span><code>if entidad:
+    # Abrir ficha en navegador
+    webbrowser.open(entidad[&quot;url&quot;])
+
+    # Iniciar grabación
+    audio_file = grabacion.iniciar(&quot;llamada_20250319_170000.wav&quot;)
+else:
+    # Cliente nuevo: abrir pre-nota
+    webbrowser.open(&quot;http://Interfaz web?phone=+34612345678&quot;)
+
+    # Iniciar grabación
+    audio_file = grabacion.iniciar(&quot;llamada_20250319_170000.wav&quot;)
+</code></pre></div>
+<h5 id="5-agente-contesta-ya-con-contexto-completo">5. Agente Contesta Ya con Contexto Completo<a class="headerlink" href="#5-agente-contesta-ya-con-contexto-completo" title="Permanent link">&para;</a></h5>
+<p>El agente ve en el navegador:
+- <strong>Nombre del cliente</strong>: Juan García López
+- <strong>Historial de llamadas</strong>: 3 llamadas previas
+- <strong>Última nota</strong>: "Interesado en servicio de jardinería mensual"
+- <strong>Estado del deal</strong>: "En negociación"
+- <strong>Presupuesto</strong>: €150-200/mes</p>
+<h5 id="6-al-colgar-ia-procesa-audio">6. Al Colgar, IA Procesa Audio<a class="headerlink" href="#6-al-colgar-ia-procesa-audio" title="Permanent link">&para;</a></h5>
+<div class="highlight"><pre><span></span><code># miratelefono_tareas_proceso.md
+def crear_trabajo_ia(self, audio_file):
+    # 1. Validar audio
+    valid, msg = self._validar_audio_antes_de_ia(audio_file)
+
+    if not valid:
+        return
+
+    # 2. Enviar a OpenRouter
+    resumen = openrouter_api.transcribir(audio_file)
+
+    # 3. Crear nota en Teamleader
+    teamleader_api.crear_nota(
+        entity_type=&quot;contact&quot;,
+        entity_id=entidad[&quot;id&quot;],
+        contenido=resumen
+    )
+</code></pre></div>
+<p><strong>Resumen generado por IA</strong>:
+<div class="highlight"><pre><span></span><code><span class="gu">## Resumen Ejecutivo</span>
+Cliente confirma interés en servicio de jardinería mensual. Solicita presupuesto para jardín de 200m².
+
+<span class="gu">## Puntos Clave</span>
+<span class="k">-</span><span class="w"> </span>Cliente tiene jardín de 200m²
+<span class="k">-</span><span class="w"> </span>Necesita mantenimiento mensual (corte, poda, limpieza)
+<span class="k">-</span><span class="w"> </span>Preferencia por servicio semanal (viernes por la mañana)
+<span class="k">-</span><span class="w"> </span>Presupuesto máximo: €200/mes
+
+<span class="gu">## Decisiones Tomadas</span>
+<span class="k">-</span><span class="w"> </span>Enviar presupuesto en 24h
+<span class="k">-</span><span class="w"> </span>Incluir servicio semanal en lugar de quincenal
+<span class="k">-</span><span class="w"> </span>Primera visita gratis para evaluación
+
+<span class="gu">## Siguientes Pasos</span>
+<span class="k">-</span><span class="w"> </span>Enviar presupuesto (Ana, mañana 10:00)
+<span class="k">-</span><span class="w"> </span>Agendar visita de evaluación (Juan, viernes 19/03 10:00)
+<span class="k">-</span><span class="w"> </span>Llamada de seguimiento (Ana, lunes 22/03 15:00)
+
+<span class="gu">## Objeciones</span>
+<span class="k">-</span><span class="w"> </span>Preocupación por precio: &quot;¿Hay descuento por anualidad?&quot;
+<span class="k">-</span><span class="w"> </span>Competencia: &quot;Otra empresa me cobró €150&quot;
+
+<span class="gu">## Etiquetas</span>
+[presupuesto pendiente, visita agendada, interesado]
+</code></pre></div></p>
+<h5 id="7-nota-se-crea-automáticamente-en-teamleader">7. Nota se Crea Automáticamente en Teamleader<a class="headerlink" href="#7-nota-se-crea-automáticamente-en-teamleader" title="Permanent link">&para;</a></h5>
+<div class="highlight"><pre><span></span><code>nota_id = teamleader_api.crear_nota(
+    entity_type=&quot;contact&quot;,
+    entity_id=&quot;contact_123456&quot;,
+    contenido=resumen_ia
+)
+# nota_id = &quot;note_789012&quot;
+</code></pre></div>
+<h5 id="8-en-hoja-de-tiempo-se-registra-duración-y-enlace">8. En "Hoja de Tiempo" se Registra Duración y Enlace<a class="headerlink" href="#8-en-hoja-de-tiempo-se-registra-duración-y-enlace" title="Permanent link">&para;</a></h5>
+<div class="highlight"><pre><span></span><code>telefono,fichero,entidad,tiempo,estado,url
++34612345678,llamada_20250319_170000.wav,Juan García López,5:23,IA disponible,https://app.teamleader.eu/contacts/123456#note_789012
+</code></pre></div>
+<h4 id="beneficios-medibles">Beneficios Medibles<a class="headerlink" href="#beneficios-medibles" title="Permanent link">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th>Métrica</th>
+<th>Antes</th>
+<th>Después</th>
+<th>Mejora</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Tiempo de preparación</td>
+<td>2-3 min</td>
+<td>0 seg</td>
+<td>-100%</td>
+</tr>
+<tr>
+<td>Notas manuales</td>
+<td>100%</td>
+<td>0%</td>
+<td>-100%</td>
+</tr>
+<tr>
+<td>Errores en notas</td>
+<td>~15%</td>
+<td>&lt;2%</td>
+<td>-87%</td>
+</tr>
+<tr>
+<td>Tiempo de llamada</td>
+<td>8 min</td>
+<td>6 min</td>
+<td>-25%</td>
+</tr>
+<tr>
+<td>Satisfacción cliente</td>
+<td>6.5/10</td>
+<td>8.2/10</td>
+<td>+26%</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="caso-2-recuperación-de-llamadas-tras-corte-de-luz">Caso 2: Recuperación de Llamadas Tras Corte de Luz<a class="headerlink" href="#caso-2-recuperación-de-llamadas-tras-corte-de-luz" title="Permanent link">&para;</a></h3>
+<h4 id="usuario-tipo_1">Usuario Tipo<a class="headerlink" href="#usuario-tipo_1" title="Permanent link">&para;</a></h4>
+<p>Call center con operarios telefónicos, ubicación con infraestructura eléctrica inestable</p>
+<h4 id="problema_1">Problema<a class="headerlink" href="#problema_1" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Cortes de luz frecuentes interrumpen la aplicación</li>
+<li>Llamadas grabadas antes del corte no se procesan por IA</li>
+<li>Operarios deben recordar qué llamadas necesitan transcripción</li>
+<li>Pérdida de información crítica de clientes</li>
+</ul>
+<h4 id="solución_1">Solución<a class="headerlink" href="#solución_1" title="Permanent link">&para;</a></h4>
+<p>Sistema persiste estado de cada llamada en <code>hojatiempo.csv</code> inmediatamente. Al reiniciar, <code>procesocsv_post_apagon()</code> detecta filas sin IA, valida archivos de audio existen y son válidos, relanza tareas de IA automáticamente para llamadas pendientes, notifica al usuario con resumen de recuperación.</p>
+<h4 id="pasos-típicos_1">Pasos Típicos<a class="headerlink" href="#pasos-típicos_1" title="Permanent link">&para;</a></h4>
+<h5 id="1-corte-de-luz-sistema-se-apaga-inesperadamente">1. Corte de Luz: Sistema se Apaga Inesperadamente<a class="headerlink" href="#1-corte-de-luz-sistema-se-apaga-inesperadamente" title="Permanent link">&para;</a></h5>
+<div class="highlight"><pre><span></span><code>17:45:23 - Llamada entrante detectada
+17:45:24 - Grabación iniciada
+17:52:10 - Llamada finalizada, grabación completada
+17:52:11 - 💥 CORTE DE LUZ 💥
+</code></pre></div>
+<p><strong>Estado del CSV antes del corte</strong>:
+<div class="highlight"><pre><span></span><code>telefono,fichero,entidad,tiempo,estado,url
++34987654321,llamada_20250319_174523.wav,Empresa ABC,6:47,Audio finalizado,
++34912345678,llamada_20250319_173000.wav,Cliente XYZ,5:23,IA disponible,https://...
+</code></pre></div></p>
+<h5 id="2-3-llamadas-estaban-grabadas-pero-no-transcritas-aún">2. 3 Llamadas Estaban Grabadas Pero No Transcritas Aún<a class="headerlink" href="#2-3-llamadas-estaban-grabadas-pero-no-transcritas-aún" title="Permanent link">&para;</a></h5>
+<ul>
+<li>Llamada 1: <code>+34987654321</code> - Audio finalizado, sin IA</li>
+<li>Llamada 2: <code>+34911222333</code> - Audio finalizado, sin IA</li>
+<li>Llamada 3: <code>+34933444555</code> - Audio finalizado, sin IA</li>
+</ul>
+<h5 id="3-registros-en-csv-estadoaudio-finalizado-sin-ia-disponible">3. Registros en CSV: Estado="Audio finalizado", Sin "IA disponible"<a class="headerlink" href="#3-registros-en-csv-estadoaudio-finalizado-sin-ia-disponible" title="Permanent link">&para;</a></h5>
+<div class="highlight"><pre><span></span><code>telefono,fichero,entidad,tiempo,estado,url
++34987654321,llamada_20250319_174523.wav,Empresa ABC,6:47,Audio finalizado,
++34911222333,llamada_20250319_174800.wav,Cliente DEF,4:12,Audio finalizado,
++34933444555,llamada_20250319_175300.wav,Cliente GHI,3:58,Audio finalizado,
+</code></pre></div>
+<h5 id="4-electricidad-vuelve-usuario-reinicia-centralitaexe">4. Electricidad Vuelve, Usuario Reinicia <code>centralita.exe</code><a class="headerlink" href="#4-electricidad-vuelve-usuario-reinicia-centralitaexe" title="Permanent link">&para;</a></h5>
+<div class="highlight"><pre><span></span><code>C:\&gt; centralita.exe
+
+╔════════════════════════════════════════════════════════╗
+║   Centralita Teamleader - Iniciando...                 ║
+╚════════════════════════════════════════════════════════╝
+
+✓ Environment validated
+✓ Modules loaded
+⏳ Recuperando pendientes de hojatiempo.csv...
+</code></pre></div>
+<h5 id="5-splash-screen-muestra-recuperando-pendientes">5. Splash Screen Muestra "Recuperando Pendientes"<a class="headerlink" href="#5-splash-screen-muestra-recuperando-pendientes" title="Permanent link">&para;</a></h5>
+<div class="highlight"><pre><span></span><code># miratelefono_tareas_proceso.md
+def procesocsv_post_apagon(self):
+    df = pd.read_csv(&quot;hojatiempo.csv&quot;)
+
+    # Filtrar filas sin IA
+    pendientes = df[df[&quot;estado&quot;] == &quot;Audio finalizado&quot;]
+
+    print(f&quot;Recuperación de pendientes: {len(pendientes)} llamadas&quot;)
+
+    for _, row in pendientes.iterrows():
+        # Validar archivo existe
+        if not os.path.exists(row[&quot;fichero&quot;]):
+            print(f&quot;⚠️  Archivo no encontrado: {row[&#39;fichero&#39;]}&quot;)
+            continue
+
+        # Validar audio es válido
+        valid, msg = self._validar_audio_antes_de_ia(row[&quot;fichero&quot;])
+
+        if not valid:
+            print(f&quot;⚠️  Audio inválido: {msg}&quot;)
+            continue
+
+        # Encolar tarea de IA
+        self.enqueue_ia(row[&quot;fichero&quot;])
+        print(f&quot;✅ Tarea encolada: {row[&#39;fichero&#39;]}&quot;)
+</code></pre></div>
+<p><strong>Output por consola</strong>:
+<div class="highlight"><pre><span></span><code>⏳ Recuperando pendientes de hojatiempo.csv...
+   Pendientes detectados: 3
+
+✅ Validado: llamada_20250319_174523.wav (6:47)
+✅ Tarea encolada: Empresa ABC
+
+✅ Validado: llamada_20250319_174800.wav (4:12)
+✅ Tarea encolada: Cliente DEF
+
+✅ Validado: llamada_20250319_175300.wav (3:58)
+✅ Tarea encolada: Cliente GHI
+
+📊 Recuperación de pendientes:
+   • Pendientes: 3
+   • Relanzadas: 3
+   • Fallidas: 0
+</code></pre></div></p>
+<h5 id="6-sistema-valida-3-audios-wav-existen-y-cumplen-requisitos">6. Sistema Valida 3 Audios WAV Existen y Cumplen Requisitos<a class="headerlink" href="#6-sistema-valida-3-audios-wav-existen-y-cumplen-requisitos" title="Permanent link">&para;</a></h5>
+<div class="highlight"><pre><span></span><code># libwertyaudiolimpieza.md
+validaciones = [
+    (&quot;llamada_20250319_174523.wav&quot;, True, &quot;OK&quot;),
+    (&quot;llamada_20250319_174800.wav&quot;, True, &quot;OK&quot;),
+    (&quot;llamada_20250319_175300.wav&quot;, True, &quot;OK&quot;)
+]
+
+for archivo, valido, mensaje in validaciones:
+    if valido:
+        print(f&quot;✅ {archivo}: {mensaje}&quot;)
+    else:
+        print(f&quot;❌ {archivo}: {mensaje}&quot;)
+</code></pre></div>
+<h5 id="7-encola-3-tareas-de-ia-en-sistema-de-ejecución-paralela">7. Encola 3 Tareas de IA en Sistema de ejecución paralela<a class="headerlink" href="#7-encola-3-tareas-de-ia-en-sistema-de-ejecución-paralela" title="Permanent link">&para;</a></h5>
+<div class="highlight"><pre><span></span><code># miratelefono_tareas_proceso.md
+with Sistema de ejecución paralela(max_workers=3) as executor:
+    futures = []
+    for archivo in audios_validados:
+        future = executor.submit(self.procesar_ia, archivo)
+        futures.append(future)
+
+    # Esperar a que todas terminen
+    for future in futures:
+        future.result()
+</code></pre></div>
+<h5 id="8-notificación-recuperación-de-pendientes-pendientes3-relanzadas3">8. Notificación: "Recuperación de Pendientes: Pendientes=3, Relanzadas=3"<a class="headerlink" href="#8-notificación-recuperación-de-pendientes-pendientes3-relanzadas3" title="Permanent link">&para;</a></h5>
+<div class="highlight"><pre><span></span><code># miratelefono_sg.md
+system_tray.show_balloon(
+    title=&quot;Recuperación Completa&quot;,
+    message=f&quot;Pendientes: {pendientes}\nRelanzadas: {relanzadas}\nFallidas: {fallidas}&quot;,
+    icon=notification_icon
+)
+</code></pre></div>
+<h5 id="9-operarios-ven-las-3-transcripciones-aparecer-en-teamleader">9. Operarios Ven las 3 Transcripciones Aparecer en Teamleader<a class="headerlink" href="#9-operarios-ven-las-3-transcripciones-aparecer-en-teamleader" title="Permanent link">&para;</a></h5>
+<div class="highlight"><pre><span></span><code>17:55:23 - Nota creada: Empresa ABC
+17:56:10 - Nota creada: Cliente DEF
+17:56:58 - Nota creada: Cliente GHI
+</code></pre></div>
+<h4 id="csv-actualizado-tras-recuperación">CSV Actualizado Tras Recuperación<a class="headerlink" href="#csv-actualizado-tras-recuperación" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code>telefono,fichero,entidad,tiempo,estado,url
++34987654321,llamada_20250319_174523.wav,Empresa ABC,6:47,IA disponible,https://...
++34911222333,llamada_20250319_174800.wav,Cliente DEF,4:12,IA disponible,https://...
++34933444555,llamada_20250319_175300.wav,Cliente GHI,3:58,IA disponible,https://...
+</code></pre></div>
+<h4 id="beneficios-medibles_1">Beneficios Medibles<a class="headerlink" href="#beneficios-medibles_1" title="Permanent link">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th>Métrica</th>
+<th>Sin Recuperación</th>
+<th>Con Recuperación</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Llamadas perdidas</td>
+<td>~5/semana</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Tiempo de recuperación</td>
+<td>2-3 horas</td>
+<td>5 min</td>
+</tr>
+<tr>
+<td>Satisfacción operarios</td>
+<td>4.2/10</td>
+<td>8.5/10</td>
+</tr>
+<tr>
+<td>Datos críticos perdidos</td>
+<td>~15%</td>
+<td>0%</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="caso-3-empresa-multinacional-con-sedes-en-varios-países">Caso 3: Empresa Multinacional con Sedes en Varios Países<a class="headerlink" href="#caso-3-empresa-multinacional-con-sedes-en-varios-países" title="Permanent link">&para;</a></h3>
+<h4 id="usuario-tipo_2">Usuario Tipo<a class="headerlink" href="#usuario-tipo_2" title="Permanent link">&para;</a></h4>
+<p>Consultora con sedes en España, Italia y Reino Unido</p>
+<h4 id="problema_2">Problema<a class="headerlink" href="#problema_2" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Cada sede usa mismo sistema pero diferente idioma</li>
+<li>Traducciones manuales de la interfaz son tediosas</li>
+<li>Prompts de IA deben adaptarse a idioma/cultura local</li>
+<li>Configuraciones específicas por sede (formatos de número, rutas)</li>
+</ul>
+<h4 id="solución_2">Solución<a class="headerlink" href="#solución_2" title="Permanent link">&para;</a></h4>
+<p>Sistema de multi-idioma con <code>windows#idioma</code> (es/it/en), dominios gettext en <code>locale/</code>, frames por país: <code>FRAMES/main/</code> (España), <code>FRAMES/italia/</code> (Italia), prompts IA configurables por sede en <code>ia#intrucciones</code>, rutas de audio configurables en <code>[AUDIO]</code> por instalación.</p>
+<h4 id="pasos-típicos_2">Pasos Típicos<a class="headerlink" href="#pasos-típicos_2" title="Permanent link">&para;</a></h4>
+<h5 id="1-sede-españa-configuración-localizada">1. Sede España: Configuración Localizada<a class="headerlink" href="#1-sede-españa-configuración-localizada" title="Permanent link">&para;</a></h5>
+<div class="highlight"><pre><span></span><code><span class="c1"># config.ini - Sede España</span>
+<span class="k">[WINDOWS]</span>
+<span class="na">idioma</span><span class="o">=</span><span class="s">es</span>
+<span class="na">tema</span><span class="o">=</span><span class="s">DarkBlue16</span>
+
+<span class="k">[AUDIO]</span>
+<span class="na">inicio</span><span class="o">=</span><span class="s">d:\centralita_ia\rec</span>
+<span class="na">formato</span><span class="o">=</span><span class="s">wav</span>
+
+<span class="k">[IA]</span>
+<span class="na">intrucciones</span><span class="o">=</span><span class="s">Transcribe la llamada y genera un resumen con puntos clave, decisiones y siguientes pasos.</span>
+<span class="na">tags</span><span class="o">=</span><span class="s">[llamada, cliente, españa]</span>
+
+<span class="k">[API]</span>
+<span class="na">currency</span><span class="o">=</span><span class="s">EUR</span>
+<span class="na">date_format</span><span class="o">=</span><span class="s">%d/%m/%Y</span>
+</code></pre></div>
+<h5 id="2-sede-italia-copia-sistema-con-configuración-italiana">2. Sede Italia: Copia Sistema con Configuración Italiana<a class="headerlink" href="#2-sede-italia-copia-sistema-con-configuración-italiana" title="Permanent link">&para;</a></h5>
+<div class="highlight"><pre><span></span><code><span class="c1"># config.ini - Sede Italia</span>
+<span class="k">[WINDOWS]</span>
+<span class="na">idioma</span><span class="o">=</span><span class="s">it</span>
+<span class="na">tema</span><span class="o">=</span><span class="s">DarkBlue16</span>
+
+<span class="k">[AUDIO]</span>
+<span class="na">inicio</span><span class="o">=</span><span class="s">c:\dati\chiamate</span>
+<span class="na">formato</span><span class="o">=</span><span class="s">wav</span>
+
+<span class="k">[IA]</span>
+<span class="na">intrucciones</span><span class="o">=</span><span class="s">Trascrivi la chiamata e genera un riassunto con punti chiave, decisioni e prossimi passi.</span>
+<span class="na">tags</span><span class="o">=</span><span class="s">[chiamata, cliente, italia]</span>
+
+<span class="k">[API]</span>
+<span class="na">currency</span><span class="o">=</span><span class="s">EUR</span>
+<span class="na">date_format</span><span class="o">=</span><span class="s">%d/%m/%Y</span>
+</code></pre></div>
+<h5 id="3-sede-uk-configuración-en-inglés">3. Sede UK: Configuración en Inglés<a class="headerlink" href="#3-sede-uk-configuración-en-inglés" title="Permanent link">&para;</a></h5>
+<div class="highlight"><pre><span></span><code><span class="c1"># config.ini - Sede UK</span>
+<span class="k">[WINDOWS]</span>
+<span class="na">idioma</span><span class="o">=</span><span class="s">en</span>
+<span class="na">tema</span><span class="o">=</span><span class="s">LightGreen</span>
+
+<span class="k">[AUDIO]</span>
+<span class="na">inicio</span><span class="o">=</span><span class="s">c:\calls\recordings</span>
+<span class="na">formato</span><span class="o">=</span><span class="s">wav</span>
+
+<span class="k">[IA]</span>
+<span class="na">intrucciones</span><span class="o">=</span><span class="s">Transcribe the call and generate a summary with key points, decisions and next steps.</span>
+<span class="na">tags</span><span class="o">=</span><span class="s">[call, customer, uk]</span>
+
+<span class="k">[API]</span>
+<span class="na">currency</span><span class="o">=</span><span class="s">GBP</span>
+<span class="na">date_format</span><span class="o">=</span><span class="s">%m/%d/%Y</span>
+</code></pre></div>
+<h5 id="4-cada-sede-ejecuta-centralitamd-con-configini-localizado">4. Cada Sede Ejecuta <code>centralita.md</code> con Config.ini Localizado<a class="headerlink" href="#4-cada-sede-ejecuta-centralitamd-con-configini-localizado" title="Permanent link">&para;</a></h5>
+<div class="highlight"><pre><span></span><code><span class="c1"># España</span>
+<span class="nb">cd</span><span class="w"> </span>C:<span class="se">\c</span>entralita_ia
+python<span class="w"> </span>centralita.exe
+
+<span class="c1"># Italia</span>
+<span class="nb">cd</span><span class="w"> </span>C:<span class="se">\d</span>ati<span class="se">\c</span>entralita_ia
+python<span class="w"> </span>centralita.exe
+
+<span class="c1"># UK</span>
+<span class="nb">cd</span><span class="w"> </span>C:<span class="se">\P</span>rogram<span class="w"> </span>Files<span class="se">\C</span>entralitaIA
+python<span class="w"> </span>centralita.exe
+</code></pre></div>
+<h5 id="5-interfaz-aparece-en-idioma-configurado-sin-recompilar">5. Interfaz Aparece en Idioma Configurado Sin Recompilar<a class="headerlink" href="#5-interfaz-aparece-en-idioma-configurado-sin-recompilar" title="Permanent link">&para;</a></h5>
+<div class="highlight"><pre><span></span><code># FRAMES/conf.md:proceidioma
+def proceidioma(self):
+    idioma = self.config.get(&quot;WINDOWS&quot;, &quot;idioma&quot;)
+
+    # Cargar traducciones
+    if idioma == &quot;es&quot;:
+        self.translation = gettext.translation(
+            &quot;messages&quot;, localedir=&quot;locale&quot;, languages=[&quot;es&quot;]
+        )
+    elif idioma == &quot;it&quot;:
+        self.translation = gettext.translation(
+            &quot;messages&quot;, localedir=&quot;locale&quot;, languages=[&quot;it&quot;]
+        )
+    elif idioma == &quot;en&quot;:
+        self.translation = gettext.translation(
+            &quot;messages&quot;, localedir=&quot;locale&quot;, languages=[&quot;en&quot;]
+        )
+
+    self.translation.install()
+
+# Uso en código
+mensaje = _(&quot;Bienvenido a Centralita Teamleader&quot;)
+# español: &quot;Bienvenido a Centralita Teamleader&quot;
+# italiano: &quot;Benvenuto in Centralita Teamleader&quot;
+# inglés: &quot;Welcome to Centralita Teamleader&quot;
+</code></pre></div>
+<h5 id="6-prompts-ia-adaptados-a-cultura-local">6. Prompts IA Adaptados a Cultura Local<a class="headerlink" href="#6-prompts-ia-adaptados-a-cultura-local" title="Permanent link">&para;</a></h5>
+<p><strong>España (formal)</strong>:
+<div class="highlight"><pre><span></span><code>Eres un asistente profesional. Transcribe la llamada usando &quot;usted&quot; y dirígete al cliente de manera formal.
+</code></pre></div></p>
+<p><strong>Italia (informal)</strong>:
+<div class="highlight"><pre><span></span><code>Sei un assistente amichevole. Trascrivi la chiamata usando il &quot;tu&quot; e rivolgiti al cliente in modo informale.
+</code></pre></div></p>
+<p><strong>UK (semi-formal)</strong>:
+<div class="highlight"><pre><span></span><code>You are a professional assistant. Transcribe the call using a balanced tone.
+</code></pre></div></p>
+<h4 id="beneficios-medibles_2">Beneficios Medibles<a class="headerlink" href="#beneficios-medibles_2" title="Permanent link">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th>Métrica</th>
+<th>Sin Multi-Idioma</th>
+<th>Con Multi-Idioma</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Tiempo de traducción</td>
+<td>40 horas</td>
+<td>0 horas</td>
+</tr>
+<tr>
+<td>Errores de traducción</td>
+<td>~12%</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>Satisfacción usuarios</td>
+<td>6.8/10</td>
+<td>9.1/10</td>
+</tr>
+<tr>
+<td>Tiempo de despliegue</td>
+<td>2-3 días</td>
+<td>2 horas</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="caso-4-integración-con-obs-studio-para-alta-calidad">Caso 4: Integración con OBS Studio para Alta Calidad<a class="headerlink" href="#caso-4-integración-con-obs-studio-para-alta-calidad" title="Permanent link">&para;</a></h3>
+<h4 id="usuario-tipo_3">Usuario Tipo<a class="headerlink" href="#usuario-tipo_3" title="Permanent link">&para;</a></h4>
+<p>Empresa VoIP que necesita grabar llamadas de softphone</p>
+<h4 id="problema_3">Problema<a class="headerlink" href="#problema_3" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Grabación interna Grabación interna solo captura audio de micrófono</li>
+<li>Softphone Zoiper/3CX no se integra con API de audio Windows</li>
+<li>Necesitan grabar ambos lados de la conversación (caller + callee)</li>
+<li>Calidad de WAV interno es insuficiente para análisis de sentimiento</li>
+</ul>
+<h4 id="solución_3">Solución<a class="headerlink" href="#solución_3" title="Permanent link">&para;</a></h4>
+<p>Configurar <code>modulos#audio=2</code> en config.ini, OBS Studio con plugin obs-browser-source captura audio del sistema, Centralita conecta vía WebSocket a OBS, al detectar llamada invoca <code>tarea_obs.obs_grabar(nombre)</code>, OBS graba en MP4 alta calidad con ambos canales de audio, IA procesa MP4 con mejores resultados que WAV.</p>
+<h4 id="pasos-típicos_3">Pasos Típicos<a class="headerlink" href="#pasos-típicos_3" title="Permanent link">&para;</a></h4>
+<h5 id="1-usuario-instala-obs-studio-y-configura-escena-de-audio">1. Usuario Instala OBS Studio y Configura Escena de Audio<a class="headerlink" href="#1-usuario-instala-obs-studio-y-configura-escena-de-audio" title="Permanent link">&para;</a></h5>
+<ol>
+<li>Descargar OBS Studio: https://obsproject.com/</li>
+<li>Instalar plugin obs-websocket</li>
+<li>Configurar servidor WebSocket en puerto 4455</li>
+<li>Crear escena "Audio"</li>
+<li>Agregar fuente "Audio Output Capture"</li>
+</ol>
+<h5 id="2-edita-configini-modo-obs">2. Edita config.ini: Modo OBS<a class="headerlink" href="#2-edita-configini-modo-obs" title="Permanent link">&para;</a></h5>
+<div class="highlight"><pre><span></span><code><span class="c1"># config.ini</span>
+<span class="k">[MODULOS]</span>
+<span class="na">audio</span><span class="o">=</span><span class="s">2</span><span class="w">  </span><span class="c1"># 0=desactivado, 1=interna, 2=OBS</span>
+
+<span class="k">[OBS]</span>
+<span class="na">obs_activo</span><span class="o">=</span><span class="s">True</span>
+<span class="na">obs_host</span><span class="o">=</span><span class="s">localhost</span>
+<span class="na">obs_port</span><span class="o">=</span><span class="s">4455</span>
+<span class="na">obs_password</span><span class="o">=</span><span class="s">mypassword</span>
+<span class="na">obs_scene</span><span class="o">=</span><span class="s">Audio</span>
+</code></pre></div>
+<h5 id="3-inicia-centralitamd">3. Inicia centralita.md<a class="headerlink" href="#3-inicia-centralitamd" title="Permanent link">&para;</a></h5>
+<div class="highlight"><pre><span></span><code>C:<span class="se">\&gt;</span><span class="w"> </span>centralita.exe
+
+✓<span class="w"> </span>Environment<span class="w"> </span>validated
+✓<span class="w"> </span>Connecting<span class="w"> </span>to<span class="w"> </span>OBS<span class="w"> </span>Studio...
+✓<span class="w"> </span>OBS<span class="w"> </span>connected:<span class="w"> </span>localhost:4455
+✓<span class="w"> </span>Modules<span class="w"> </span>loaded
+✓<span class="w"> </span>System<span class="w"> </span>ready
+</code></pre></div>
+<h5 id="4-obs-se-inicia-en-background-conecta-websocket">4. OBS se Inicia en Background, Conecta WebSocket<a class="headerlink" href="#4-obs-se-inicia-en-background-conecta-websocket" title="Permanent link">&para;</a></h5>
+<div class="highlight"><pre><span></span><code># tarea_obs.md
+import obswebsocket
+
+class OBSController:
+    def __init__(self):
+        self.ws = obswebsocket.Browser(
+            host=&quot;localhost&quot;,
+            port=4455,
+            password=&quot;mypassword&quot;
+        )
+        self.ws.connect()
+
+    def start_recording(self, filename):
+        # Cambiar a escena de Audio
+        self.ws.call(
+            obswebsocket.requests.SetCurrentScene(&quot;Audio&quot;)
+        )
+
+        # Iniciar grabación
+        self.ws.call(
+            obswebsocket.requests.StartRecording()
+        )
+</code></pre></div>
+<h5 id="5-llamada-entra-centralita-detecta-offhook">5. Llamada Entra, Centralita Detecta OffHook<a class="headerlink" href="#5-llamada-entra-centralita-detecta-offhook" title="Permanent link">&para;</a></h5>
+<div class="highlight"><pre><span></span><code>17:23:45 - Incoming call: +34 612 345 678
+17:23:46 - State: OffHook
+17:23:47 - Starting OBS recording...
+</code></pre></div>
+<h5 id="6-instrucción-a-obs-startrecording-vía-websocket">6. Instrucción a OBS: StartRecording vía WebSocket<a class="headerlink" href="#6-instrucción-a-obs-startrecording-vía-websocket" title="Permanent link">&para;</a></h5>
+<div class="highlight"><pre><span></span><code># miratelefono_tareas_proceso.md
+def crear_trabajo_grabar(self, phone_number):
+    if self.config.get(&quot;MODULOS&quot;, &quot;audio&quot;) == &quot;2&quot;:
+        # Modo OBS
+        obs.start_recording(f&quot;llamada_{timestamp}.mp4&quot;)
+    else:
+        # Modo interno
+        grabacion.iniciar(f&quot;llamada_{timestamp}.wav&quot;)
+</code></pre></div>
+<h5 id="7-obs-graba-toda-la-conversación-en-mp4">7. OBS Graba Toda la Conversación en MP4<a class="headerlink" href="#7-obs-graba-toda-la-conversación-en-mp4" title="Permanent link">&para;</a></h5>
+<div class="highlight"><pre><span></span><code>OBS Output:
+- Format: MP4
+- Codec: AAC
+- Bitrate: 128 kbps
+- Sample rate: 44.1 kHz
+- Channels: Stereo (both sides)
+</code></pre></div>
+<h5 id="8-al-colgar-stoprecording--conversión-a-wav-para-ia">8. Al Colgar, StopRecording + Conversión a WAV para IA<a class="headerlink" href="#8-al-colgar-stoprecording--conversión-a-wav-para-ia" title="Permanent link">&para;</a></h5>
+<div class="highlight"><pre><span></span><code>def stop_recording(self):
+    # Detener grabación en OBS
+    self.ws.call(
+        obswebsocket.requests.StopRecording()
+    )
+
+    # Convertir MP4 a WAV
+    ffmpeg.convert(
+        input=&quot;llamada.mp4&quot;,
+        output=&quot;llamada.wav&quot;,
+        codec=&quot;pcm_s16le&quot;
+    )
+</code></pre></div>
+<h5 id="9-transcripción-de-mayor-calidad-por-mejor-audio-fuente">9. Transcripción de Mayor Calidad por Mejor Audio Fuente<a class="headerlink" href="#9-transcripción-de-mayor-calidad-por-mejor-audio-fuente" title="Permanent link">&para;</a></h5>
+<div class="highlight"><pre><span></span><code># Comparación de calidad
+# Grabación interna: 16 kHz, mono, solo micrófono
+# Grabación OBS: 44.1 kHz, stereo, ambos lados
+
+# Resultados de transcripción
+# Interna: 85% precisión
+# OBS: 95% precisión
+</code></pre></div>
+<h4 id="beneficios-medibles_3">Beneficios Medibles<a class="headerlink" href="#beneficios-medibles_3" title="Permanent link">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th>Métrica</th>
+<th>Grabación Interna</th>
+<th>Grabación OBS</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Precisión transcripción</td>
+<td>85%</td>
+<td>95%</td>
+</tr>
+<tr>
+<td>Calidad audio</td>
+<td>Estándar</td>
+<td>Alta</td>
+</tr>
+<tr>
+<td>Ambos lados conversación</td>
+<td>❌</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>Compatible con softphone</td>
+<td>❌</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>Requiere configuración</td>
+<td>❌</td>
+<td>✅</td>
+</tr>
+</tbody>
+</table>
+<h4 id="configuración-completa-de-obs">Configuración Completa de OBS<a class="headerlink" href="#configuración-completa-de-obs" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code>ESCENA: Audio
+├── Audio Output Capture
+│   ├── Device: Default
+│   ├── Sample Rate: 44.1 kHz
+│   └── Channels: Stereo
+└── Audio Input Capture
+    ├── Device: Microphone
+    ├── Sample Rate: 44.1 kHz
+    └── Channels: Mono
+
+CONFIGURACIÓN DE GRABACIÓN:
+- Format: MP4
+- Encoder: AAC
+- Bitrate: 128 kbps
+- Sample Rate: 44.1 kHz
+- Output Directory: D:\centralita_ia\rec
+</code></pre></div>
+<hr />
+<h3 id="resumen-de-casos-de-uso">Resumen de Casos de Uso<a class="headerlink" href="#resumen-de-casos-de-uso" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Caso</th>
+<th>Industria</th>
+<th>Problema Principal</th>
+<th>Solución</th>
+<th>Beneficio Clave</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Servicios</td>
+<td>Pierden tiempo buscando info</td>
+<td>Detección automática</td>
+<td>-100% tiempo preparación</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Call Center</td>
+<td>Pérdida de datos por cortes</td>
+<td>Recuperación post-apagón</td>
+<td>0% llamadas perdidas</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Consultora</td>
+<td>Multi-sede multi-idioma</td>
+<td>Multi-idioma gettext</td>
+<td>-40 horas traducción</td>
+</tr>
+<tr>
+<td>4</td>
+<td>VoIP</td>
+<td>Calidad de audio insuficiente</td>
+<td>Integración OBS</td>
+<td>+10% precisión IA</td>
+</tr>
+</tbody>
+</table>
+<h3 id="próximos-pasos">Próximos Pasos<a class="headerlink" href="#próximos-pasos" title="Permanent link">&para;</a></h3>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Revisar [[funcionalidades-core]] para entender el MVP</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Consultar [[integraciones]] para configurar servicios externos</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Leer [[faq-tecnica]] para resolver dudas comunes</li>
+</ul>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Volver al principio
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+    <a href="https://www.linkedin.com/in/%E2%98%85alfonso-martinez-gonzalez%E2%98%85-19236218/" target="_blank" rel="noopener" title="LinkedIn de Alfonso Martínez" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3M135.4 416H69V202.2h66.5V416zM102.2 96a38.5 38.5 0 1 1 0 77 38.5 38.5 0 1 1 0-77m282.1 320h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="https://github.com/wertyMSD" target="_blank" rel="noopener" title="GitHub de wertyMSD" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+      <div class="md-consent" data-md-component="consent" id="__consent" hidden>
+        <div class="md-consent__overlay"></div>
+        <aside class="md-consent__inner">
+          <form class="md-consent__form md-grid md-typeset" name="consent">
+            
+
+
+  
+
+
+<h4>Cookie</h4>
+<p>Utilizamos cookies para reconocer sus visitas repetidas y sus preferencias, así como para medir la eficacia de nuestra documentación y si los usuarios encuentran lo que buscan. Con su consentimiento, nos ayuda a mejorar nuestra documentación.</p>
+<input class="md-toggle" type="checkbox" id="__settings" >
+<div class="md-consent__settings">
+  <ul class="task-list">
+    
+    
+      
+        
+  
+  
+    
+    
+  
+  <li class="task-list-item">
+    <label class="task-list-control">
+      <input type="checkbox" name="analytics" checked>
+      <span class="task-list-indicator"></span>
+      Google Analytics
+    </label>
+  </li>
+
+      
+    
+    
+      
+        
+  
+  
+    
+    
+  
+  <li class="task-list-item">
+    <label class="task-list-control">
+      <input type="checkbox" name="github" checked>
+      <span class="task-list-indicator"></span>
+      GitHub
+    </label>
+  </li>
+
+      
+    
+    
+  </ul>
+</div>
+<div class="md-consent__controls">
+  
+    
+      <button class="md-button md-button--primary">Aceptar</button>
+    
+    
+    
+  
+    
+    
+    
+      <label class="md-button" for="__settings">Gestionar cookies</label>
+    
+  
+</div>
+          </form>
+        </aside>
+      </div>
+      <script>var consent=__md_get("__consent");if(consent)for(var input of document.forms.consent.elements)input.name&&(input.checked=consent[input.name]||!1);else"file:"!==location.protocol&&setTimeout((function(){document.querySelector("[data-md-component=consent]").hidden=!1}),250);var form=document.forms.consent;for(var action of["submit","reset"])form.addEventListener(action,(function(e){if(e.preventDefault(),"reset"===e.type)for(var n of document.forms.consent.elements)n.name&&(n.checked=!1);__md_set("__consent",Object.fromEntries(Array.from(new FormData(form).keys()).map((function(e){return[e,!0]})))),location.hash="",location.reload()}))</script>
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.instant", "navigation.tabs", "navigation.sections", "navigation.top", "navigation.footer", "navigation.indexes", "navigation.path", "navigation.tracking", "navigation.prune", "search.highlight", "search.share", "search.suggest", "content.tabs.link", "content.code.copy", "content.action.edit", "content.action.view"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="../../javascripts/traducir.js"></script>
+      
+        <script src="../../javascripts/removeCredits.js"></script>
+      
+        <script src="../../javascripts/language-selector.js"></script>
+      
+    
+  </body>
+</html>

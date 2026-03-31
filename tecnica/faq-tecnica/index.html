@@ -7,15 +7,23 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
+        <meta name="description" content="Automatice su CRM Teamleader con IA y su teléfono Android. Identificación de llamadas en tiempo real sin VOIP.">
+      
+      
+        <meta name="author" content="Alfonso Martínez González">
       
       
         <link rel="canonical" href="https://wertymsd.github.io/Centralita_Teamleader/tecnica/faq-tecnica/">
       
       
-        <link rel="prev" href="../funcionalidades-avanzadas/">
       
       
-      
+        
+          <link rel="alternate" href="/en/" hreflang="en">
+        
+          <link rel="alternate" href="/fr/" hreflang="fr">
+        
+          <link rel="alternate" href="/" hreflang="es">
         
       
       
@@ -49,6 +57,8 @@
         <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
       
     
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
     
     <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
@@ -88,7 +98,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#instalacion-y-configuracion" class="md-skip">
+        <a href="#preguntas-frecuentes-técnicas-faq" class="md-skip">
           Saltar a contenido
         </a>
       
@@ -158,6 +168,38 @@
       <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
     
     
+      <div class="md-header__option">
+  <div class="md-select">
+    
+    <button class="md-header__button md-icon" aria-label="Seleccionar idioma">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.5 17.5 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2zm-2.62 7 1.62-4.33L19.12 17z"/></svg>
+    </button>
+    <div class="md-select__inner">
+      <ul class="md-select__list">
+        
+          <li class="md-select__item">
+            <a href="/en/" hreflang="en" class="md-select__link">
+              English
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="/fr/" hreflang="fr" class="md-select__link">
+              Français
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="/" hreflang="es" class="md-select__link">
+              Español
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+    
     
       
       
@@ -178,11 +220,18 @@
       </label>
       <nav class="md-search__options" aria-label="Buscar">
         
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Compartir" aria-label="Compartir" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
         <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
           
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
         </button>
       </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
       
     </form>
     <div class="md-search__output">
@@ -199,6 +248,18 @@
 </div>
       
     
+    
+      <div class="md-header__source">
+        <a href="https://github.com/wertyMSD/Centralita_Teamleader" title="Ir al repositorio" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
     
   </nav>
   
@@ -222,7 +283,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../index.md" class="md-tabs__link">
+        <a href="../.." class="md-tabs__link">
           
   
   
@@ -261,7 +322,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../es/link-descarga-software-centralita-teamleader.md" class="md-tabs__link">
+      <a href="../../es/castellano/link-descarga-software-centralita-teamleader/" class="md-tabs__link">
         
   
   
@@ -282,7 +343,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../es/inicio-rapido-centralita-teamleader.md" class="md-tabs__link">
+        <a href="../../es/castellano/inicio-rapido-centralita-teamleader/" class="md-tabs__link">
           
   
   
@@ -300,19 +361,83 @@
   
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="../arquitectura/" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../es/tecnica/arquitectura/" class="md-tabs__link">
           
   
   
     
   
-  Documentación tecnica
+  Documentación Técnica
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../es/castellano/ejemplos-dia-a-dia/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Casos y Ejemplos
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../en/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  English
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../fr/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Français
 
         </a>
       </li>
@@ -350,6 +475,18 @@
     Centralita IA Teamleader
   </label>
   
+    <div class="md-nav__source">
+      <a href="https://github.com/wertyMSD/Centralita_Teamleader" title="Ir al repositorio" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
   <ul class="md-nav__list" data-md-scrollfix>
     
       
@@ -362,29 +499,35 @@
     
       
         
-      
-        
-      
-        
-      
-    
-    
-    
-      
-      
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
-        
           
-          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
-            
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../.." class="md-nav__link">
+      
   
   
   <span class="md-ellipsis">
@@ -398,106 +541,12 @@
   
   
 
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_1">
-            <span class="md-nav__icon md-icon"></span>
-            
-  
-    Inicio
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
   
 
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../index.md" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    None
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="https://wertymsd.github.io/Centralita_Teamleader/img-shared/Setup_Centralita_IA_Teamleader.zip" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Descarga Gratuita
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../es/inicio-rapido-centralita-teamleader.md" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Configuración Rapida
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
       
     </li>
   
@@ -537,7 +586,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../es/link-descarga-software-centralita-teamleader.md" class="md-nav__link">
+      <a href="../../es/castellano/link-descarga-software-centralita-teamleader/" class="md-nav__link">
         
   
   
@@ -551,6 +600,13 @@
   </span>
   
   
+    
+  
+  
+    <span class="md-status md-status--published"></span>
+  
+
+  
 
       </a>
     </li>
@@ -587,15 +643,19 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
         
-          
-          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
-            
+  
+  
+  
+    <a href="../../es/castellano/inicio-rapido-centralita-teamleader/" class="md-nav__link">
+      
   
   
   <span class="md-ellipsis">
@@ -609,35 +669,66 @@
   
   
 
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_4">
-            <span class="md-nav__icon md-icon"></span>
-            
-  
-    Español
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
   
 
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
+      
+    </li>
+  
+
+    
+      
+      
   
   
   
   
-    <li class="md-nav__item">
-      <a href="../../es/inicio-rapido-centralita-teamleader.md" class="md-nav__link">
+    
+    
+      
         
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../es/tecnica/arquitectura/" class="md-nav__link">
+      
   
   
   <span class="md-ellipsis">
     
   
-    None
+    Documentación Técnica
   
 
     
@@ -645,27 +736,56 @@
   
   
 
-      </a>
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
     </li>
   
 
-              
-            
-              
-                
+    
+      
+      
   
   
   
   
-    <li class="md-nav__item">
-      <a href="../../es/api-teamleader.md" class="md-nav__link">
+    
+    
+      
         
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../es/castellano/ejemplos-dia-a-dia/" class="md-nav__link">
+      
   
   
   <span class="md-ellipsis">
     
   
-    None
+    Casos y Ejemplos
   
 
     
@@ -673,126 +793,12 @@
   
   
 
-      </a>
-    </li>
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
   
 
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../es/centralita-crm-ia-teamleader.md" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    None
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../es/creacion-nuevo-registros-teamleader.md" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    None
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../es/pantalla-configuracion-centralita-teamleader.md" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    None
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../es/App-Call-remoto.md" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    None
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
       
     </li>
   
@@ -802,237 +808,126 @@
       
   
   
-    
   
   
-  
     
     
       
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-    
-    
-    
-      
-        
-        
-      
-      
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
         
           
-          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
-            
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Documentación tecnica
-  
-
-    
-  </span>
-  
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_5">
-            <span class="md-nav__icon md-icon"></span>
-            
-  
-    Documentación tecnica
-  
-
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../arquitectura/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Arquitectura
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../funcionalidades-core/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Funcionalidades core
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../funcionalidades-avanzadas/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Funcionalidades avanzadas
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../integraciones.md" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    None
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../casos-de-uso.md" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    None
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-    
-  
-  
-  
-    <li class="md-nav__item md-nav__item--active">
       
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
       
       
         
       
+    
+    
       
-        <label class="md-nav__link md-nav__link--active" for="__toc">
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../en/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    English
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
           
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../fr/" class="md-nav__link">
+      
   
   
   <span class="md-ellipsis">
     
   
-    Faq tecnica
+    Français
   
 
     
@@ -1040,113 +935,12 @@
   
   
 
-          <span class="md-nav__icon md-icon"></span>
-        </label>
       
-      <a href="./" class="md-nav__link md-nav__link--active">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Faq tecnica
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
   
 
-    
-  </span>
-  
-  
-
-      </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Tabla de contenidos
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#como-se-instala" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        ¿Cómo se instala?
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="¿Cómo se instala?">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#1-requisitos-previos" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        1. Requisitos Previos
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#2-instalacion" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        2. Instalación
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#3-configuracion-inicial" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        3. Configuración Inicial
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#4-ejecucion" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        4. Ejecución
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
       
     </li>
   
@@ -1169,8 +963,6 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -1179,7 +971,31 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#como-se-instala" class="md-nav__link">
+  <a href="#preguntas-frecuentes-técnicas-faq" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Preguntas Frecuentes Técnicas (FAQ)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Preguntas Frecuentes Técnicas (FAQ)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#instalación-y-configuración" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Instalación y Configuración
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Instalación y Configuración">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cómo-se-instala" class="md-nav__link">
     <span class="md-ellipsis">
       
         ¿Cómo se instala?
@@ -1202,7 +1018,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#2-instalacion" class="md-nav__link">
+  <a href="#2-instalación" class="md-nav__link">
     <span class="md-ellipsis">
       
         2. Instalación
@@ -1213,7 +1029,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#3-configuracion-inicial" class="md-nav__link">
+  <a href="#3-configuración-inicial" class="md-nav__link">
     <span class="md-ellipsis">
       
         3. Configuración Inicial
@@ -1224,10 +1040,710 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#4-ejecucion" class="md-nav__link">
+  <a href="#4-ejecución" class="md-nav__link">
     <span class="md-ellipsis">
       
         4. Ejecución
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#integración-teamleader" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Integración Teamleader
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Integración Teamleader">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#qué-pasa-si-falla-la-conexión-con-teamleader" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ¿Qué pasa si falla la conexión con Teamleader?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cómo-se-obtienen-credenciales-de-teamleader-api" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ¿Cómo se obtienen credenciales de Teamleader API?
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="¿Cómo se obtienen credenciales de Teamleader API?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-registrar-aplicación-en-teamleader" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Registrar Aplicación en Teamleader
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-obtener-client-credentials" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Obtener Client Credentials
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-configurar-en-centralita" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Configurar en Centralita
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-autenticación-oauth2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Autenticación (OAuth2)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cómo-se-configuran-los-mapeos-de-columnas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ¿Cómo se configuran los mapeos de columnas?
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="¿Cómo se configuran los mapeos de columnas?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#campos-libres-de-teamleader" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Campos Libres de Teamleader
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mapeos-de-campos-personalizados" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mapeos de Campos Personalizados
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#para-nuevas-integraciones" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Para Nuevas Integraciones
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#personalización" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Personalización
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Personalización">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#se-puede-personalizar-x" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ¿Se puede personalizar X?
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="¿Se puede personalizar X?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#prompts-de-ia" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Prompts de IA
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tema-visual" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tema Visual
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#idioma" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Idioma
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#módulos-activos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Módulos Activos
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#integraciones" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Integraciones
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#formatos-de-archivo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Formatos de Archivo
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Formatos de Archivo">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#qué-formatos-de-archivo-soporta" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ¿Qué formatos de archivo soporta?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#formatos-de-audio-soportados" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Formatos de Audio Soportados
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Formatos de Audio Soportados">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#wav-grabación-interna" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        WAV (Grabación Interna)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mp4-grabación-obs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        MP4 (Grabación OBS)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#manejo-de-errores" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Manejo de Errores
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Manejo de Errores">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cómo-se-manejan-los-errores-de-validación" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ¿Cómo se manejan los errores de validación?
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="¿Cómo se manejan los errores de validación?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-validación-de-audio" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Validación de Audio
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-reintentos-automáticos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Reintentos Automáticos
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-logging-estructurado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Logging Estructurado
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-notificaciones-usuario" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Notificaciones Usuario
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-recuperación-graceful" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Recuperación Graceful
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#problemas-comunes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Problemas Comunes
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Problemas Comunes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#la-aplicación-no-detecta-llamadas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        La aplicación no detecta llamadas
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#error-teamleader-api-no-responde" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Error: "Teamleader API no responde"
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#obs-no-graba-audio" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        OBS no graba audio
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#la-transcripción-ia-es-de-mala-calidad" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        La transcripción IA es de mala calidad
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rendimiento-y-optimización" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Rendimiento y Optimización
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Rendimiento y Optimización">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cuántos-recursos-consume-el-sistema" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ¿Cuántos recursos consume el sistema?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cómo-optimizar-el-rendimiento" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ¿Cómo optimizar el rendimiento?
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="¿Cómo optimizar el rendimiento?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-desactivar-módulos-no-usados" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Desactivar Módulos No Usados
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-reducir-calidad-de-audio" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Reducir Calidad de Audio
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-limitar-instancias-interfaz-web" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Limitar Instancias Interfaz web
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-usar-modelo-ia-más-ligero" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Usar Modelo IA Más Ligero
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#backup-y-recuperación" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Backup y Recuperación
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Backup y Recuperación">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cómo-hacer-backup-de-la-configuración" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ¿Cómo hacer backup de la configuración?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cómo-restaurar-desde-backup" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ¿Cómo restaurar desde backup?
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#seguridad" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Seguridad
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Seguridad">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cómo-se-protegen-las-credenciales-api" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ¿Cómo se protegen las credenciales API?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#el-sistema-envía-datos-a-servidores-externos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ¿El sistema envía datos a servidores externos?
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#actualizaciones" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Actualizaciones
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Actualizaciones">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cómo-actualizar-a-la-última-versión" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ¿Cómo actualizar a la última versión?
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#soporte" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Soporte
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Soporte">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dónde-obtener-ayuda" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ¿Dónde obtener ayuda?
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resumen-de-faq" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resumen de FAQ
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#próximos-pasos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Próximos Pasos
       
     </span>
   </a>
@@ -1261,19 +1777,37 @@
                   
 
 
+  
+    <a href="https://github.com/wertyMSD/Centralita_Teamleader/edit/master/docs/tecnica/faq-tecnica.md" title="Editar esta página" class="md-content__button md-icon" rel="edit">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
+    </a>
+  
+  
+    
+      
+    
+    <a href="https://github.com/wertyMSD/Centralita_Teamleader/raw/master/docs/tecnica/faq-tecnica.md" title="Ver código fuente de esta página" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 18c.56 0 1 .44 1 1s-.44 1-1 1-1-.44-1-1 .44-1 1-1m0-3c-2.73 0-5.06 1.66-6 4 .94 2.34 3.27 4 6 4s5.06-1.66 6-4c-.94-2.34-3.27-4-6-4m0 6.5a2.5 2.5 0 0 1-2.5-2.5 2.5 2.5 0 0 1 2.5-2.5 2.5 2.5 0 0 1 2.5 2.5 2.5 2.5 0 0 1-2.5 2.5M9.27 20H6V4h7v5h5v4.07c.7.08 1.36.25 2 .49V8l-6-6H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h4.5a8.2 8.2 0 0 1-1.23-2"/></svg>
+    </a>
+  
 
-<h0 id="preguntas-frecuentes-tecnicas-faq">Preguntas Frecuentes Técnicas (FAQ)</h0>
+
+  <h1>Faq tecnica</h1>
+
+<h2 id="preguntas-frecuentes-técnicas-faq">Preguntas Frecuentes Técnicas (FAQ)<a class="headerlink" href="#preguntas-frecuentes-técnicas-faq" title="Permanent link">&para;</a></h2>
 <p>Preguntas técnicas frecuentes sobre la instalación, configuración y uso de la Centralita Teamleader.</p>
 <hr />
-<h1 id="instalacion-y-configuracion">Instalación y Configuración</h1>
-<h2 id="como-se-instala">¿Cómo se instala?</h2>
-<h3 id="1-requisitos-previos">1. Requisitos Previos</h3>
+<h3 id="instalación-y-configuración">Instalación y Configuración<a class="headerlink" href="#instalación-y-configuración" title="Permanent link">&para;</a></h3>
+<h4 id="cómo-se-instala">¿Cómo se instala?<a class="headerlink" href="#cómo-se-instala" title="Permanent link">&para;</a></h4>
+<h5 id="1-requisitos-previos">1. Requisitos Previos<a class="headerlink" href="#1-requisitos-previos" title="Permanent link">&para;</a></h5>
 <ul>
 <li><strong>Python 3.13+</strong> instalado (<a href="https://www.python.org/downloads/">Descargar</a>)</li>
 <li><strong>Windows 10/11</strong> (para integración de telefonía)</li>
 <li><strong>5 MB</strong> de espacio en disco mínimo</li>
 </ul>
-<h3 id="2-instalacion">2. Instalación</h3>
+<h5 id="2-instalación">2. Instalación<a class="headerlink" href="#2-instalación" title="Permanent link">&para;</a></h5>
 <div class="highlight"><pre><span></span><code><span class="c1"># 1. Clonar repositorio o descargar ZIP</span>
 git<span class="w"> </span>clone<span class="w"> </span>https://github.com/wertyMSD/Centralita_Teamleader.git
 <span class="nb">cd</span><span class="w"> </span>Centralita_Teamleader
@@ -1288,7 +1822,7 @@ python<span class="w"> </span>-m<span class="w"> </span>venv<span class="w"> </s
 <span class="c1"># 4. Instalar dependencias</span>
 pip<span class="w"> </span>install<span class="w"> </span>-r<span class="w"> </span>requirements.txt
 </code></pre></div>
-<h3 id="3-configuracion-inicial">3. Configuración Inicial</h3>
+<h5 id="3-configuración-inicial">3. Configuración Inicial<a class="headerlink" href="#3-configuración-inicial" title="Permanent link">&para;</a></h5>
 <div class="highlight"><pre><span></span><code><span class="c1"># 1. Copiar config.ini ejemplo</span>
 cp<span class="w"> </span>config.ini.example<span class="w"> </span>config.ini
 
@@ -1306,7 +1840,7 @@ notepad<span class="w"> </span>config.ini
 <span class="k">[AUDIO]</span>
 <span class="na">inicio</span><span class="o">=</span><span class="s">d:\centralita_ia\rec</span>
 </code></pre></div></p>
-<h3 id="4-ejecucion">4. Ejecución</h3>
+<h5 id="4-ejecución">4. Ejecución<a class="headerlink" href="#4-ejecución" title="Permanent link">&para;</a></h5>
 <div class="highlight"><pre><span></span><code><span class="c1"># Modo desarrollo</span>
 python<span class="w"> </span>centralita.md
 
@@ -1314,8 +1848,8 @@ python<span class="w"> </span>centralita.md
 exe<span class="se">\d</span>ist<span class="se">\c</span>entralita.exe
 </code></pre></div>
 <hr />
-<h1 id="integracion-teamleader">Integración Teamleader</h1>
-<h2 id="que-pasa-si-falla-la-conexion-con-teamleader">¿Qué pasa si falla la conexión con Teamleader?</h2>
+<h3 id="integración-teamleader">Integración Teamleader<a class="headerlink" href="#integración-teamleader" title="Permanent link">&para;</a></h3>
+<h4 id="qué-pasa-si-falla-la-conexión-con-teamleader">¿Qué pasa si falla la conexión con Teamleader?<a class="headerlink" href="#qué-pasa-si-falla-la-conexión-con-teamleader" title="Permanent link">&para;</a></h4>
 <p>El sistema incluye <strong>Circuit Breaker</strong> (<code>miratelefono_circuit_breaker.md</code>) que aísla fallos de la API CRM. Si Teamleader no responde:</p>
 <ol>
 <li><strong>Las llamadas se siguen grabando y transcribiendo</strong></li>
@@ -1331,8 +1865,8 @@ except CircuitBreakerOpen:
     csv_manager.add_pending_lookup(phone)
     logger.warning(&quot;Teamleader API no disponible, datos guardados localmente&quot;)
 </code></pre></div>
-<h2 id="como-se-obtienen-credenciales-de-teamleader-api">¿Cómo se obtienen credenciales de Teamleader API?</h2>
-<h3 id="1-registrar-aplicacion-en-teamleader">1. Registrar Aplicación en Teamleader</h3>
+<h4 id="cómo-se-obtienen-credenciales-de-teamleader-api">¿Cómo se obtienen credenciales de Teamleader API?<a class="headerlink" href="#cómo-se-obtienen-credenciales-de-teamleader-api" title="Permanent link">&para;</a></h4>
+<h5 id="1-registrar-aplicación-en-teamleader">1. Registrar Aplicación en Teamleader<a class="headerlink" href="#1-registrar-aplicación-en-teamleader" title="Permanent link">&para;</a></h5>
 <ol>
 <li>Ir a https://app.teamleader.eu/integrations</li>
 <li>Click en "Create app"</li>
@@ -1341,17 +1875,17 @@ except CircuitBreakerOpen:
 <li><strong>Description</strong>: Integración de telefonía</li>
 <li><strong>Redirect URI</strong>: <code>http://Interfaz web/auth/callback</code></li>
 </ol>
-<h3 id="2-obtener-client-credentials">2. Obtener Client Credentials</h3>
+<h5 id="2-obtener-client-credentials">2. Obtener Client Credentials<a class="headerlink" href="#2-obtener-client-credentials" title="Permanent link">&para;</a></h5>
 <ul>
 <li><strong>Client ID</strong>: Generado automáticamente</li>
 <li><strong>Client Secret</strong>: Generado automáticamente</li>
 </ul>
-<h3 id="3-configurar-en-centralita">3. Configurar en Centralita</h3>
+<h5 id="3-configurar-en-centralita">3. Configurar en Centralita<a class="headerlink" href="#3-configurar-en-centralita" title="Permanent link">&para;</a></h5>
 <div class="highlight"><pre><span></span><code><span class="k">[API]</span>
 <span class="na">client_id</span><span class="o">=</span><span class="s">tu_client_id</span>
 <span class="na">client_secret</span><span class="o">=</span><span class="s">tu_client_secret</span>
 </code></pre></div>
-<h3 id="4-autenticacion-oauth2">4. Autenticación (OAuth2)</h3>
+<h5 id="4-autenticación-oauth2">4. Autenticación (OAuth2)<a class="headerlink" href="#4-autenticación-oauth2" title="Permanent link">&para;</a></h5>
 <p>Al iniciar la aplicación por primera vez:
 1. Abrir navegador en <code>http://Interfaz web</code>
 2. Click en "Autorizar Teamleader"
@@ -1362,8 +1896,8 @@ except CircuitBreakerOpen:
 <span class="na">tl_access_token</span><span class="o">=</span><span class="s">eyJhbGciOi...</span>
 <span class="na">tl_refresh_token</span><span class="o">=</span><span class="s">eyJhbGciOi...</span>
 </code></pre></div>
-<h2 id="como-se-configuran-los-mapeos-de-columnas">¿Cómo se configuran los mapeos de columnas?</h2>
-<h3 id="campos-libres-de-teamleader">Campos Libres de Teamleader</h3>
+<h4 id="cómo-se-configuran-los-mapeos-de-columnas">¿Cómo se configuran los mapeos de columnas?<a class="headerlink" href="#cómo-se-configuran-los-mapeos-de-columnas" title="Permanent link">&para;</a></h4>
+<h5 id="campos-libres-de-teamleader">Campos Libres de Teamleader<a class="headerlink" href="#campos-libres-de-teamleader" title="Permanent link">&para;</a></h5>
 <div class="highlight"><pre><span></span><code><span class="k">[API]</span>
 <span class="na">camposlibres</span><span class="o">=</span><span class="s">telefono&lt;--&gt;custom_field_telefono</span><span class="c1">#nombre&lt;--&gt;custom_field_nombre</span>
 </code></pre></div>
@@ -1379,7 +1913,7 @@ camposlibres_decoded = bs4.BeautifulSoup(
 
 # Resultado: &quot;telefono&lt;--&gt;custom_field_telefono#nombre&lt;--&gt;custom_field_nombre&quot;
 </code></pre></div></p>
-<h3 id="mapeos-de-campos-personalizados">Mapeos de Campos Personalizados</h3>
+<h5 id="mapeos-de-campos-personalizados">Mapeos de Campos Personalizados<a class="headerlink" href="#mapeos-de-campos-personalizados" title="Permanent link">&para;</a></h5>
 <p>Editar <code>FRAMES/config_glosario.md</code>:
 <div class="highlight"><pre><span></span><code>MAPEOS_CAMPOS_LIBRES = {
     &quot;telefono&quot;: &quot;custom_field_telefono&quot;,
@@ -1390,7 +1924,7 @@ camposlibres_decoded = bs4.BeautifulSoup(
     &quot;codigo_postal&quot;: &quot;custom_field_postal_code&quot;
 }
 </code></pre></div></p>
-<h3 id="para-nuevas-integraciones">Para Nuevas Integraciones</h3>
+<h5 id="para-nuevas-integraciones">Para Nuevas Integraciones<a class="headerlink" href="#para-nuevas-integraciones" title="Permanent link">&para;</a></h5>
 <p>Crear nuevo frame en <code>FRAMES/&lt;nombre&gt;/x_conf.md</code>:
 <div class="highlight"><pre><span></span><code># FRAMES/sage50/x_conf.md
 MAPEOS_SAGE50 = {
@@ -1401,10 +1935,10 @@ MAPEOS_SAGE50 = {
 }
 </code></pre></div></p>
 <hr />
-<h1 id="personalizacion">Personalización</h1>
-<h2 id="se-puede-personalizar-x">¿Se puede personalizar X?</h2>
+<h3 id="personalización">Personalización<a class="headerlink" href="#personalización" title="Permanent link">&para;</a></h3>
+<h4 id="se-puede-personalizar-x">¿Se puede personalizar X?<a class="headerlink" href="#se-puede-personalizar-x" title="Permanent link">&para;</a></h4>
 <p>El sistema es <strong>altamente personalizable</strong>:</p>
-<h3 id="prompts-de-ia">Prompts de IA</h3>
+<h5 id="prompts-de-ia">Prompts de IA<a class="headerlink" href="#prompts-de-ia" title="Permanent link">&para;</a></h5>
 <p><strong>Método 1</strong>: Modificar <code>config.ini</code>
 <div class="highlight"><pre><span></span><code><span class="k">[IA]</span>
 <span class="na">intrucciones</span><span class="o">=</span><span class="s">Transcribe la llamada y enfócate en:</span>
@@ -1413,7 +1947,7 @@ MAPEOS_SAGE50 = {
 <span class="na">3. Siguientes pasos con fechas</span>
 </code></pre></div></p>
 <p><strong>Método 2</strong>: Sistema A/B Testing (ver [[funcionalidades-avanzadas#9-ab-testing-de-prompts-ia]])</p>
-<h3 id="tema-visual">Tema Visual</h3>
+<h5 id="tema-visual">Tema Visual<a class="headerlink" href="#tema-visual" title="Permanent link">&para;</a></h5>
 <div class="highlight"><pre><span></span><code><span class="k">[WINDOWS]</span>
 <span class="na">tema</span><span class="o">=</span><span class="s">DarkBlue16</span><span class="w">  </span><span class="c1"># Temas de PySimpleGUI</span>
 </code></pre></div>
@@ -1421,7 +1955,7 @@ MAPEOS_SAGE50 = {
 - <code>DarkBlue16</code>, <code>DarkGrey16</code>, <code>DarkBlack1</code>
 - <code>LightGreen</code>, <code>LightBlue</code>, <code>LightGrey</code>
 - <code>HotDogStand</code> (estilo retro)</p>
-<h3 id="idioma">Idioma</h3>
+<h5 id="idioma">Idioma<a class="headerlink" href="#idioma" title="Permanent link">&para;</a></h5>
 <div class="highlight"><pre><span></span><code><span class="k">[WINDOWS]</span>
 <span class="na">idioma</span><span class="o">=</span><span class="s">es</span><span class="w">  </span><span class="c1"># es, en, it</span>
 </code></pre></div>
@@ -1435,7 +1969,7 @@ notepad<span class="w"> </span>locale/fr/LC_MESSAGES/messages.po
 <span class="c1"># Compilar</span>
 msgfmt<span class="w"> </span>locale/fr/LC_MESSAGES/messages.po<span class="w"> </span>-o<span class="w"> </span>locale/fr/LC_MESSAGES/messages.mo
 </code></pre></div></p>
-<h3 id="modulos-activos">Módulos Activos</h3>
+<h5 id="módulos-activos">Módulos Activos<a class="headerlink" href="#módulos-activos" title="Permanent link">&para;</a></h5>
 <div class="highlight"><pre><span></span><code><span class="k">[MODULOS]</span>
 <span class="na">buscar</span><span class="o">=</span><span class="s">1</span><span class="w">      </span><span class="c1"># Búsqueda en CRM</span>
 <span class="na">audio</span><span class="o">=</span><span class="s">1</span><span class="w">       </span><span class="c1"># Grabación de llamadas</span>
@@ -1443,7 +1977,7 @@ msgfmt<span class="w"> </span>locale/fr/LC_MESSAGES/messages.po<span class="w"> 
 <span class="na">plantillas</span><span class="o">=</span><span class="s">0</span><span class="w">  </span><span class="c1"># Plantillas (desactivado)</span>
 <span class="na">cuadro</span><span class="o">=</span><span class="s">1</span><span class="w">      </span><span class="c1"># Cuadro de mando</span>
 </code></pre></div>
-<h3 id="integraciones">Integraciones</h3>
+<h5 id="integraciones">Integraciones<a class="headerlink" href="#integraciones" title="Permanent link">&para;</a></h5>
 <p>Crear frames personalizados en <code>FRAMES/</code> siguiendo estructura de <code>main/</code>:
 <div class="highlight"><pre><span></span><code>FRAMES/micrm/
 ├── __init__.md
@@ -1453,8 +1987,8 @@ msgfmt<span class="w"> </span>locale/fr/LC_MESSAGES/messages.po<span class="w"> 
 └── x_conf.md        # Mapeos específicos
 </code></pre></div></p>
 <hr />
-<h1 id="formatos-de-archivo">Formatos de Archivo</h1>
-<h2 id="que-formatos-de-archivo-soporta">¿Qué formatos de archivo soporta?</h2>
+<h3 id="formatos-de-archivo">Formatos de Archivo<a class="headerlink" href="#formatos-de-archivo" title="Permanent link">&para;</a></h3>
+<h4 id="qué-formatos-de-archivo-soporta">¿Qué formatos de archivo soporta?<a class="headerlink" href="#qué-formatos-de-archivo-soporta" title="Permanent link">&para;</a></h4>
 <table>
 <thead>
 <tr>
@@ -1501,8 +2035,8 @@ msgfmt<span class="w"> </span>locale/fr/LC_MESSAGES/messages.po<span class="w"> 
 </tr>
 </tbody>
 </table>
-<h2 id="formatos-de-audio-soportados">Formatos de Audio Soportados</h2>
-<h3 id="wav-grabacion-interna">WAV (Grabación Interna)</h3>
+<h4 id="formatos-de-audio-soportados">Formatos de Audio Soportados<a class="headerlink" href="#formatos-de-audio-soportados" title="Permanent link">&para;</a></h4>
+<h5 id="wav-grabación-interna">WAV (Grabación Interna)<a class="headerlink" href="#wav-grabación-interna" title="Permanent link">&para;</a></h5>
 <div class="highlight"><pre><span></span><code># Especificaciones
 sample_rate = 16000  # Hz
 channels = 1         # Mono
@@ -1515,7 +2049,7 @@ format = WAV         # .wav
 - Amplio soporte de software</p>
 <p><strong>Desventajas</strong>:
 - Tamaño de archivo grande (~1 MB/minuto)</p>
-<h3 id="mp4-grabacion-obs">MP4 (Grabación OBS)</h3>
+<h5 id="mp4-grabación-obs">MP4 (Grabación OBS)<a class="headerlink" href="#mp4-grabación-obs" title="Permanent link">&para;</a></h5>
 <div class="highlight"><pre><span></span><code># Especificaciones
 codec = AAC
 bitrate = 128000    # 128 kbps
@@ -1531,10 +2065,10 @@ format = MP4        # .mp4
 - Requiere conversión a WAV para IA
 - Requiere OBS Studio instalado</p>
 <hr />
-<h1 id="manejo-de-errores">Manejo de Errores</h1>
-<h2 id="como-se-manejan-los-errores-de-validacion">¿Cómo se manejan los errores de validación?</h2>
+<h3 id="manejo-de-errores">Manejo de Errores<a class="headerlink" href="#manejo-de-errores" title="Permanent link">&para;</a></h3>
+<h4 id="cómo-se-manejan-los-errores-de-validación">¿Cómo se manejan los errores de validación?<a class="headerlink" href="#cómo-se-manejan-los-errores-de-validación" title="Permanent link">&para;</a></h4>
 <p>Sistema multi-capa con validación en múltiples niveles:</p>
-<h3 id="1-validacion-de-audio">1. Validación de Audio</h3>
+<h5 id="1-validación-de-audio">1. Validación de Audio<a class="headerlink" href="#1-validación-de-audio" title="Permanent link">&para;</a></h5>
 <div class="highlight"><pre><span></span><code># libwertyaudiolimpieza.md
 def _validar_audio_antes_de_ia(self, audio_file):
     # Tamaño mínimo
@@ -1556,7 +2090,7 @@ def _validar_audio_antes_de_ia(self, audio_file):
 
     return True, &quot;OK&quot;
 </code></pre></div>
-<h3 id="2-reintentos-automaticos">2. Reintentos Automáticos</h3>
+<h5 id="2-reintentos-automáticos">2. Reintentos Automáticos<a class="headerlink" href="#2-reintentos-automáticos" title="Permanent link">&para;</a></h5>
 <div class="highlight"><pre><span></span><code># Para archivos recién creados
 retries = 6
 delay = 350  # ms
@@ -1569,7 +2103,7 @@ for i in range(retries):
 
     time.sleep(delay / 1000)
 </code></pre></div>
-<h3 id="3-logging-estructurado">3. Logging Estructurado</h3>
+<h5 id="3-logging-estructurado">3. Logging Estructurado<a class="headerlink" href="#3-logging-estructurado" title="Permanent link">&para;</a></h5>
 <div class="highlight"><pre><span></span><code># log_centralita.log
 import logging
 
@@ -1590,7 +2124,7 @@ Traceback (most recent call last):
     response = openrouter.ChatCompletion.create(...)
 openrouter.error.APIError: Invalid API key
 </code></pre></div></p>
-<h3 id="4-notificaciones-usuario">4. Notificaciones Usuario</h3>
+<h5 id="4-notificaciones-usuario">4. Notificaciones Usuario<a class="headerlink" href="#4-notificaciones-usuario" title="Permanent link">&para;</a></h5>
 <div class="highlight"><pre><span></span><code># System tray muestra avisos visuales
 system_tray.show_balloon(
     title=&quot;Error de Validación&quot;,
@@ -1598,7 +2132,7 @@ system_tray.show_balloon(
     icon=error_icon
 )
 </code></pre></div>
-<h3 id="5-recuperacion-graceful">5. Recuperación Graceful</h3>
+<h5 id="5-recuperación-graceful">5. Recuperación Graceful<a class="headerlink" href="#5-recuperación-graceful" title="Permanent link">&para;</a></h5>
 <div class="highlight"><pre><span></span><code># TareaV2 marca estado &quot;Sin IA&quot; para audios no válidos
 if not valid:
     csv_manager.update_estado(
@@ -1609,8 +2143,8 @@ if not valid:
     # Continúa procesando otras tareas
 </code></pre></div>
 <hr />
-<h1 id="problemas-comunes">Problemas Comunes</h1>
-<h2 id="la-aplicacion-no-detecta-llamadas">La aplicación no detecta llamadas</h2>
+<h3 id="problemas-comunes">Problemas Comunes<a class="headerlink" href="#problemas-comunes" title="Permanent link">&para;</a></h3>
+<h4 id="la-aplicación-no-detecta-llamadas">La aplicación no detecta llamadas<a class="headerlink" href="#la-aplicación-no-detecta-llamadas" title="Permanent link">&para;</a></h4>
 <p><strong>Solución</strong>:
 1. Verificar que <code>appandroid=True</code> en <code>[WINDOWS]</code>
 2. Asegurarse de que RemotePhoneService está ejecutándose
@@ -1618,7 +2152,7 @@ if not valid:
 <div class="highlight"><pre><span></span><code><span class="k">[WINDOWS]</span>
 <span class="na">appandroid</span><span class="o">=</span><span class="s">True</span><span class="w">  </span><span class="c1"># Debe ser True</span>
 </code></pre></div>
-<h2 id="error-teamleader-api-no-responde">Error: "Teamleader API no responde"</h2>
+<h4 id="error-teamleader-api-no-responde">Error: "Teamleader API no responde"<a class="headerlink" href="#error-teamleader-api-no-responde" title="Permanent link">&para;</a></h4>
 <p><strong>Solución</strong>:
 1. Verificar conexión a internet
 2. Comprobar tokens en <code>config.ini</code> no han expirado
@@ -1626,7 +2160,7 @@ if not valid:
 <div class="highlight"><pre><span></span><code># Refrescar tokens manualmente
 teamleader_api.refresh_access_token()
 </code></pre></div>
-<h2 id="obs-no-graba-audio">OBS no graba audio</h2>
+<h4 id="obs-no-graba-audio">OBS no graba audio<a class="headerlink" href="#obs-no-graba-audio" title="Permanent link">&para;</a></h4>
 <p><strong>Solución</strong>:
 1. Verificar que OBS está ejecutándose
 2. Comprobar que <code>obs_activo=True</code> en <code>[OBS]</code>
@@ -1637,7 +2171,7 @@ teamleader_api.refresh_access_token()
 <span class="na">obs_host</span><span class="o">=</span><span class="s">localhost</span>
 <span class="na">obs_port</span><span class="o">=</span><span class="s">4455</span>
 </code></pre></div>
-<h2 id="la-transcripcion-ia-es-de-mala-calidad">La transcripción IA es de mala calidad</h2>
+<h4 id="la-transcripción-ia-es-de-mala-calidad">La transcripción IA es de mala calidad<a class="headerlink" href="#la-transcripción-ia-es-de-mala-calidad" title="Permanent link">&para;</a></h4>
 <p><strong>Solución</strong>:
 1. Verificar calidad de audio (usar modo OBS si es posible)
 2. Ajustar prompt en <code>config.ini</code>
@@ -1646,8 +2180,8 @@ teamleader_api.refresh_access_token()
 <span class="na">model</span><span class="o">=</span><span class="s">google/gemini-2.5-flash-lite</span><span class="w">  </span><span class="c1"># Cambiar a openai/gpt-4o</span>
 </code></pre></div>
 <hr />
-<h1 id="rendimiento-y-optimizacion">Rendimiento y Optimización</h1>
-<h2 id="cuantos-recursos-consume-el-sistema">¿Cuántos recursos consume el sistema?</h2>
+<h3 id="rendimiento-y-optimización">Rendimiento y Optimización<a class="headerlink" href="#rendimiento-y-optimización" title="Permanent link">&para;</a></h3>
+<h4 id="cuántos-recursos-consume-el-sistema">¿Cuántos recursos consume el sistema?<a class="headerlink" href="#cuántos-recursos-consume-el-sistema" title="Permanent link">&para;</a></h4>
 <table>
 <thead>
 <tr>
@@ -1696,26 +2230,26 @@ teamleader_api.refresh_access_token()
 </tr>
 </tbody>
 </table>
-<h2 id="como-optimizar-el-rendimiento">¿Cómo optimizar el rendimiento?</h2>
-<h3 id="1-desactivar-modulos-no-usados">1. Desactivar Módulos No Usados</h3>
+<h4 id="cómo-optimizar-el-rendimiento">¿Cómo optimizar el rendimiento?<a class="headerlink" href="#cómo-optimizar-el-rendimiento" title="Permanent link">&para;</a></h4>
+<h5 id="1-desactivar-módulos-no-usados">1. Desactivar Módulos No Usados<a class="headerlink" href="#1-desactivar-módulos-no-usados" title="Permanent link">&para;</a></h5>
 <div class="highlight"><pre><span></span><code><span class="k">[MODULOS]</span>
 <span class="na">plantillas</span><span class="o">=</span><span class="s">0</span><span class="w">  </span><span class="c1"># Desactivar si no se usa</span>
 </code></pre></div>
-<h3 id="2-reducir-calidad-de-audio">2. Reducir Calidad de Audio</h3>
+<h5 id="2-reducir-calidad-de-audio">2. Reducir Calidad de Audio<a class="headerlink" href="#2-reducir-calidad-de-audio" title="Permanent link">&para;</a></h5>
 <div class="highlight"><pre><span></span><code><span class="k">[AUDIO]</span>
 <span class="na">bitrate</span><span class="o">=</span><span class="s">64000</span><span class="w">  </span><span class="c1"># Bajar de 128 kbps a 64 kbps</span>
 </code></pre></div>
-<h3 id="3-limitar-instancias-interfaz-web">3. Limitar Instancias Interfaz web</h3>
+<h5 id="3-limitar-instancias-interfaz-web">3. Limitar Instancias Interfaz web<a class="headerlink" href="#3-limitar-instancias-interfaz-web" title="Permanent link">&para;</a></h5>
 <div class="highlight"><pre><span></span><code><span class="k">[STREAMLIT_SUPERVISOR]</span>
 <span class="na">inactivity_timeout</span><span class="o">=</span><span class="s">1800</span><span class="w">  </span><span class="c1"># Cerrar después de 30 min inactivo</span>
 </code></pre></div>
-<h3 id="4-usar-modelo-ia-mas-ligero">4. Usar Modelo IA Más Ligero</h3>
+<h5 id="4-usar-modelo-ia-más-ligero">4. Usar Modelo IA Más Ligero<a class="headerlink" href="#4-usar-modelo-ia-más-ligero" title="Permanent link">&para;</a></h5>
 <div class="highlight"><pre><span></span><code><span class="k">[IA]</span>
 <span class="na">model</span><span class="o">=</span><span class="s">google/gemini-2.5-flash-lite</span><span class="w">  </span><span class="c1"># En lugar de GPT-4o</span>
 </code></pre></div>
 <hr />
-<h1 id="backup-y-recuperacion">Backup y Recuperación</h1>
-<h2 id="como-hacer-backup-de-la-configuracion">¿Cómo hacer backup de la configuración?</h2>
+<h3 id="backup-y-recuperación">Backup y Recuperación<a class="headerlink" href="#backup-y-recuperación" title="Permanent link">&para;</a></h3>
+<h4 id="cómo-hacer-backup-de-la-configuración">¿Cómo hacer backup de la configuración?<a class="headerlink" href="#cómo-hacer-backup-de-la-configuración" title="Permanent link">&para;</a></h4>
 <div class="highlight"><pre><span></span><code><span class="c1"># Backup manual completo</span>
 tar<span class="w"> </span>-czf<span class="w"> </span>backup_<span class="k">$(</span>date<span class="w"> </span>+%Y%m%d<span class="k">)</span>.tar.gz<span class="w"> </span><span class="se">\</span>
 <span class="w">    </span>config.ini<span class="w"> </span><span class="se">\</span>
@@ -1723,7 +2257,7 @@ tar<span class="w"> </span>-czf<span class="w"> </span>backup_<span class="k">$(
 <span class="w">    </span>campos_libres.c<span class="w"> </span><span class="se">\</span>
 <span class="w">    </span>log_centralita.log
 </code></pre></div>
-<h2 id="como-restaurar-desde-backup">¿Cómo restaurar desde backup?</h2>
+<h4 id="cómo-restaurar-desde-backup">¿Cómo restaurar desde backup?<a class="headerlink" href="#cómo-restaurar-desde-backup" title="Permanent link">&para;</a></h4>
 <div class="highlight"><pre><span></span><code><span class="c1"># 1. Detener aplicación</span>
 taskkill<span class="w"> </span>/IM<span class="w"> </span>centralita.exe
 
@@ -1738,22 +2272,22 @@ cp<span class="w"> </span>hojatiempo.csv<span class="w"> </span>..
 centralita.exe
 </code></pre></div>
 <hr />
-<h1 id="seguridad">Seguridad</h1>
-<h2 id="como-se-protegen-las-credenciales-api">¿Cómo se protegen las credenciales API?</h2>
+<h3 id="seguridad">Seguridad<a class="headerlink" href="#seguridad" title="Permanent link">&para;</a></h3>
+<h4 id="cómo-se-protegen-las-credenciales-api">¿Cómo se protegen las credenciales API?<a class="headerlink" href="#cómo-se-protegen-las-credenciales-api" title="Permanent link">&para;</a></h4>
 <ol>
 <li><strong>Tokens en config.ini</strong> (local, no se comparte)</li>
 <li><strong>Codificación bs4</strong> para campos libres</li>
 <li><strong>OAuth2</strong> con refresh tokens automáticos</li>
 <li><strong>Sin envío de datos a terceros</strong> (solo a APIs configuradas)</li>
 </ol>
-<h2 id="el-sistema-envia-datos-a-servidores-externos">¿El sistema envía datos a servidores externos?</h2>
+<h4 id="el-sistema-envía-datos-a-servidores-externos">¿El sistema envía datos a servidores externos?<a class="headerlink" href="#el-sistema-envía-datos-a-servidores-externos" title="Permanent link">&para;</a></h4>
 <p>Solo a los servicios configurados:
 - <strong>Teamleader API</strong>: Solo contactos/notas
 - <strong>OpenRouter API</strong>: Solo audio para transcripción
 - <strong>Sin telemetría</strong>: No se recopilan datos de uso</p>
 <hr />
-<h1 id="actualizaciones">Actualizaciones</h1>
-<h2 id="como-actualizar-a-la-ultima-version">¿Cómo actualizar a la última versión?</h2>
+<h3 id="actualizaciones">Actualizaciones<a class="headerlink" href="#actualizaciones" title="Permanent link">&para;</a></h3>
+<h4 id="cómo-actualizar-a-la-última-versión">¿Cómo actualizar a la última versión?<a class="headerlink" href="#cómo-actualizar-a-la-última-versión" title="Permanent link">&para;</a></h4>
 <div class="highlight"><pre><span></span><code><span class="c1"># 1. Hacer backup</span>
 cp<span class="w"> </span>config.ini<span class="w"> </span>config.ini.backup
 
@@ -1770,8 +2304,8 @@ cp<span class="w"> </span>config.ini.backup<span class="w"> </span>config.ini
 python<span class="w"> </span>centralita.md
 </code></pre></div>
 <hr />
-<h1 id="soporte">Soporte</h1>
-<h2 id="donde-obtener-ayuda">¿Dónde obtener ayuda?</h2>
+<h3 id="soporte">Soporte<a class="headerlink" href="#soporte" title="Permanent link">&para;</a></h3>
+<h4 id="dónde-obtener-ayuda">¿Dónde obtener ayuda?<a class="headerlink" href="#dónde-obtener-ayuda" title="Permanent link">&para;</a></h4>
 <ol>
 <li><strong>Documentación técnica</strong>: Ver [[arquitectura]] y [[funcionalidades-core]]</li>
 <li><strong>Casos de uso</strong>: Consultar [[casos-de-uso]]</li>
@@ -1779,7 +2313,7 @@ python<span class="w"> </span>centralita.md
 <li><strong>Email</strong>: soporte@alcatic.com</li>
 </ol>
 <hr />
-<h1 id="resumen-de-faq">Resumen de FAQ</h1>
+<h3 id="resumen-de-faq">Resumen de FAQ<a class="headerlink" href="#resumen-de-faq" title="Permanent link">&para;</a></h3>
 <table>
 <thead>
 <tr>
@@ -1830,7 +2364,7 @@ python<span class="w"> </span>centralita.md
 </tr>
 </tbody>
 </table>
-<h1 id="proximos-pasos">Próximos Pasos</h1>
+<h3 id="próximos-pasos">Próximos Pasos<a class="headerlink" href="#próximos-pasos" title="Permanent link">&para;</a></h3>
 <ul class="task-list">
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Revisar [[arquitectura]] para entender la estructura del sistema</li>
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Consultar [[funcionalidades-core]] para详细了解 las funcionalidades principales</li>
@@ -1856,6 +2390,8 @@ python<span class="w"> </span>centralita.md
             </div>
           
           
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
 <script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
         </div>
         
@@ -1869,28 +2405,6 @@ python<span class="w"> </span>centralita.md
       
         <footer class="md-footer">
   
-    
-      
-      <nav class="md-footer__inner md-grid" aria-label="Pie" >
-        
-          
-          <a href="../funcionalidades-avanzadas/" class="md-footer__link md-footer__link--prev" aria-label="Anterior: Funcionalidades avanzadas">
-            <div class="md-footer__button md-icon">
-              
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
-            </div>
-            <div class="md-footer__title">
-              <span class="md-footer__direction">
-                Anterior
-              </span>
-              <div class="md-ellipsis">
-                Funcionalidades avanzadas
-              </div>
-            </div>
-          </a>
-        
-        
-      </nav>
     
   
   <div class="md-footer-meta md-typeset">
@@ -1912,10 +2426,7 @@ python<span class="w"> </span>centralita.md
     
     
     
-      
-      
-    
-    <a href="https://www.linkedin.com/in/★alfonso-martinez-gonzalez★-19236218/" target="_blank" rel="noopener" title="www.linkedin.com" class="md-social__link">
+    <a href="https://www.linkedin.com/in/%E2%98%85alfonso-martinez-gonzalez%E2%98%85-19236218/" target="_blank" rel="noopener" title="LinkedIn de Alfonso Martínez" class="md-social__link">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3M135.4 416H69V202.2h66.5V416zM102.2 96a38.5 38.5 0 1 1 0 77 38.5 38.5 0 1 1 0-77m282.1 320h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9z"/></svg>
     </a>
   
@@ -1923,10 +2434,7 @@ python<span class="w"> </span>centralita.md
     
     
     
-      
-      
-    
-    <a href="https://github.com/wertyMSD" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+    <a href="https://github.com/wertyMSD" target="_blank" rel="noopener" title="GitHub de wertyMSD" class="md-social__link">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
     </a>
   
@@ -1953,7 +2461,7 @@ python<span class="w"> </span>centralita.md
 
 
 <h4>Cookie</h4>
-<p>Utilizamos cookies para reconocer sus visitas repetidas y sus preferencias, así como para como para medir la eficacia de nuestra documentación y si los usuarios  encuentran lo que buscan. Con su consentimiento, nos ayuda a mejorar nuestra documentación</p>
+<p>Utilizamos cookies para reconocer sus visitas repetidas y sus preferencias, así como para medir la eficacia de nuestra documentación y si los usuarios encuentran lo que buscan. Con su consentimiento, nos ayuda a mejorar nuestra documentación.</p>
 <input class="md-toggle" type="checkbox" id="__settings" >
 <div class="md-consent__settings">
   <ul class="task-list">
@@ -1977,6 +2485,21 @@ python<span class="w"> </span>centralita.md
       
     
     
+      
+        
+  
+  
+    
+    
+  
+  <li class="task-list-item">
+    <label class="task-list-control">
+      <input type="checkbox" name="github" checked>
+      <span class="task-list-indicator"></span>
+      GitHub
+    </label>
+  </li>
+
       
     
     
@@ -2005,7 +2528,7 @@ python<span class="w"> </span>centralita.md
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.instant", "navigation.tabs", "navigation.sections", "navigation.top", "navigation.footer", "navigation.indexes", "navigation.path", "language_selector"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.instant", "navigation.tabs", "navigation.sections", "navigation.top", "navigation.footer", "navigation.indexes", "navigation.path", "navigation.tracking", "navigation.prune", "search.highlight", "search.share", "search.suggest", "content.tabs.link", "content.code.copy", "content.action.edit", "content.action.view"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
     
     
       <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>

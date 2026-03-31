@@ -1,0 +1,2896 @@
+
+
+<!doctype html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Aprende a emparejar tu Android con Windows usando JustRemotePhone para detección automática de llamadas. Guía paso a paso para sincronizar Centralita Teamleader con tu teléfono móvil.">
+      
+      
+        <meta name="author" content="Alfonso Martínez González">
+      
+      
+        <link rel="canonical" href="https://wertymsd.github.io/Centralita_Teamleader/es/castellano/App-Call-remoto/">
+      
+      
+        <link rel="prev" href="../pantalla-configuracion-centralita-teamleader/">
+      
+      
+        <link rel="next" href="../../tecnica/arquitectura/">
+      
+      
+        
+          <link rel="alternate" href="/en/" hreflang="en">
+        
+          <link rel="alternate" href="/fr/" hreflang="fr">
+        
+          <link rel="alternate" href="/" hreflang="es">
+        
+      
+      
+      <link rel="icon" href="../../../img-shared/hola.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>Emparejar Android con Windows - JustRemotePhone para Detección Automática de Llamadas | Guía Completa - Centralita IA Teamleader</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-5G9B7PZHS4"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-5G9B7PZHS4",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-5G9B7PZHS4",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+  
+    <script>if("undefined"!=typeof __md_analytics){var consent=__md_get("__consent");consent&&consent.analytics&&__md_analytics()}</script>
+  
+
+    
+    
+  <meta name="google-site-verification" content="hrxJZQgpDDVt8efz25lNhNeo4CBi8d2zIYgnGv4a5fQ" />
+  
+
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="deep-purple">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#-app-call-remoto---emparejar-android-con-windows" class="md-skip">
+          Saltar a contenido
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabecera">
+    <a href="../../.." title="Centralita IA Teamleader" class="md-header__button md-logo" aria-label="Centralita IA Teamleader" data-md-component="logo">
+      
+  <img src="../../../img-shared/hola.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Centralita IA Teamleader
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Emparejar Android con Windows - JustRemotePhone para Detección Automática de Llamadas | Guía Completa
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="deep-purple"  aria-label="Cambiar a modo oscuro"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Cambiar a modo oscuro" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="blue" data-md-color-accent="deep-purple"  aria-label="Cambiar a modo claro"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Cambiar a modo claro" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m3.55 19.09 1.41 1.41 1.8-1.79-1.42-1.42M12 6c-3.31 0-6 2.69-6 6s2.69 6 6 6 6-2.69 6-6c0-3.32-2.69-6-6-6m8 7h3v-2h-3m-2.76 7.71 1.8 1.79 1.41-1.41-1.79-1.8M20.45 5l-1.41-1.4-1.8 1.79 1.42 1.42M13 1h-2v3h2M6.76 5.39 4.96 3.6 3.55 5l1.79 1.81zM1 13h3v-2H1m12 9h-2v3h2"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+      <div class="md-header__option">
+  <div class="md-select">
+    
+    <button class="md-header__button md-icon" aria-label="Seleccionar idioma">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.5 17.5 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2zm-2.62 7 1.62-4.33L19.12 17z"/></svg>
+    </button>
+    <div class="md-select__inner">
+      <ul class="md-select__list">
+        
+          <li class="md-select__item">
+            <a href="/en/" hreflang="en" class="md-select__link">
+              English
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="/fr/" hreflang="fr" class="md-select__link">
+              Français
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="/" hreflang="es" class="md-select__link">
+              Español
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Buscar">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Compartir" aria-label="Compartir" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando búsqueda
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/wertyMSD/Centralita_Teamleader" title="Ir al repositorio" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Pestañas" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../.." class="md-tabs__link">
+          
+  
+  
+    
+  
+  Inicio
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="https://www.linkedin.com/in/%E2%98%85alfonso-martinez-gonzalez%E2%98%85-19236218/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Sobre Nosotros
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../link-descarga-software-centralita-teamleader/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Descarga Gratis
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../inicio-rapido-centralita-teamleader/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Español
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../tecnica/arquitectura/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Documentación Técnica
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../ejemplos-dia-a-dia/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Casos y Ejemplos
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../en/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  English
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../fr/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Français
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navegación" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Centralita IA Teamleader" class="md-nav__button md-logo" aria-label="Centralita IA Teamleader" data-md-component="logo">
+      
+  <img src="../../../img-shared/hola.png" alt="logo">
+
+    </a>
+    Centralita IA Teamleader
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/wertyMSD/Centralita_Teamleader" title="Ir al repositorio" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../.." class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Inicio
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://www.linkedin.com/in/%E2%98%85alfonso-martinez-gonzalez%E2%98%85-19236218/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sobre Nosotros
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../link-descarga-software-centralita-teamleader/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Descarga Gratis
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--published"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Español
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Español
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../inicio-rapido-centralita-teamleader/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Configuración Rápida
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--published"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api-teamleader/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Configurar API Teamleader OAuth2 - Integración CRM Completa | Guía Paso a Paso
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--published"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../centralita-crm-ia-teamleader/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Centralita crm ia teamleader
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../creacion-nuevo-registros-teamleader/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Crear Contactos y Empresas en Teamleader - Alta Automática con IA Enriquecimiento de Datos
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--published"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pantalla-configuracion-centralita-teamleader/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pantalla configuracion centralita teamleader
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Emparejar Android con Windows - JustRemotePhone para Detección Automática de Llamadas | Guía Completa
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--published"></span>
+  
+
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Emparejar Android con Windows - JustRemotePhone para Detección Automática de Llamadas | Guía Completa
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--published"></span>
+  
+
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#-app-call-remoto---emparejar-android-con-windows" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📱 App Call Remoto - Emparejar Android con Windows
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📱 App Call Remoto - Emparejar Android con Windows">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#-mapa-del-emparejamiento" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🗺️ Mapa del Emparejamiento
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#information_source-qué-es-justremotephone" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        :information_source: ¿Qué es JustRemotePhone?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#checklist-requisitos-previos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        :checklist: Requisitos Previos
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label=":checklist: Requisitos Previos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#devices-dispositivos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        :devices: Dispositivos
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#software-software" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        :software: Software
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#desktop_windows-paso-1-instalar-en-windows" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        :desktop_windows: Paso 1: Instalar en Windows
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label=":desktop_windows: Paso 1: Instalar en Windows">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#download-descargar-aplicación-windows" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        :download: Descargar Aplicación Windows
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#smartphone-paso-2-instalar-en-android" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        :smartphone: Paso 2: Instalar en Android
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#link-paso-3-emparejar-dispositivos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        :link: Paso 3: Emparejar Dispositivos
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label=":link: Paso 3: Emparejar Dispositivos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#monitor-31-iniciar-aplicación-en-windows" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        :monitor: 3.1 Iniciar Aplicación en Windows
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#phone_android-32-iniciar-aplicación-en-android" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        :phone_android: 3.2 Iniciar Aplicación en Android
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#qr_code-33-emparejar-mediante-código-qr" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        :qr_code: 3.3 Emparejar Mediante Código QR
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#verified-paso-4-verificar-funcionamiento" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        :verified: Paso 4: Verificar Funcionamiento
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label=":verified: Paso 4: Verificar Funcionamiento">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#phone-test-de-detección-de-llamadas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        :phone: Test de Detección de Llamadas
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#troubleshooting-solución-de-problemas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        :troubleshooting: Solución de Problemas
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label=":troubleshooting: Solución de Problemas">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#material-phone-off-problema-no-se-detectan-las-llamadas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        :material-phone-off: Problema: No se detectan las llamadas
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#material-sync-problem-problema-emparejamiento-falla" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        :material-sync-problem: Problema: Emparejamiento falla
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#material-battery-alert-problema-aplicación-se-cierra-en-android" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        :material-battery-alert: Problema: Aplicación se cierra en Android
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#video-tutoriales-en-video" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        :video: Tutoriales en Video
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label=":video: Tutoriales en Video">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#play_circle-video-oficial-de-justremotephone" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        :play_circle: Video Oficial de JustRemotePhone
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tips_and_updates-consejos-de-uso" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        :tips_and_updates: Consejos de Uso
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label=":tips_and_updates: Consejos de Uso">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#headphones-1-uso-con-auricular-bluetooth" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        :headphones: 1. Uso con Auricular Bluetooth
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#battery_charging_full-2-optimización-de-batería" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        :battery_charging_full: 2. Optimización de Batería
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wifi-3-conexión-estable" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        :wifi: 3. Conexión Estable
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#integration_instructions-integración-con-centralita-teamleader" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        :integration_instructions: Integración con Centralita Teamleader
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label=":integration_instructions: Integración con Centralita Teamleader">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#settings-configuración-en-centralita" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        :settings: Configuración en Centralita
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#play_circle-flujo-completo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        :play_circle: Flujo Completo
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#question_answer-preguntas-frecuentes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        :question_answer: Preguntas Frecuentes
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label=":question_answer: Preguntas Frecuentes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#money_off-es-gratuita-justremotephone" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        :money_off: ¿Es gratuita JustRemotePhone?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#apple-funciona-con-iphone" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        :apple: ¿Funciona con iPhone?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#usb-necesito-cable-usb" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        :usb: ¿Necesito cable USB?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#devices-puedo-usarlo-con-varios-pcs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        :devices: ¿Puedo usarlo con varios PCs?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#battery_full-consume-mucha-batería" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        :battery_full: ¿Consume mucha batería?
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#headset-soporte" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        :headset: Soporte
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#checklist--conclusión" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        :checklist: ✅ Conclusión
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../tecnica/arquitectura/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Documentación Técnica
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../ejemplos-dia-a-dia/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Casos y Ejemplos
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../../en/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    English
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../../fr/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Français
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#-app-call-remoto---emparejar-android-con-windows" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📱 App Call Remoto - Emparejar Android con Windows
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📱 App Call Remoto - Emparejar Android con Windows">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#-mapa-del-emparejamiento" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🗺️ Mapa del Emparejamiento
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#information_source-qué-es-justremotephone" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        :information_source: ¿Qué es JustRemotePhone?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#checklist-requisitos-previos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        :checklist: Requisitos Previos
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label=":checklist: Requisitos Previos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#devices-dispositivos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        :devices: Dispositivos
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#software-software" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        :software: Software
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#desktop_windows-paso-1-instalar-en-windows" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        :desktop_windows: Paso 1: Instalar en Windows
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label=":desktop_windows: Paso 1: Instalar en Windows">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#download-descargar-aplicación-windows" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        :download: Descargar Aplicación Windows
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#smartphone-paso-2-instalar-en-android" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        :smartphone: Paso 2: Instalar en Android
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#link-paso-3-emparejar-dispositivos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        :link: Paso 3: Emparejar Dispositivos
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label=":link: Paso 3: Emparejar Dispositivos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#monitor-31-iniciar-aplicación-en-windows" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        :monitor: 3.1 Iniciar Aplicación en Windows
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#phone_android-32-iniciar-aplicación-en-android" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        :phone_android: 3.2 Iniciar Aplicación en Android
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#qr_code-33-emparejar-mediante-código-qr" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        :qr_code: 3.3 Emparejar Mediante Código QR
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#verified-paso-4-verificar-funcionamiento" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        :verified: Paso 4: Verificar Funcionamiento
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label=":verified: Paso 4: Verificar Funcionamiento">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#phone-test-de-detección-de-llamadas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        :phone: Test de Detección de Llamadas
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#troubleshooting-solución-de-problemas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        :troubleshooting: Solución de Problemas
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label=":troubleshooting: Solución de Problemas">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#material-phone-off-problema-no-se-detectan-las-llamadas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        :material-phone-off: Problema: No se detectan las llamadas
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#material-sync-problem-problema-emparejamiento-falla" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        :material-sync-problem: Problema: Emparejamiento falla
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#material-battery-alert-problema-aplicación-se-cierra-en-android" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        :material-battery-alert: Problema: Aplicación se cierra en Android
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#video-tutoriales-en-video" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        :video: Tutoriales en Video
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label=":video: Tutoriales en Video">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#play_circle-video-oficial-de-justremotephone" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        :play_circle: Video Oficial de JustRemotePhone
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tips_and_updates-consejos-de-uso" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        :tips_and_updates: Consejos de Uso
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label=":tips_and_updates: Consejos de Uso">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#headphones-1-uso-con-auricular-bluetooth" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        :headphones: 1. Uso con Auricular Bluetooth
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#battery_charging_full-2-optimización-de-batería" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        :battery_charging_full: 2. Optimización de Batería
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wifi-3-conexión-estable" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        :wifi: 3. Conexión Estable
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#integration_instructions-integración-con-centralita-teamleader" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        :integration_instructions: Integración con Centralita Teamleader
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label=":integration_instructions: Integración con Centralita Teamleader">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#settings-configuración-en-centralita" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        :settings: Configuración en Centralita
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#play_circle-flujo-completo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        :play_circle: Flujo Completo
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#question_answer-preguntas-frecuentes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        :question_answer: Preguntas Frecuentes
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label=":question_answer: Preguntas Frecuentes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#money_off-es-gratuita-justremotephone" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        :money_off: ¿Es gratuita JustRemotePhone?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#apple-funciona-con-iphone" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        :apple: ¿Funciona con iPhone?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#usb-necesito-cable-usb" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        :usb: ¿Necesito cable USB?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#devices-puedo-usarlo-con-varios-pcs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        :devices: ¿Puedo usarlo con varios PCs?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#battery_full-consume-mucha-batería" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        :battery_full: ¿Consume mucha batería?
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#headset-soporte" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        :headset: Soporte
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#checklist--conclusión" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        :checklist: ✅ Conclusión
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+                
+
+
+
+
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+    <a href="https://github.com/wertyMSD/Centralita_Teamleader/edit/master/docs/es/castellano/App-Call-remoto.md" title="Editar esta página" class="md-content__button md-icon" rel="edit">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
+    </a>
+  
+  
+    
+      
+    
+    <a href="https://github.com/wertyMSD/Centralita_Teamleader/raw/master/docs/es/castellano/App-Call-remoto.md" title="Ver código fuente de esta página" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 18c.56 0 1 .44 1 1s-.44 1-1 1-1-.44-1-1 .44-1 1-1m0-3c-2.73 0-5.06 1.66-6 4 .94 2.34 3.27 4 6 4s5.06-1.66 6-4c-.94-2.34-3.27-4-6-4m0 6.5a2.5 2.5 0 0 1-2.5-2.5 2.5 2.5 0 0 1 2.5-2.5 2.5 2.5 0 0 1 2.5 2.5 2.5 2.5 0 0 1-2.5 2.5M9.27 20H6V4h7v5h5v4.07c.7.08 1.36.25 2 .49V8l-6-6H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h4.5a8.2 8.2 0 0 1-1.23-2"/></svg>
+    </a>
+  
+
+
+  <h1>Emparejar Android con Windows - JustRemotePhone para Detección Automática de Llamadas | Guía Completa</h1>
+
+<h2 id="-app-call-remoto---emparejar-android-con-windows">📱 App Call Remoto - Emparejar Android con Windows<a class="headerlink" href="#-app-call-remoto---emparejar-android-con-windows" title="Permanent link">&para;</a></h2>
+<p><strong>JustRemotePhone</strong> es la aplicación que permite a Centralita Teamleader detectar automáticamente las llamadas entrantes y salientes desde tu teléfono Android, sin intervención manual.</p>
+<div class="admonition success">
+<p class="admonition-title">🎯 Objetivo de esta guía</p>
+<p>Al finalizar, tendrás:
+- ✅ JustRemotePhone instalado en Windows y Android
+- ✅ Dispositivos emparejados
+- ✅ Detección automática de llamadas funcionando
+- ✅ Centralita Teamleader conectada con tu Android</p>
+</div>
+<hr />
+<h3 id="-mapa-del-emparejamiento">🗺️ Mapa del Emparejamiento<a class="headerlink" href="#-mapa-del-emparejamiento" title="Permanent link">&para;</a></h3>
+<pre class="mermaid"><code>flowchart TD
+    A[Instalar JustRemotePhone] --&gt; B[Instalar en Windows]
+    A --&gt; C[Instalar en Android]
+    B --&gt; D[Ejecutar aplicación]
+    C --&gt; D
+    D --&gt; E[Emparejar dispositivos]
+    E --&gt; F[Verificar conexión]
+    F --&gt; G[Configurar en Centralita]
+    G --&gt; H[✅ Listo para usar]
+
+    style A fill:#e3f2fd
+    style H fill:#e8f5e9</code></pre>
+<hr />
+<h3 id="information_source-qué-es-justremotephone">:information_source: ¿Qué es JustRemotePhone?<a class="headerlink" href="#information_source-qué-es-justremotephone" title="Permanent link">&para;</a></h3>
+<p><strong>JustRemotePhone</strong> es una aplicación de terceros que conecta tu teléfono Android con tu PC con Windows a través de Wi-Fi o Bluetooth, permitiendo:</p>
+<div class="grid cards">
+<ul>
+<li>
+<p>:material-phone-in-talk: <strong>Detección automática de llamadas</strong></p>
+<p>Entrantes y salientes</p>
+</li>
+<li>
+<p>:material-message: <strong>Gestión de SMS</strong></p>
+<p>Leer y enviar mensajes desde el PC</p>
+</li>
+<li>
+<p>:material-contacts: <strong>Sincronización de contactos</strong></p>
+<p>Acceder a la agenda del teléfono</p>
+</li>
+<li>
+<p>:material-headphones: <strong>Uso con auricular Bluetooth</strong></p>
+<p>Dejar el teléfono en la estación</p>
+</li>
+</ul>
+</div>
+<div class="admonition info">
+<p class="admonition-title">Ideal para Centralita</p>
+<p>En combinación con Centralita Teamleader, JustRemotePhone permite que el sistema detecte automáticamente cuándo recibes o realizas una llamada, sin que tengas que introducir el número manualmente.</p>
+</div>
+<hr />
+<h3 id="checklist-requisitos-previos">:checklist: Requisitos Previos<a class="headerlink" href="#checklist-requisitos-previos" title="Permanent link">&para;</a></h3>
+<h4 id="devices-dispositivos">:devices: Dispositivos<a class="headerlink" href="#devices-dispositivos" title="Permanent link">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th>Elemento</th>
+<th>Requisito</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Teléfono móvil</strong></td>
+<td>Android 6.0 o superior</td>
+</tr>
+<tr>
+<td><strong>PC</strong></td>
+<td>Windows 10 o Windows 11</td>
+</tr>
+<tr>
+<td><strong>Conectividad</strong></td>
+<td>Wi-Fi (misma red) o Bluetooth</td>
+</tr>
+<tr>
+<td><strong>Auricular</strong></td>
+<td>Bluetooth recomendado (opcional)</td>
+</tr>
+</tbody>
+</table>
+<h4 id="software-software">:software: Software<a class="headerlink" href="#software-software" title="Permanent link">&para;</a></h4>
+<pre class="mermaid"><code>mindmap
+  root((Software requerido))
+    JustRemotePhone
+      Instalado en Android
+      Instalado en Windows
+      Ambos ejecutándose
+    Permisos
+      Contactos
+      Registro de llamadas
+      SMS
+      Teléfono</code></pre>
+<ul>
+<li>✅ Aplicación JustRemotePhone en Android</li>
+<li>✅ Aplicación JustRemotePhone en Windows</li>
+<li>✅ Ambos dispositivos ejecutándose</li>
+</ul>
+<hr />
+<h3 id="desktop_windows-paso-1-instalar-en-windows">:desktop_windows: Paso 1: Instalar en Windows<a class="headerlink" href="#desktop_windows-paso-1-instalar-en-windows" title="Permanent link">&para;</a></h3>
+<h4 id="download-descargar-aplicación-windows">:download: Descargar Aplicación Windows<a class="headerlink" href="#download-descargar-aplicación-windows" title="Permanent link">&para;</a></h4>
+<pre class="mermaid"><code>flowchart LR
+    A[Visitar web oficial] --&gt; B[Descargar CallCenter.msi]
+    B --&gt; C[Ejecutar instalador]
+    C --&gt; D[Seguir pasos]
+    D --&gt; E[Finalizar instalación]
+
+    style A fill:#e3f2fd
+    style E fill:#e8f5e9</code></pre>
+<ol>
+<li><strong>Visita la web oficial</strong></li>
+<li>
+<p>URL: <a href="https://www.justremotephone.com/">https://www.justremotephone.com/</a></p>
+</li>
+<li>
+<p><strong>Descarga el instalador</strong></p>
+</li>
+<li>Haga clic en "Download for Windows"</li>
+<li>
+<p>Archivo: <code>CallCenter.msi</code></p>
+</li>
+<li>
+<p><strong>Ejecuta el instalador</strong></p>
+</li>
+<li>Doble clic en <code>CallCenter.msi</code></li>
+<li>Sigue los pasos del asistente</li>
+<li>Finaliza la instalación</li>
+</ol>
+<div class="admonition tip">
+<p class="admonition-title">Consejo</p>
+<p>Instala la aplicación en una carpeta de fácil acceso, preferiblemente en <code>C:\Program Files\JustRemotePhone\</code>.</p>
+</div>
+<hr />
+<h3 id="smartphone-paso-2-instalar-en-android">:smartphone: Paso 2: Instalar en Android<a class="headerlink" href="#smartphone-paso-2-instalar-en-android" title="Permanent link">&para;</a></h3>
+<details class="info" open="open">
+<summary>Opciones de instalación</summary>
+</details>
+<div class="tabbed-set" data-tabs="1:1"><input checked="checked" id="-versión-de-prueba-gratis-7-días" name="__tabbed_1" type="radio" /><label for="-versión-de-prueba-gratis-7-días">📱 Versión de Prueba GRATIS (7 días)</label><div class="tabbed-content"></div>
+</div>
+<ol>
+<li><strong>Abra Google Play</strong> en su Android</li>
+<li><strong>Busque "Remote Phone Call Trial"</strong></li>
+<li>O acceda directamente: <a href="https://play.google.com/store/apps/details?id=justPhone.remotePhoneTrial&amp;hl=es_HN">Remote Phone Call Trial - Google Play</a></li>
+<li><strong>Instale la aplicación</strong></li>
+<li><strong>Pruebe durante 7 días</strong> antes de comprar</li>
+</ol>
+<div class="tabbed-set" data-tabs="2:1"><input checked="checked" id="-versión-completa-de-pago-999-pago-único" name="__tabbed_2" type="radio" /><label for="-versión-completa-de-pago-999-pago-único">💳 Versión Completa de Pago (~€9.99 pago único)</label><div class="tabbed-content"></div>
+</div>
+<ol>
+<li><strong>Abra Google Play</strong> en su Android</li>
+<li><strong>Busque "Remote Phone Call"</strong></li>
+<li>O acceda directamente: <a href="https://play.google.com/store/apps/details?id=justPhone.remotePhone&amp;hl=es&amp;gl=US">Remote Phone Call - Google Play</a></li>
+<li><strong>Compre la aplicación</strong> (~€9.99 pago único)</li>
+</ol>
+<div class="admonition warning">
+<p class="admonition-title">⚠️ Importante sobre la Licencia</p>
+<p>La licencia está <strong>vinculada a la cuenta de Google</strong> que uses para la compra.</p>
+<p><strong>Recomendación</strong>: Usa una cuenta de Google que puedas compartir en varios terminales si deseas usar la app en múltiples dispositivos.</p>
+</div>
+<hr />
+<h3 id="link-paso-3-emparejar-dispositivos">:link: Paso 3: Emparejar Dispositivos<a class="headerlink" href="#link-paso-3-emparejar-dispositivos" title="Permanent link">&para;</a></h3>
+<h4 id="monitor-31-iniciar-aplicación-en-windows">:monitor: 3.1 Iniciar Aplicación en Windows<a class="headerlink" href="#monitor-31-iniciar-aplicación-en-windows" title="Permanent link">&para;</a></h4>
+<ol>
+<li><strong>Ejecute JustRemotePhone</strong> en Windows</li>
+<li><strong>Verá la pantalla principal</strong></li>
+<li>Estado: "Esperando conexión"</li>
+</ol>
+<h4 id="phone_android-32-iniciar-aplicación-en-android">:phone_android: 3.2 Iniciar Aplicación en Android<a class="headerlink" href="#phone_android-32-iniciar-aplicación-en-android" title="Permanent link">&para;</a></h4>
+<ol>
+<li><strong>Ejecute JustRemotePhone</strong> en su Android</li>
+<li><strong>Permita los permisos solicitados</strong></li>
+<li>Acceso a contactos</li>
+<li>Acceso a registro de llamadas</li>
+<li>Acceso a SMS</li>
+<li>Acceso a teléfono</li>
+</ol>
+<h4 id="qr_code-33-emparejar-mediante-código-qr">:qr_code: 3.3 Emparejar Mediante Código QR<a class="headerlink" href="#qr_code-33-emparejar-mediante-código-qr" title="Permanent link">&para;</a></h4>
+<pre class="mermaid"><code>sequenceDiagram
+    participant W as Windows PC
+    participant A as Android Phone
+    participant U as Usuario
+
+    W-&gt;&gt;U: 1. Pulse "Emparejar dispositivo"
+    W-&gt;&gt;U: 2. Muestra código QR
+    U-&gt;&gt;A: 3. Escanea código QR
+    A-&gt;&gt;W: 4. Confirma emparejamiento
+    W-&gt;&gt;W: 5. Estado: "Conectado a Android"
+    W-&gt;&gt;U: 6. Notificación: "Emparejado"
+
+    Note over W,A: Emparejamiento exitoso</code></pre>
+<ol>
+<li><strong>En Windows</strong>, haga clic en "Emparejar dispositivo"</li>
+<li><strong>Se generará un código QR</strong> en pantalla</li>
+<li><strong>En Android</strong>, selecciona "Escanear código QR"</li>
+<li><strong>Escanea el código</strong> desde su Android</li>
+<li><strong>Confirme el emparejamiento</strong> en ambos dispositivos</li>
+</ol>
+<div class="admonition success">
+<p class="admonition-title">✅ Emparejamiento Completado</p>
+<p>Verás en Windows: "Conectado a [Nombre de tu Android]"
+Verás en Android: "Conectado a [Nombre de tu PC]"</p>
+</div>
+<hr />
+<h3 id="verified-paso-4-verificar-funcionamiento">:verified: Paso 4: Verificar Funcionamiento<a class="headerlink" href="#verified-paso-4-verificar-funcionamiento" title="Permanent link">&para;</a></h3>
+<h4 id="phone-test-de-detección-de-llamadas">:phone: Test de Detección de Llamadas<a class="headerlink" href="#phone-test-de-detección-de-llamadas" title="Permanent link">&para;</a></h4>
+<ol>
+<li><strong>Realice una llamada</strong> desde su Android</li>
+<li>
+<p>Llame a cualquier número (puede ser corto)</p>
+</li>
+<li>
+<p><strong>Verifique que Windows detecta la llamada</strong></p>
+</li>
+<li>Debería ver una notificación en Windows</li>
+<li>
+<p>JustRemotePhone mostrará: "Llamada entrante: +34 XXX XXX XXX"</p>
+</li>
+<li>
+<p><strong>Verifique que Centralita detecta la llamada</strong></p>
+</li>
+<li>Si Centralita está ejecutándose, también debería detectarla</li>
+<li>Se abrirá automáticamente la ficha de Teamleader</li>
+</ol>
+<div class="admonition tip">
+<p class="admonition-title">Consejo</p>
+<p>Si Centralita no detecta la llamada, verifica que:
+- Centralita está ejecutándose en segundo plano
+- El emparejamiento con JustRemotePhone está activo
+- Has configurado el emparejamiento en Centralita</p>
+</div>
+<hr />
+<h3 id="troubleshooting-solución-de-problemas">:troubleshooting: Solución de Problemas<a class="headerlink" href="#troubleshooting-solución-de-problemas" title="Permanent link">&para;</a></h3>
+<h4 id="material-phone-off-problema-no-se-detectan-las-llamadas">:material-phone-off: Problema: No se detectan las llamadas<a class="headerlink" href="#material-phone-off-problema-no-se-detectan-las-llamadas" title="Permanent link">&para;</a></h4>
+<p><strong>Causas posibles</strong>:</p>
+<pre class="mermaid"><code>flowchart TD
+    A[No detecta llamadas] --&gt; B{App ejecutándose?}
+    B --&gt;|No| C[Iniciar apps]
+    B --&gt;|Sí| D{Emparejamiento activo?}
+    D --&gt;|No| E[Re-emparejar]
+    D --&gt;|Sí| F{Misma WiFi?}
+    F --&gt;|No| G[Conectar misma red]
+    F --&gt;|Sí| H{Permisos concedidos?}
+    H --&gt;|No| I[Conceder permisos]
+    H --&gt;|Sí| J[Contactar soporte]
+
+    style A fill:#ff6b6b
+    style C fill:#e8f5e9
+    style E fill:#e8f5e9
+    style G fill:#e8f5e9
+    style I fill:#e8f5e9</code></pre>
+<ol>
+<li>Aplicación JustRemotePhone no ejecutándose</li>
+<li>Dispositivos no emparejados</li>
+<li>Red WiFi diferente</li>
+<li>Permisos denegados en Android</li>
+</ol>
+<p><strong>Soluciones</strong>:
+1. Verifica que JustRemotePhone está <strong>ejecutándose en ambos dispositivos</strong>
+2. Reinicia la aplicación en Windows y Android
+3. Verifica que ambos dispositivos están en la <strong>misma red WiFi</strong>
+4. Revisa los permisos de la app en Android:
+   - Ajustes → Aplicaciones → JustRemotePhone → Permisos
+   - Asegúrate de que todos los permisos estén concedidos</p>
+<h4 id="material-sync-problem-problema-emparejamiento-falla">:material-sync-problem: Problema: Emparejamiento falla<a class="headerlink" href="#material-sync-problem-problema-emparejamiento-falla" title="Permanent link">&para;</a></h4>
+<p><strong>Causa</strong>: Código QR caducado o conexión inestable.</p>
+<p><strong>Solución</strong>:
+1. Genera un nuevo código QR en Windows
+2. Escanea rápidamente (dentro de 2 minutos)
+3. Asegúrate de que la pantalla del Android esté encendida</p>
+<h4 id="material-battery-alert-problema-aplicación-se-cierra-en-android">:material-battery-alert: Problema: Aplicación se cierra en Android<a class="headerlink" href="#material-battery-alert-problema-aplicación-se-cierra-en-android" title="Permanent link">&para;</a></h4>
+<p><strong>Causa</strong>: Optimización de batería cerrando la app.</p>
+<p><strong>Solución</strong>:
+1. Ve a Ajustes → Batería → Optimización de batería
+2. Busca JustRemotePhone
+3. Selecciona "No optimizar"
+4. Esto permite que la app se ejecute en segundo plano</p>
+<hr />
+<h3 id="video-tutoriales-en-video">:video: Tutoriales en Video<a class="headerlink" href="#video-tutoriales-en-video" title="Permanent link">&para;</a></h3>
+<h4 id="play_circle-video-oficial-de-justremotephone">:play_circle: Video Oficial de JustRemotePhone<a class="headerlink" href="#play_circle-video-oficial-de-justremotephone" title="Permanent link">&para;</a></h4>
+<details class="info">
+<summary>📺 Ver Video Completo</summary>
+<p><a href="https://youtu.be/7zBI8Gr4Kmg">Remote Phone Call - PC dialer for mobile phones - YouTube</a></p>
+<p><strong>Duración</strong>: 5 minutos
+<strong>Contenido</strong>:
+- Instalación en Windows y Android
+- Emparejamiento de dispositivos
+- Gestión de llamadas y SMS
+- Uso con auricular Bluetooth</p>
+</details>
+<hr />
+<h3 id="tips_and_updates-consejos-de-uso">:tips_and_updates: Consejos de Uso<a class="headerlink" href="#tips_and_updates-consejos-de-uso" title="Permanent link">&para;</a></h3>
+<h4 id="headphones-1-uso-con-auricular-bluetooth">:headphones: 1. Uso con Auricular Bluetooth<a class="headerlink" href="#headphones-1-uso-con-auricular-bluetooth" title="Permanent link">&para;</a></h4>
+<p><strong>Ideal para dejar el teléfono en la estación</strong>:</p>
+<pre class="mermaid"><code>sequenceDiagram
+    participant A as Android
+    participant BT as Auricular Bluetooth
+    participant W as Windows
+    participant CT as Centralita
+
+    A-&gt;&gt;BT: 1. Emparejar auricular
+    A-&gt;&gt;W: 2. Dejar teléfono cargando
+    CT-&gt;&gt;CT: 3. Detecta llamada
+    BT-&gt;&gt;A: 4. Auricular avisa
+    A-&gt;&gt;A: 5. Contesta desde auricular
+    CT-&gt;&gt;CT: 6. Procesa automáticamente
+
+    Note over A,CT: Hands-free completo</code></pre>
+<ol>
+<li>Empareja tu auricular Bluetooth con el Android</li>
+<li>Deja el teléfono cargando en la estación</li>
+<li>Contesta las llamadas desde el auricular</li>
+<li>JustRemotePhone y Centralita detectarán la llamada automáticamente</li>
+</ol>
+<p><strong>Ventajas</strong>:
+- ✅ Manos libres
+- ✅ Teléfono siempre cargado
+- ✅ No necesitas tocar el Android</p>
+<h4 id="battery_charging_full-2-optimización-de-batería">:battery_charging_full: 2. Optimización de Batería<a class="headerlink" href="#battery_charging_full-2-optimización-de-batería" title="Permanent link">&para;</a></h4>
+<p><strong>Para evitar que la app se cierre en Android</strong>:
+- Añade JustRemotePhone a "Aplicaciones sin optimizar"
+- Desactiva ahorro de energía para la app
+- Mantén la pantalla encendida durante emparejamiento inicial</p>
+<h4 id="wifi-3-conexión-estable">:wifi: 3. Conexión Estable<a class="headerlink" href="#wifi-3-conexión-estable" title="Permanent link">&para;</a></h4>
+<p><strong>Para mantener conexión estable</strong>:
+- Usa siempre la misma red WiFi
+- Evita cambiar de red mientras usas la app
+- Mantén ambos dispositivos encendidos
+- Reinicia la app si pierdes conexión</p>
+<hr />
+<h3 id="integration_instructions-integración-con-centralita-teamleader">:integration_instructions: Integración con Centralita Teamleader<a class="headerlink" href="#integration_instructions-integración-con-centralita-teamleader" title="Permanent link">&para;</a></h3>
+<h4 id="settings-configuración-en-centralita">:settings: Configuración en Centralita<a class="headerlink" href="#settings-configuración-en-centralita" title="Permanent link">&para;</a></h4>
+<p>Una vez emparejados los dispositivos con JustRemotePhone:</p>
+<pre class="mermaid"><code>flowchart TD
+    A[Abrir configuración] --&gt; B[Navegar a Emparejamiento Android]
+    B --&gt; C[Verificar estado]
+    C --&gt; D{Conectado?}
+    D --&gt;|No| E[Pulse Conectar]
+    D --&gt;|Sí| F[✅ Listo]
+    E --&gt; F
+    F --&gt; G[Guardar configuración]
+
+    style A fill:#e3f2fd
+    style G fill:#e8f5e9</code></pre>
+<ol>
+<li><strong>Abre configuración de Centralita</strong></li>
+<li>Clic con el botón derecho en el icono de Centralita</li>
+<li>
+<p>Seleccionar "Configuración"</p>
+</li>
+<li>
+<p><strong>Navega a "Emparejamiento Android"</strong></p>
+</li>
+<li>
+<p>Sección de emparejamiento</p>
+</li>
+<li>
+<p><strong>Verifica estado</strong></p>
+</li>
+<li>Debería mostrar: "Conectado a JustRemotePhone"</li>
+<li>
+<p>Si muestra "Desconectado", click en "Conectar"</p>
+</li>
+<li>
+<p><strong>Guarda configuración</strong></p>
+</li>
+<li>Haga clic en "Guardar"</li>
+</ol>
+<div class="admonition success">
+<p class="admonition-title">✅ Integración Completada</p>
+<p>Ahora Centralita detectará automáticamente todas las llamadas que realices o recibas en tu Android.</p>
+</div>
+<h4 id="play_circle-flujo-completo">:play_circle: Flujo Completo<a class="headerlink" href="#play_circle-flujo-completo" title="Permanent link">&para;</a></h4>
+<pre class="mermaid"><code>sequenceDiagram
+    participant T as Teléfono
+    participant A as Android
+    participant JRP as JustRemotePhone
+    participant W as Windows
+    participant CT as Centralita
+    participant TL as Teamleader
+
+    T-&gt;&gt;A: 1️⃣ Llamada entrante en Android
+    A-&gt;&gt;JRP: 2️⃣ JustRemotePhone detecta
+    JRP-&gt;&gt;W: 3️⃣ Envía notificación a Windows
+    W-&gt;&gt;CT: 4️⃣ Centralita recibe notificación
+    CT-&gt;&gt;TL: 5️⃣ Busca contacto en Teamleader
+    TL--&gt;&gt;CT: Contacto encontrado
+    CT-&gt;&gt;W: 6️⃣ Abre ficha automáticamente
+    W-&gt;&gt;T: 7️⃣ Inicia grabación
+    T-&gt;&gt;A: 8️⃣ Conversación
+    A--&gt;&gt;T: Cuelga
+    CT-&gt;&gt;CT: 9️⃣ Transcribe con IA
+    CT-&gt;&gt;TL: 🔟 Crea nota en Teamleader
+
+    Note over CT,TL: Automatización completa</code></pre>
+<hr />
+<h3 id="question_answer-preguntas-frecuentes">:question_answer: Preguntas Frecuentes<a class="headerlink" href="#question_answer-preguntas-frecuentes" title="Permanent link">&para;</a></h3>
+<h4 id="money_off-es-gratuita-justremotephone">:money_off: ¿Es gratuita JustRemotePhone?<a class="headerlink" href="#money_off-es-gratuita-justremotephone" title="Permanent link">&para;</a></h4>
+<p><strong>Tiene 2 versiones</strong>:</p>
+<pre class="mermaid"><code>pie chart Versiones de JustRemotePhone
+    title Comparación de versiones
+    "Versión Trial (7 días gratis)" : 50
+    "Versión Completa (€9.99 pago único)" : 50</code></pre>
+<ul>
+<li><strong>Versión Trial</strong>: GRATIS durante 7 días</li>
+<li><strong>Versión Completa</strong>: ~€9.99 pago único (sin suscripción mensual)</li>
+</ul>
+<h4 id="apple-funciona-con-iphone">:apple: ¿Funciona con iPhone?<a class="headerlink" href="#apple-funciona-con-iphone" title="Permanent link">&para;</a></h4>
+<p><strong>No</strong>. JustRemotePhone <strong>solo funciona con Android</strong>.</p>
+<div class="admonition info">
+<p class="admonition-title">Alternativa para iPhone</p>
+<p>Si usas iPhone, puedes introducir manualmente el número en Centralita después de la llamada. El sistema buscará en Teamleader y creará la nota automáticamente.</p>
+</div>
+<h4 id="usb-necesito-cable-usb">:usb: ¿Necesito cable USB?<a class="headerlink" href="#usb-necesito-cable-usb" title="Permanent link">&para;</a></h4>
+<p><strong>No es necesario</strong>. JustRemotePhone funciona vía:</p>
+<div class="grid cards">
+<ul>
+<li>
+<p>:material-wifi: <strong>Wi-Fi</strong> (Recomendado, más estable)</p>
+</li>
+<li>
+<p>:material-bluetooth: <strong>Bluetooth</strong> (Alternativa, menos alcance)</p>
+</li>
+</ul>
+</div>
+<h4 id="devices-puedo-usarlo-con-varios-pcs">:devices: ¿Puedo usarlo con varios PCs?<a class="headerlink" href="#devices-puedo-usarlo-con-varios-pcs" title="Permanent link">&para;</a></h4>
+<p><strong>Sí, pero necesitas una licencia por PC</strong>:
+- La licencia está vinculada a tu cuenta de Google
+- Puedes instalar en múltiples Android con la misma cuenta
+- Pero necesitas emparejar cada PC por separado</p>
+<h4 id="battery_full-consume-mucha-batería">:battery_full: ¿Consume mucha batería?<a class="headerlink" href="#battery_full-consume-mucha-batería" title="Permanent link">&para;</a></h4>
+<p><strong>Consumo moderado</strong>:</p>
+<table>
+<thead>
+<tr>
+<th>Estado</th>
+<th>Consumo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Uso normal</td>
+<td>~2-3% de batería por hora</td>
+</tr>
+<tr>
+<td>En segundo plano</td>
+<td>~1% por hora</td>
+</tr>
+<tr>
+<td>Recomendado</td>
+<td>Mantener cargado durante uso intensivo</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="headset-soporte">:headset: Soporte<a class="headerlink" href="#headset-soporte" title="Permanent link">&para;</a></h3>
+<p>Si tienes problemas con JustRemotePhone:</p>
+<table>
+<thead>
+<tr>
+<th>Recurso</th>
+<th>Contacto</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Web oficial</strong></td>
+<td><a href="https://www.justremotephone.com/">https://www.justremotephone.com/</a></td>
+</tr>
+<tr>
+<td><strong>Soporte</strong></td>
+<td>A través de su web oficial</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition info">
+<p class="admonition-title">Soporte de Centralita</p>
+<p>Para problemas específicos de integración con Centralita Teamleader:
+- Email: soporte@alcatic.com
+- Web: <a href="https://alca.co/">https://alca.co/</a></p>
+</div>
+<hr />
+<h3 id="checklist--conclusión">:checklist: ✅ Conclusión<a class="headerlink" href="#checklist--conclusión" title="Permanent link">&para;</a></h3>
+<p><strong>JustRemotePhone</strong> + <strong>Centralita Teamleader</strong> = Automatización total</p>
+<ul>
+<li>✅ <strong>Detección automática</strong> de llamadas entrantes y salientes</li>
+<li>✅ <strong>Sin intervención manual</strong> - No necesitas introducir números</li>
+<li>✅ <strong>Integración perfecta</strong> con Teamleader</li>
+<li>✅ <strong>Transcripción IA</strong> automática de todas las llamadas</li>
+<li>✅ <strong>Uso con auricular Bluetooth</strong> para máxima comodidad</li>
+</ul>
+<p>Con ambos sistemas configurados, tu flujo de llamadas será 100% automático, permitiéndote enfocarte en la conversación mientras Centralita gestiona todo el resto.</p>
+<div class="admonition success">
+<p class="admonition-title">¿Listo para configurar el emparejamiento?</p>
+<p><a class="md-button md-button--primary" href="../inicio-rapido-centralita-teamleader/"><strong>Volver a Inicio Rápido</strong></a></p>
+</div>
+
+
+
+
+
+
+
+  
+  
+
+
+
+  
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Volver al principio
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Pie" >
+        
+          
+          <a href="../pantalla-configuracion-centralita-teamleader/" class="md-footer__link md-footer__link--prev" aria-label="Anterior: Pantalla configuracion centralita teamleader">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Anterior
+              </span>
+              <div class="md-ellipsis">
+                Pantalla configuracion centralita teamleader
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../../tecnica/arquitectura/" class="md-footer__link md-footer__link--next" aria-label="Siguiente: ¿Cómo funciona Centralita IA? | Centralita Teamleader">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Siguiente
+              </span>
+              <div class="md-ellipsis">
+                ¿Cómo funciona Centralita IA? | Centralita Teamleader
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+    <a href="https://www.linkedin.com/in/%E2%98%85alfonso-martinez-gonzalez%E2%98%85-19236218/" target="_blank" rel="noopener" title="LinkedIn de Alfonso Martínez" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3M135.4 416H69V202.2h66.5V416zM102.2 96a38.5 38.5 0 1 1 0 77 38.5 38.5 0 1 1 0-77m282.1 320h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="https://github.com/wertyMSD" target="_blank" rel="noopener" title="GitHub de wertyMSD" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+      <div class="md-consent" data-md-component="consent" id="__consent" hidden>
+        <div class="md-consent__overlay"></div>
+        <aside class="md-consent__inner">
+          <form class="md-consent__form md-grid md-typeset" name="consent">
+            
+
+
+  
+
+
+<h4>Cookie</h4>
+<p>Utilizamos cookies para reconocer sus visitas repetidas y sus preferencias, así como para medir la eficacia de nuestra documentación y si los usuarios encuentran lo que buscan. Con su consentimiento, nos ayuda a mejorar nuestra documentación.</p>
+<input class="md-toggle" type="checkbox" id="__settings" >
+<div class="md-consent__settings">
+  <ul class="task-list">
+    
+    
+      
+        
+  
+  
+    
+    
+  
+  <li class="task-list-item">
+    <label class="task-list-control">
+      <input type="checkbox" name="analytics" checked>
+      <span class="task-list-indicator"></span>
+      Google Analytics
+    </label>
+  </li>
+
+      
+    
+    
+      
+        
+  
+  
+    
+    
+  
+  <li class="task-list-item">
+    <label class="task-list-control">
+      <input type="checkbox" name="github" checked>
+      <span class="task-list-indicator"></span>
+      GitHub
+    </label>
+  </li>
+
+      
+    
+    
+  </ul>
+</div>
+<div class="md-consent__controls">
+  
+    
+      <button class="md-button md-button--primary">Aceptar</button>
+    
+    
+    
+  
+    
+    
+    
+      <label class="md-button" for="__settings">Gestionar cookies</label>
+    
+  
+</div>
+          </form>
+        </aside>
+      </div>
+      <script>var consent=__md_get("__consent");if(consent)for(var input of document.forms.consent.elements)input.name&&(input.checked=consent[input.name]||!1);else"file:"!==location.protocol&&setTimeout((function(){document.querySelector("[data-md-component=consent]").hidden=!1}),250);var form=document.forms.consent;for(var action of["submit","reset"])form.addEventListener(action,(function(e){if(e.preventDefault(),"reset"===e.type)for(var n of document.forms.consent.elements)n.name&&(n.checked=!1);__md_set("__consent",Object.fromEntries(Array.from(new FormData(form).keys()).map((function(e){return[e,!0]})))),location.hash="",location.reload()}))</script>
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.instant", "navigation.tabs", "navigation.sections", "navigation.top", "navigation.footer", "navigation.indexes", "navigation.path", "navigation.tracking", "navigation.prune", "search.highlight", "search.share", "search.suggest", "content.tabs.link", "content.code.copy", "content.action.edit", "content.action.view"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="../../../javascripts/traducir.js"></script>
+      
+        <script src="../../../javascripts/removeCredits.js"></script>
+      
+        <script src="../../../javascripts/language-selector.js"></script>
+      
+    
+  </body>
+</html>
