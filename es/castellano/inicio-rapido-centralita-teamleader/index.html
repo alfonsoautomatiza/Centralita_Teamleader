@@ -2023,23 +2023,19 @@
 </div>
 <hr />
 <h3 id="-timeline-de-instalación">📊 Timeline de Instalación<a class="headerlink" href="#-timeline-de-instalación" title="Permanent link">&para;</a></h3>
-<pre class="mermaid"><code>gantt
-    title Instalación de Centralita Teamleader
-    dateFormat  HH:mm
-    axisFormat  %H:%M
+<pre class="mermaid"><code>flowchart LR
+    A["📥 1. Descarga&lt;br&gt;(2 min)"] --&gt; B["💻 2. Instalación&lt;br&gt;(1 min)"]
+    B --&gt; C["📱 3. App Celular&lt;br&gt;(2 min)"]
+    C --&gt; D["⚙️ 4. API Teamleader&lt;br&gt;(1 min)"]
+    D --&gt; E["🤖 5. IA OpenRouter&lt;br&gt;(1 min)"]
+    E --&gt; F["✅ 6. ¡Llamada de Prueba!"]
 
-    section Preparación
-    Descargar instalador          :a1, 00:00, 2m
-    Descomprimir y ejecutar       :a2, after a1, 1m
-
-    section Configuración
-    Emparejar Android             :b1, after a2, 2m
-    Configurar API Teamleader     :b2, after b1, 1m
-    Configurar OpenRouter IA      :b3, after b2, 1m
-
-    section Finalización
-    Primera llamada de prueba     :c1, after b3, 2m
-    Verificar transcripción      :c2, after c1, 1m</code></pre>
+    style A fill:#e3f2fd,stroke:#1e88e5,stroke-width:2px
+    style B fill:#e3f2fd,stroke:#1e88e5,stroke-width:2px
+    style C fill:#fff3e0,stroke:#fb8c00,stroke-width:2px
+    style D fill:#e8f5e9,stroke:#43a047,stroke-width:2px
+    style E fill:#f3e5f5,stroke:#8e24aa,stroke-width:2px
+    style F fill:#e8f5e9,stroke:#43a047,stroke-width:4px</code></pre>
 <hr />
 <h3 id="-requisitos-previos">📋 Requisitos Previos<a class="headerlink" href="#-requisitos-previos" title="Permanent link">&para;</a></h3>
 <div class="admonition warning">
