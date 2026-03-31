@@ -1451,7 +1451,7 @@
 <pre class="mermaid"><code>flowchart LR
     A[Teléfono suena] --&gt; B[Centralita detecta llamada]
     B --&gt; C[Busca número en Teamleader]
-    C --&gt; D{¿Encontrado?}
+    C --&gt; D{"¿Encontrado?"}
     D --&gt;|Sí| E[Abre ficha automáticamente]
     D --&gt;|No| F[Asistente IA crea nuevo registro]
     E --&gt; G[Contestas con contexto completo]

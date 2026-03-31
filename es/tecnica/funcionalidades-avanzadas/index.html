@@ -2721,7 +2721,7 @@ Herramientas -&gt; Ajustes de conexión
     B --&gt; C[Backup #3]
     C --&gt; D[...]
     D --&gt; E[Backup #30]
-    E --&gt; F{¿Max?}
+    E --&gt; F{"¿Max?"}
     F --&gt;|Sí| G[Eliminar Backup #1]
     F --&gt;|No| H[Crear nuevo backup]
     G --&gt; H
@@ -2981,13 +2981,13 @@ Herramientas -&gt; Ajustes de conexión
 </table>
 <h4 id="reintentos-automáticos">Reintentos automáticos<a class="headerlink" href="#reintentos-automáticos" title="Permanent link">&para;</a></h4>
 <pre class="mermaid"><code>flowchart TD
-    A[Audio creado] --&gt; B{¿Válido?}
+    A[Audio creado] --&gt; B{"¿Válido?"}
     B --&gt;|No| C[Esperar 350ms]
     C --&gt; D[Reintentar]
-    D --&gt; E{¿Válido?}
+    D --&gt; E{"¿Válido?"}
     E --&gt;|No| C
     E --&gt;|Sí| F[Enviar a IA]
-    C --&gt; G{¿6 intentos?}
+    C --&gt; G{"¿6 intentos?"}
     G --&gt;|Sí| H[Marcar Sin IA]
     G --&gt;|No| D
 

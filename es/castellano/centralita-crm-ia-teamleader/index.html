@@ -2699,7 +2699,7 @@ status: published</li>
 <pre class="mermaid"><code>flowchart TD
     A[Llamada entrante/saliente] --&gt; B[Centralita detecta automáticamente]
     B --&gt; C[Busca contacto/empresa en Teamleader]
-    C --&gt; D{¿Encontrado?}
+    C --&gt; D{"¿Encontrado?"}
     D --&gt;|Sí| E[Abre ficha en navegador]
     D --&gt;|No| F[Asistente IA crea nuevo registro]
     E --&gt; G[Inicia grabación de audio]
