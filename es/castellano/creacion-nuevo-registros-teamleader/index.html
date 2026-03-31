@@ -2654,8 +2654,7 @@
 <h3 id="search-búsqueda-automática-de-información">:search: Búsqueda Automática de Información<a class="headerlink" href="#search-búsqueda-automática-de-información" title="Permanent link">&para;</a></h3>
 <p>Centralita utiliza <strong>inteligencia artificial</strong> para buscar información automáticamente en internet y enriquecer el registro del nuevo contacto.</p>
 <h4 id="network-redes-de-búsqueda-adicional">:network: Redes de Búsqueda Adicional<a class="headerlink" href="#network-redes-de-búsqueda-adicional" title="Permanent link">&para;</a></h4>
-<pre class="mermaid"><code>pie chart Fuentes de búsqueda
-    title Distribución de búsqueda automática
+<pre class="mermaid"><code>pie title Distribución de búsqueda automática
     "WhatsApp" : 35
     "Google" : 40
     "LinkedIn" : 25</code></pre>
@@ -2867,19 +2866,19 @@
 <h4 id="ahorro-de-tiempo"><img alt="⏲" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/23f2.svg" title=":timer:" /> Ahorro de Tiempo<a class="headerlink" href="#ahorro-de-tiempo" title="Permanent link">&para;</a></h4>
 <pre class="mermaid"><code>gantt
     title Comparación de tiempo de alta
-    dateFormat  SS
-    axisFormat  %s s
+    dateFormat X
+    axisFormat %S
 
     section Sin IA
-    Buscar empresa en Google       :a1, 00, 300
-    Buscar en LinkedIn             :a2, 00, 180
-    Copiar datos manualmente       :a3, 00, 120
-    Total                          :a4, 00, 600
+    Buscar empresa en Google       :a1, 0, 300s
+    Buscar en LinkedIn             :a2, 0, 180s
+    Copiar datos manualmente       :a3, 0, 120s
+    Total                          :a4, 0, 600s
 
     section Con IA
-    Introducir nombre empresa       :b1, 00, 30
-    IA busca automáticamente        :b2, 00, 90
-    Total                          :b3, 00, 120
+    Introducir nombre empresa       :b1, 0, 30s
+    IA busca automáticamente        :b2, 0, 90s
+    Total                          :b3, 0, 120s
 
     style a4 fill:#ff6b6b
     style b3 fill:#51cf66</code></pre>
