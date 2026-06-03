@@ -1,0 +1,19 @@
+{
+  "project": "centralita_teamleader",
+  "channel": "stable",
+  "latest": "0.1.1",
+  "key_id": "global-2026-01",
+  "generated_at": "2026-06-03T05:56:29.209916+00:00",
+  "releases": [
+    {
+      "version": "0.1.1",
+      "type": "partial",
+      "target": "win-x64",
+      "url": "files/_internal.zip",
+      "sha256": "7c6948b3e503ce45e677bcc019ed54bbeed6c9c4ab559d54e5ffed694ef2ab32",
+      "size": 553343,
+      "operations_manifest": "operations.json"
+    }
+  ],
+  "signature": "V0d6P61UoXbu24YUr5W/4YkIO38jNayGUu/1ktAAroyiy5iV4sGPocLhOeV+nDFXYveoRENA4n57+8dUkXvTBg=="
+}
