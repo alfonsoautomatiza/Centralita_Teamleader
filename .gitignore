@@ -3,6 +3,7 @@
 
 # Excepto estos archivos
 !README.md
+!LICENSE
 !.gitignore
 !docs/
 !docs/updates/
