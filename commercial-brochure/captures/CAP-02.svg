@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900" role="img" aria-labelledby="title desc">
+  <title id="title">CAP-02 capture placeholder</title><desc id="desc">Búsqueda manual con teléfono sintético</desc>
+  <rect width="100%" height="100%" fill="#eef2f5"/><rect x="24" y="24" width="1152" height="852" rx="16" fill="none" stroke="#567086" stroke-width="4" stroke-dasharray="16 12"/>
+  <text x="50%" y="46%" text-anchor="middle" fill="#17324d" font-family="Arial, sans-serif" font-size="64" font-weight="700">CAP-02</text>
+  <text x="50%" y="56%" text-anchor="middle" fill="#425b70" font-family="Arial, sans-serif" font-size="28">Búsqueda manual con teléfono sintético</text>
+</svg>

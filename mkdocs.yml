@@ -1,0 +1,149 @@
+site_name: Centralita IA Teamleader
+site_url: https://wertymsd.github.io/Centralita_Teamleader/
+site_author: Alfonso Martínez González
+site_description: Manual oficial para instalar, configurar y usar Centralita IA con Teamleader Focus.
+
+docs_dir: docs
+site_dir: site
+strict: true
+use_directory_urls: true
+
+repo_url: https://github.com/wertyMSD/Centralita_Teamleader
+repo_name: wertyMSD/Centralita_Teamleader
+copyright: Copyright &copy; 2026 AlfonsoAutomatiza.com
+
+exclude_docs: |
+  _internal/**
+  **/indice_*.md
+  tecnica/**
+  overrides/**
+
+plugins:
+  - search:
+      lang:
+        - es
+        - en
+        - fr
+      separator: '[\s\-\.]+'
+
+theme:
+  name: material
+  favicon: img/hola.png
+  logo: img/hola.png
+  custom_dir: overrides
+  language: es
+  font: false
+  features:
+    - navigation.sections
+    - navigation.top
+    - navigation.footer
+    - navigation.indexes
+    - navigation.path
+    - navigation.tracking
+    - search.highlight
+    - search.suggest
+    - content.tabs.link
+    - content.code.copy
+    - toc.follow
+  icon:
+    repo: fontawesome/brands/github
+  palette:
+    - scheme: default
+      primary: blue grey
+      accent: teal
+      toggle:
+        icon: material/weather-night
+        name: Cambiar a modo oscuro
+    - scheme: slate
+      primary: blue grey
+      accent: teal
+      toggle:
+        icon: material/white-balance-sunny
+        name: Cambiar a modo claro
+
+extra:
+  generator: false
+  social:
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/%E2%98%85alfonso-martinez-gonzalez%E2%98%85-19236218/
+      name: LinkedIn de Alfonso Martínez
+    - icon: fontawesome/brands/github
+      link: https://github.com/wertyMSD
+      name: GitHub de wertyMSD
+  analytics:
+    provider: google
+    property: G-9FBB0G8XHG
+  consent:
+    title: Cookies de analítica
+    description: >-
+      Con su consentimiento, usamos Google Analytics para saber si la documentación
+      ayuda a resolver las tareas. Puede rechazar estas cookies sin perder funciones.
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - meta
+  - tables
+  - pymdownx.details
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - toc:
+      permalink: true
+      permalink_title: Enlace permanente a esta sección
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+extra_javascript:
+  - https://unpkg.com/mermaid@11.12.0/dist/mermaid.min.js
+  - javascripts/mermaid.js
+
+extra_css:
+  - stylesheets/extra.css
+
+nav:
+  - Inicio: index.md
+  - Manual de uso:
+      - Elegir una tarea: es/manual/index.md
+      - Instalación y primer inicio: es/manual/instalacion.md
+      - Configuración: es/manual/configuracion.md
+      - Uso diario: es/manual/uso-diario.md
+      - Teamleader: es/manual/teamleader.md
+      - Solución de problemas: es/manual/incidencias.md
+      - FAQ y soporte: es/manual/ayuda.md
+  - Guías detalladas:
+      - Inicio rápido: es/castellano/inicio-rapido-centralita-teamleader.md
+      - API de Teamleader: es/castellano/api-teamleader.md
+      - Guía completa: es/castellano/centralita-crm-ia-teamleader.md
+      - Crear registros: es/castellano/creacion-nuevo-registros-teamleader.md
+      - Pantalla de configuración: es/castellano/pantalla-configuracion-centralita-teamleader.md
+      - App Call Remoto: es/castellano/App-Call-remoto.md
+      - Descargar software: es/castellano/link-descarga-software-centralita-teamleader.md
+      - Ejemplos del día a día: es/castellano/ejemplos-dia-a-dia.md
+  - Referencia técnica:
+      - Arquitectura: es/tecnica/arquitectura.md
+      - Funcionalidades principales: es/tecnica/funcionalidades-core.md
+      - Funcionalidades avanzadas: es/tecnica/funcionalidades-avanzadas.md
+      - Casos de uso: es/tecnica/casos-de-uso.md
+      - Integraciones: es/tecnica/integraciones.md
+      - Preguntas técnicas: es/tecnica/faq-tecnica.md
+  - English:
+      - Overview: en/index.md
+      - Quick start: en/english/inicio-rapido-centralita-teamleader.md
+      - Complete guide: en/english/centralita-crm-ia-teamleader.md
+      - Download: en/english/link-descarga-software-centralita-teamleader.md
+      - Architecture: en/technical/arquitectura.md
+  - Français:
+      - Présentation: fr/index.md
+      - Démarrage rapide: fr/francais/demarrage-rapide-centralita-teamleader.md
+      - Guide complet: fr/francais/centralite-crm-ia-teamleader.md
+      - Téléchargement: fr/francais/lien-telechargement-logiciel-centralita-teamleader.md
+      - Architecture: fr/technique/architecture.md

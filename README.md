@@ -1,3 +1,8 @@
+---
+created: 2026-08-13
+tags:
+  - contexto/proyecto/manual
+---
 
 # Visión general / Overview
 

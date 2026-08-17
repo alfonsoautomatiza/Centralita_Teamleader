@@ -1,0 +1,18 @@
+{
+  "project": "centralita_teamleader",
+  "channel": "stable",
+  "latest": "0.1.1",
+  "key_id": "global-2026-01",
+  "generated_at": "2026-08-17T00:00:00+00:00",
+  "releases": [
+    {
+      "version": "0.1.1",
+      "type": "full",
+      "target": "win-x64",
+      "url": "https://github.com/wertyMSD/Centralita_Teamleader/releases/download/v0.1.1/centralita_teamleader.zip",
+      "sha256": "",
+      "size": 0
+    }
+  ],
+  "signature": ""
+}
