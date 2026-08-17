@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://wertymsd.github.io/Centralita_Teamleader/sitemap.xml

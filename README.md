@@ -36,6 +36,16 @@ https://github.com/wertyMSD/Centralita_Teamleader
 # Requisitos Previos / Prerequisites
 - Windows 10 o superior con Espacio minimo 5 Mb
 
+# Novedades / What's new
+
+## Versión 0.1.1 — 17/08/2026 (primera versión / first release)
+
+- Primera versión pública de **Centralita IA Teamleader**: integración con Teamleader Focus,
+  marcación con un clic, grabación de llamadas y análisis con IA.
+- Instalador Windows con actualizaciones automáticas (canal estable).
+
+Detalles: [Novedades v0.1.1](https://wertymsd.github.io/Centralita_Teamleader/updates/novedades-v0.1.1/)
+
 # Instalación / Installation :
 - Descargar y descomprimir la aplicación en Zip http://alca.co/centralita_teamleader
 - Instalación y emparejamiento equipo windows [app Call Remoto](https://wertymsd.github.io/Centralita_Teamleader/100_Proyectos/centralita/centralita%20SAGE50/App%20Call%20remoto.html)
